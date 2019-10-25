@@ -1,0 +1,4 @@
+COMPONENT	ModifiedFunctions
+INCLUDE	.*	.*	.*
+COMPONENT	AddedFunctions
+COMPONENT	DeletedFunctions

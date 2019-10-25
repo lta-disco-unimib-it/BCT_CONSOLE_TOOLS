@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: it.unimib.disco.lta.bct.bctJavaEclipse.doc
+Bundle-SymbolicName: it.unimib.disco.lta.bct.bctJavaEclipse.doc;singleton:=true
+Bundle-Version: 0.7.00
+Bundle-Activator: bctjavaeclipseplugindoc.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

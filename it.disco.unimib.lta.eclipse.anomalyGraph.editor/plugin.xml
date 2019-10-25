@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id: plugin.xml,v 1.1 2008-07-07 20:09:11 pastore Exp $
+-->
+
+<plugin>
+
+
+  <extension
+    point = "org.eclipse.ui.newWizards">
+    <category
+      id = "org.eclipse.emf.ecore.Wizard.category.ID"
+      name="%_UI_Wizard_category">
+    </category>
+    <wizard
+      id = "it.unimib.disco.lta.eclipse.anomalyGraph.presentation.AnomalyGraphModelWizardID"
+      name = "%_UI_AnomalyGraphModelWizard_label"
+      class = "it.unimib.disco.lta.eclipse.anomalyGraph.presentation.AnomalyGraphModelWizard"
+      category = "org.eclipse.emf.ecore.Wizard.category.ID"
+      icon = "icons/full/obj16/AnomalyGraphModelFile.gif">
+      <description>%_UI_AnomalyGraphModelWizard_description</description>
+      <selection class = "org.eclipse.core.resources.IResource" />
+    </wizard>
+  </extension>
+
+  <extension point = "org.eclipse.ui.editors">
+    <editor
+        id = "it.unimib.disco.lta.eclipse.anomalyGraph.presentation.AnomalyGraphEditorID"
+        name = "%_UI_AnomalyGraphEditor_label"
+        icon = "icons/full/obj16/AnomalyGraphModelFile.gif"
+        extensions = "anomalygraph"
+        class = "it.unimib.disco.lta.eclipse.anomalyGraph.presentation.AnomalyGraphEditor" 
+        contributorClass="it.unimib.disco.lta.eclipse.anomalyGraph.presentation.AnomalyGraphActionBarContributor" >
+    </editor>
+  </extension>    
+</plugin>

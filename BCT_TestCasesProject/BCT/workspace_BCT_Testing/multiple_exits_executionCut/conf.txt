@@ -1,0 +1,1 @@
+daikon.FileIO.ignore_missing_enter=false

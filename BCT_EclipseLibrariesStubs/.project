@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>BCT_EclipseLibrariesStubs</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src-console</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/BctJavaEclipsePlugin/src-console</locationURI>
+		</link>
+		<link>
+			<name>src-core</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/BctEclipseCore/src</locationURI>
+		</link>
+		<link>
+			<name>src-vart</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/it.unimib.disco.lta.eclipse.vart/src-console</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

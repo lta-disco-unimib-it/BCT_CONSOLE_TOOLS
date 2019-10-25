@@ -1,0 +1,13 @@
+Daikon version 4.3.0, released July 1, 2007; http://pag.csail.mit.edu/daikon.
+Reading declaration files .[8:17:34 AM]: Reading 1.decls (line 6) ...                                                                                                                     (read 1 decls file)
+                                                                               Processing trace data; reading 1 dtrace file:
+[8:17:34 AM]: Finished reading 1.dtrace                                        
+                                                                               ===========================================================================
+testPackage.Test1.m(int):::ENTER
+parameter[0] == 1
+===========================================================================
+testPackage.Test1.m(int):::EXIT
+parameter[0] == orig(parameter[0])
+parameter[0] == 1
+returnValue == 10
+Exiting Daikon.

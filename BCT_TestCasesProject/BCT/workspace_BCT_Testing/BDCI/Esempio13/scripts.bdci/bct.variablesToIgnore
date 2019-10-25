@@ -1,0 +1,13 @@
+*:offset
+*:map
+*:buffer
+*:str
+*:baselen
+*:b
+*:a
+*:_b
+*:_a
+config.c:value
+config.c:name
+config.c:var
+parse-options.c:argv

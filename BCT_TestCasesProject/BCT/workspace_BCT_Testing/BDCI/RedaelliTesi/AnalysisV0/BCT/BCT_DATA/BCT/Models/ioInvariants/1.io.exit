@@ -1,0 +1,4 @@
+x one of { 0, 1 }
+returnValue.eax == x
+x == orig(x)
+returnValue != null

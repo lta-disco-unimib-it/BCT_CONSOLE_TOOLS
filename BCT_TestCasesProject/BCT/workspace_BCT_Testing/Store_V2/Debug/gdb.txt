@@ -1,0 +1,3 @@
+/tmp/bct.gdb.conf.tmp:31: Error in sourced command file:
+A syntax error in expression, near `0xbffff0b0'.
+(gdb) 

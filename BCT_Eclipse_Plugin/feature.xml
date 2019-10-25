@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="it.unimib.disco.lta.eclipse.bct.feature"
+      label="BCT"
+      version="0.7.00"
+      provider-name="University of Milano Bicocca - LTA Lab"
+      os="linux,macosx,win32"
+      arch="x86,x86_64">
+
+   <description>
+      This plugin provides BCT, a dynamic analysis toolset for the identification
+of software behavioral anomalies and the diagnosis of software
+faults.
+   </description>
+
+   <copyright>
+      Copyright (c) 2005-2010  Fabrizio Pastore, Leonardo Mariani,
+Mauro Pezzè. University of Milano Bicocca - Laboratory of Testing
+and Analysis
+   </copyright>
+
+   <license>
+      Copyright (c) 2005-2010  Fabrizio Pastore, Leonardo Mariani,
+Mauro Pezzè. University of Milano Bicocca - Laboratory of Testing
+and Analysis
+Permission is hereby granted, free of charge, to any person obtaining
+a copy
+of this software and associated documentation files (the &quot;Software&quot;),
+to deal
+in the Software without restriction, including without limitation
+the rights
+to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell
+copies of the Software, and to permit persons to whom the Software
+is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be
+included in
+all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN
+THE SOFTWARE.
+This software includes classes from JFLAP 4.0. JFLAP is owned
+by its copyright holders. JFLAP copyright disclaimer is 
+provided in COPYRIGHT.JFLAP.txt.
+   </license>
+
+   <url>
+      <update label="University of Milano Bicocca - Department of Informatics Systems and COmmunication - Laboratory of Software Testing and Analysis Update Site" url="https://www.lta.disco.unimib.it/downloads/eclipseUpdates/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.debug.core"/>
+      <import plugin="org.eclipse.jdt.launching"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jdt"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jdt.core.manipulation"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="it.unimib.disco.lta.eclipse.anomalyGraph"/>
+      <import plugin="it.unimib.disco.lta.eclipse.anomalyGraph.diagram"/>
+      <import plugin="it.unimib.disco.lta.eclipse.anomalyGraph.edit"/>
+      <import plugin="it.unimib.disco.lta.eclipse.anomalyGraph.editor"/>
+      <import plugin="it.unimib.disco.lta.eclipse.fsa"/>
+      <import plugin="org.eclipse.ui.navigator"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.ui.views.properties.tabbed"/>
+      <import plugin="org.eclipse.core.databinding"/>
+      <import plugin="org.eclipse.core.databinding.beans"/>
+      <import plugin="org.eclipse.core.net"/>
+      <import plugin="org.eclipse.core.variables"/>
+      <import plugin="org.eclipse.emf" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.compare" version="3.5.201" match="greaterOrEqual"/>
+      <import feature="it.unimib.disco.lta.eclipse.anomalyGraph.feature" version="1.2.4"/>
+      <import feature="it.unimib.disco.lta.eclipse.fsa.feature" version="1.2.3"/>
+   </requires>
+
+   <plugin
+         id="it.unimib.disco.lta.bct.bctJavaEclipse.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="it.unimib.disco.lta.bct.eclipse.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="it.unimib.disco.lta.bct.bctJavaEclipse.doc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

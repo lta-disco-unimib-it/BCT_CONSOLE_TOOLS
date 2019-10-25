@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="help" name="Showing the possible ant targets for BCT">
+
+	
+	<tstamp>
+	<format property="BUILD_STAMP" pattern="yyyyMMddHHmm" />
+	</tstamp>
+	
+	<property name="ant.build.javac.target" value="1.7" />
+	<property name="bctDir" value="../../BCT" />
+	<property name="bctStandalone" value="lib/bct-standalone.jar" />
+	<property name="bctMonitoringOnly" value="lib/bct-monitoring-only.jar" />
+	<property name="bctStandalone14" value="lib/bct-standalone-1.4.jar" />
+	<property name="cdt" value="lib/cdt_5.3.jar" />
+	<property name="junit" value="lib/junit4.jar" />
+	<property name="bctEclipseStandaloneJar" value="bct-console-tools-${BUILD_STAMP}.jar" />
+	<property name="bctEclipseStandaloneMonitoringOnlyJar" value="bct-monitoring-only-${BUILD_STAMP}.jar" />
+	<property name="bctEclipseLib" value="bct-eclipse-lib.jar" />
+	<property name="bctEclipseStandalone14Jar" value="bct-console-tools-1.4-${BUILD_STAMP}.jar" />
+	
+
+	
+	
+	<property name="bctTmpFolder" value="bct-${BUILD_STAMP}" />
+	<property name="bctZip" value="bct-${BUILD_STAMP}.zip" />
+	
+	
+	<property name="bin" value="classes" />
+			
+	<property name="buildClasspath" value="${bctStandalone}:${cdt}:${junit}" />
+	
+	<target name="init">
+		<mkdir dir="${bin}" />
+		<mkdir dir="dist" />
+	</target>
+	
+	  <target name="clean">
+	  	<delete dir="dist" />
+	  	<delete dir="${bin}" />
+	      <!-- <delete includeemptydirs="true">
+	         <fileset dir="${bin}" excludes="CVS/*" includes="**/*"/>
+	       </delete>  -->
+	  </target>
+	
+	   <tstamp>
+	     <format property="BUILD_STAMP" pattern="yyyyMMddHHmm" />
+	   </tstamp>
+	
+	
+	
+	
+	<target name="compile" depends="init,buildDependencies">
+		<echo>Compiling project classes</echo>
+		
+		<javac destdir="${bin}" classpath="${buildClasspath}" debug="true" debuglevel="lines,vars,source" >
+			<src path="src-tptp" />
+			
+			<src path="src" />
+			
+			<src path="../BctEclipseCore/src" />
+						
+			<src path="../BctJavaEclipsePlugin/src-console" />
+			<src path="../it.unimib.disco.lta.eclipse.vart/src-console" />
+		
+			<src path="src-ui" />
+			<src path="tests" />
+			
+		</javac>
+		
+		<copy file="../BctJavaEclipsePlugin/src-console/TEMPLATE.bct.anomalies.html" toFile="${bin}/TEMPLATE.bct.anomalies.html" />
+		<copy file="src/bct.system.properties.desc.txt" toFile="${bin}/bct.system.properties.desc.txt" />
+		
+		
+	</target>
+	
+	<target name="runTest" >
+		        <junit>
+		        	<jvmarg value="-Dbct.util.javaRunner.includeCurrentClasspath=true"/>
+		        	<jvmarg value="-Dbct.maxHeap=1024M"/>
+		        	<formatter type="xml" />
+		            <classpath>
+		                <pathelement location="dist/bct-console-tools.jar"/>
+		                <pathelement location="lib/junit4.jar"/>
+		            </classpath>
+		        <test name="${testToRun}" fork="yes" />
+		        </junit>
+	</target>
+	
+	 <target name="testJar" >
+	        <junit>
+	        	<formatter type="xml" />
+	        	<jvmarg value="-Dbct.util.javaRunner.includeCurrentClasspath=true"/>
+	        	<jvmarg value="-Dbct.maxHeap=1024M"/>
+	            <classpath>
+		                <pathelement location="dist/bct-console-tools.jar"/>
+		                <pathelement location="lib/junit4.jar"/>
+		        </classpath>
+	            
+	            <batchtest fork="yes">
+	            	<fileset dir="tests">
+	            		<include name="**/Test*.java" />
+	            		<exclude name="console/TestCBMC*.java" />
+	            		<exclude name="console/Tests*.java" />
+	            		<exclude name="cpp/gdb/coverage/*.java" />
+	            		
+	            	</fileset>
+	            </batchtest>
+	        </junit>
+	    </target>
+	
+	
+
+	
+	<target name="buildDependencies" >
+			<echo>Building dependencies</echo>
+				<ant dir="${bctDir}" target="standalone" inheritAll="false" />
+				<copy file="${bctDir}/dist/bct-standalone.jar" toFile="${bctStandalone}" />	
+			<copy file="${bctDir}/dist/bct-monitoring-only.jar" toFile="${bctMonitoringOnly}" />	
+				<copy file="${bctDir}/dist/bct-standalone.jar" toFile="../BctEclipseCore/lib/bct-standalone.jar" />	<!-- required to properly run some test cases -->
+		</target>
+	
+	<target name="bct14" >
+				<echo>Building dependencies</echo>
+					<ant dir="${bctDir}" target="standalone14" inheritAll="false" />
+					<copy file="${bctDir}/dist/bct-standalone-1.4.jar" toFile="${bctStandalone14}" />		
+			</target>
+	
+	
+	<target name="eclipseLib" depends="compile,deleteOldBuilds"  >
+			<!--<zip destfile="dist/testCases.zip" basedir="../BCT_TestCasesProject/BCT/workspace_BCT_Testing/" >
+				</zip> -->
+			
+		        <jar destfile="dist/${bctEclipseLib}">
+		        	
+
+		        	<manifest >
+		        						<attribute name="Class-Path" value="."/>
+		        						<attribute name="Built-Date" value="${BUILD_STAMP}"/> 
+		        						<attribute name="Implementation-Version" value="${version.num}"/> 
+		        		        	</manifest>
+		        		        	
+		        	
+		        	<fileset dir="${bin}"/>
+		        	
+		        	<!-- <fileset file="dist/testCases.zip"/> -->
+		        	
+		        </jar>
+		    	
+				
+		    	
+		    	</target>
+	
+	<target name="eclipseStandaloneMonitoring" depends="compile,deleteOldBuilds"  >
+		<jar destfile="dist/${bctEclipseStandaloneMonitoringOnlyJar}">
+			 <zipfileset src="${bctMonitoringOnly}"/>
+		</jar>
+	</target>
+	
+	<target name="eclipseStandaloneAll" depends="eclipseStandalone,eclipseStandaloneMonitoring"  >
+	</target>
+	
+	<target name="eclipseStandalone" depends="compile,deleteOldBuilds"  >
+		<!--<zip destfile="dist/testCases.zip" basedir="../BCT_TestCasesProject/BCT/workspace_BCT_Testing/" >
+			</zip> -->
+		
+	        <jar destfile="dist/${bctEclipseStandaloneJar}">
+	        	
+	        	
+	        	
+	            
+
+	        	
+	            <zipfileset excludes="META-INF/*.SF" src="${bctStandalone}"/>
+	        	<zipfileset excludes="META-INF/*.SF" src="${junit}"/>
+	        	<zipfileset excludes="META-INF/*.SF" src="${cdt}"/>
+
+	        	<manifest >
+	        						<attribute name="Class-Path" value="."/>
+	        						<attribute name="Built-Date" value="${BUILD_STAMP}"/> 
+	        						<attribute name="Implementation-Version" value="${version.num}"/> 
+	        		        	</manifest>
+	        		        	
+	        	
+	        	<fileset dir="${bin}"/>
+	        	
+	        	<!-- <fileset file="dist/testCases.zip"/> -->
+	        	
+	        </jar>
+	    	
+			<copy file="dist/${bctEclipseStandaloneJar}" toFile="dist/bct-console-tools.jar" />
+	    	
+	    	</target>
+	
+   
+
+	
+	<target name="help" >
+		<echo>Possible targets:</echo>
+			</target>
+	
+	
+	<target name="eclipseStandalone14" depends="eclipseStandalone,bct14"  >
+			<!--<zip destfile="dist/testCases.zip" basedir="../BCT_TestCasesProject/BCT/workspace_BCT_Testing/" >
+				</zip> -->
+			
+		        <jar destfile="dist/${bctEclipseStandalone14Jar}">
+		        	
+		        	
+		        	
+		            
+
+		        	
+		            <zipfileset excludes="META-INF/*.SF" src="${bctStandalone14}"/>
+		        	<zipfileset excludes="META-INF/*.SF" src="${junit}"/>
+		        	<zipfileset excludes="META-INF/*.SF" src="${cdt}"/>
+
+		        	<manifest >
+		        						<attribute name="Class-Path" value="."/>
+		        						<attribute name="Built-Date" value="${BUILD_STAMP}"/> 
+		        						<attribute name="Implementation-Version" value="${version.num}"/> 
+		        		        	</manifest>
+		        		        	
+		        	
+		        	<fileset dir="${bin}"/>
+		        	
+		        	<!-- <fileset file="dist/testCases.zip"/> -->
+		        	
+		        </jar>
+		    	
+		    	
+		    	</target>
+		
+	   
+	 <target name="emma" description="turns on EMMA instrumentation/reporting" >
+	    <property name="emma.enabled" value="true" />
+	    <!-- EMMA instr class output directory: -->
+	    <property name="out.instr.dir" value="${basedir}/outinstr" />
+	    <mkdir dir="${out.instr.dir}" />
+	  </target>
+
+	  <target name="coverageWithEmma" depends="init, compile" description="runs the examples" >
+	    <emma enabled="${emma.enabled}" >
+	      <instr instrpathref="run.classpath"
+	             destdir="${out.instr.dir}"	
+	             metadatafile="${coverage.dir}/metadata.emma"
+	             merge="true"
+	      />
+	    </emma>
+
+	    <!--change with tests-->
+	    <java classname="Main" fork="true" >
+	      <classpath>
+	       <pathelement location="${out.instr.dir}" />
+	        <path refid="run.classpath" />
+	        <path refid="emma.lib" />
+	      </classpath> 
+	      <jvmarg value="-Demma.coverage.out.file=${coverage.dir}/coverage.emma" />
+	      <jvmarg value="-Demma.coverage.out.merge=true" />
+	    </java>
+
+	    <emma enabled="${emma.enabled}" >
+	      <report sourcepath="${src.dir}" >
+	        <fileset dir="${coverage.dir}" >
+	          <include name="*.emma" />
+	        </fileset>
+
+	        <txt outfile="${coverage.dir}/coverage.txt" />
+	        <html outfile="${coverage.dir}/coverage.html" />
+	      </report>
+	    </emma>
+	  </target>
+		
+	<target name="deleteOldBuilds" depends="init" description="Delete old builds" >
+	<delete includeemptydirs="true">
+	    <fileset dir="dist" includes="bct-console-tools-*.jar"/>
+	  </delete>
+	</target>
+</project>

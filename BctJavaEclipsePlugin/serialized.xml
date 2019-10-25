@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_10" class="java.beans.XMLDecoder"> 
+ <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.BctViolationsAnalysisConfiguration"> 
+  <void property="anomaliesGraphsPath"> 
+   <string>/Prova/agp</string> 
+  </void> 
+  <void property="avaConfiguration"> 
+   <object class="it.unimib.disco.lta.ava.engine.configuration.AvaConfiguration"> 
+    <void property="expectedSequencesLimit"> 
+     <int>100</int> 
+    </void> 
+    <void property="expectedSubSequencesLimit"> 
+     <int>100</int> 
+    </void> 
+    <void property="stepsToPerform"> 
+     <void method="put"> 
+      <object class="it.unimib.disco.lta.ava.graphs.TransitionDirection" method="valueOf"> 
+       <string>forward</string> 
+      </object> 
+      <int>3</int> 
+     </void> 
+     <void method="put"> 
+      <object class="it.unimib.disco.lta.ava.graphs.TransitionDirection" method="valueOf"> 
+       <string>backward</string> 
+      </object> 
+      <int>3</int> 
+     </void> 
+    </void> 
+    <void property="thresholds"> 
+     <void method="put"> 
+      <object class="it.unimib.disco.lta.ava.engine.configuration.ThresholdType" method="valueOf"> 
+       <string>compositePatternScore</string> 
+      </object> 
+      <float>0.0</float> 
+     </void> 
+     <void method="put"> 
+      <object class="it.unimib.disco.lta.ava.engine.configuration.ThresholdType" method="valueOf"> 
+       <string>singlePatternScore</string> 
+      </object> 
+      <float>0.0</float> 
+     </void> 
+     <void method="put"> 
+      <object class="it.unimib.disco.lta.ava.engine.configuration.ThresholdType" method="valueOf"> 
+       <string>interComponentPatternScore</string> 
+      </object> 
+      <float>0.0</float> 
+     </void> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="failingActions"> 
+   <void method="add"> 
+    <string>2</string> 
+   </void> 
+   <void method="add"> 
+    <string>1</string> 
+   </void> 
+  </void> 
+  <void property="failingProcesses"> 
+   <void method="add"> 
+    <string>6</string> 
+   </void> 
+   <void method="add"> 
+    <string>5</string> 
+   </void> 
+  </void> 
+  <void property="failingTests"> 
+   <void method="add"> 
+    <string>3</string> 
+   </void> 
+   <void method="add"> 
+    <string>4</string> 
+   </void> 
+  </void> 
+  <void property="logFilesNames"> 
+   <void method="add"> 
+    <string>file1</string> 
+   </void> 
+  </void> 
+  <void property="violationsAnalysisResult"> 
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.ViolationsAnalysisResult"> 
+    <void property="failureId"> 
+     <string>1</string> 
+    </void> 
+    <void property="resources"> 
+     <void method="add"> 
+      <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.AnomalyGraphResource"> 
+       <void property="connectedComponents"> 
+        <int>2</int> 
+       </void> 
+       <void property="connectedComponentsElements"> 
+        <object class="java.util.ArrayList"> 
+         <void method="add"> 
+          <object class="java.util.HashSet"> 
+           <void method="add"> 
+            <string>V2</string> 
+           </void> 
+           <void method="add"> 
+            <string>V1</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="java.util.HashSet"> 
+           <void method="add"> 
+            <string>V3</string> 
+           </void> 
+           <void method="add"> 
+            <string>V4</string> 
+           </void> 
+           <void method="add"> 
+            <string>V5</string> 
+           </void> 
+          </object> 
+         </void> 
+        </object> 
+       </void> 
+       <void property="optimalGraph"> 
+        <boolean>true</boolean> 
+       </void> 
+       <void property="resourceName"> 
+        <string>R1</string> 
+       </void> 
+       <void property="resourcePath"> 
+        <string>/P/R1</string> 
+       </void> 
+      </object> 
+     </void> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

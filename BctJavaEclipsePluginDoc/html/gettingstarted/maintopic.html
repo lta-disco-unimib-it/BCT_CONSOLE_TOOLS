@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>BCT</title>
+</head>
+
+<body>
+<h1>BCT</h1>
+<h2 id="WhatIs">What is BCT?</h2>
+<p>
+BCT, an acronym that stands for Behavior Capture and Test, is a dynamic analysis toolset built 
+to support software developers in diagnosing faults and identifying components incompatibilities. 
+</p>
+
+<h2 id="BCTPhases">How does it work?</h2>
+<p>
+BCT works in four phases:
+<ul>
+<li>Capture Behavior</li>
+<li>Derive Models</li>
+<li>Detect Anomalies</li>
+<li>Analyze Anomalies</li>
+</ul>
+</p>
+
+<p>
+In the first phase (Capture Behavior), software developers execute the test cases of their applications. 
+They can execute any kind of test: unit, integration, or system. 
+During tests execution BCT monitor the software components and capture information about their interactions. 
+BCT records both sequences of inter-component method invocations and data exchanged between components.
+</p>
+<p>
+In the second phase (Derive Models), BCT generates models that summarize and generalize the observed executions. 
+In particular, BCT uses Daikon to generate properties about the exchanged data and kBehavior to generate finite state automata (FSA) 
+that represent component interactions. 
+For instance, if we monitor invocations of method addItem(Item it, int qt), we can automatically generate the property qt>0 that 
+indicates a positive value for the quantity. Similarly, if we monitor the use of a library for accessing files, 
+we can automatically generate an automaton that indicates that files are first open, then read several times and finally closed.
+</p>
+In the third phase (Detect Anomalies), 
+BCT is used to monitor new executions. 
+Developers can use BCT to monitor new executions in two different situations: 
+when an execution of the software causes a failure, when a new configuration of teh softwrae is tested.
+In the first case BCT helps software developers in identifying faults, in the second case 
+it permits to identify components incompatibilities.
+BCT compares the events generated during the monitored execution with the inferred models. 
+Checking can take place either in-the-field, while the system is under use, or in-house, when a failing execution is 
+replicated to debug a failure. 
+Events that violate models, i.e., data values that violate properties and sequence of method invocations that are not accepted by FSA, 
+are collected as anomalous events that deserve further investigations.
+</p>
+<p>
+In the fourth phase (Analyze Anomalies), the detected anomalous events are filtered, 
+aggregated and presented with suitable views to help developers in understanding the underlying problems.
+</p>
+
+<p>
+BCT has been implemented as an Eclipse plugin that provides also a standalone library that permits to use BCT without Eclipse.
+</p>
+<h2 id="Publications">Publications</h2>
+<p>
+The BCT technique has been described in several research papers:
+</p>
+<p>
+
+</p>
+<p>
+Leonardo Mariani and Fabrizio Pastore and Mauro Pezze. A Toolset for Automated Failure Analysis. proceedings of the International Conference on Software Engineering (ICSE) - formal tool Demo, 2009
+</p>
+<p>
+Leonardo Mariani and Sofia Papagiannakis and Mauro Pezzè. Compatibility and Regression Testing of COTS-component-based Software. proceedings of the 29th International Conference on Software Engineering (ICSE 2007), 2007
+</p>
+<p>
+L. Mariani and M. Pezzè. Dynamic Detection of COTS Components Incompatibility. IEEE Software, 2007
+</p>
+<p>
+Davide Lorenzoli and Leonardo Mariani and Mauro Pezzè. Inferring state-based behavior models. ACM Press, 4th International Workshop on Dynamic Analysis (WODA 2006) co-located with the 28th International Conference on Software Engineering (ICSE 2006), 2006
+</p>
+<p>
+Leonardo Mariani and Mauro Pezzè. Behavior Capture and Test: Automated Analysis of Component Integration. proceedings of the 10th IEEE International Conference on Engineering of Complex Computer Systems, 2005
+</p>
+<p>
+Leonardo Mariani. Behavior Capture and Test: Dynamic Analysis of Component-Based Systems. 2005
+</p>
+<p>
+Leonardo Mariani. Behavior Capture and Test for Verifying Evolving Component-Based Systems. IEEE Computer Society, proceedings of 26th International Conference on Software Engineering ICSE Doctoral Symposium, 2004
+</p>
+<p>
+Leonardo Mariani and Mauro Pezzè. A Technique for Verifying Component-Based Software. Elsevier, proceedings of the International Workshop on Test and Analysis of Component Based Systems (TACoS) satellite workshop at the European Joint Conferences on Theory and Practice of Software (ETAPS), 2004
+</p>
+<p>
+Leonardo Mariani and Mauro Pezzè and David Willmor. Generation of Selft-Test Components. Springer, proceedings of the 1st International Workshop on Integration of Testing Methodologies FORTE 2004 Workshops, 2004
+</p>
+<p>
+Leonardo Mariani and Mauro Pezzè. Behavior Capture and Test for Controlling the Quality of Component-Based Integrated Systems. proceedings of Tool-Integration in System Development Workshop at the 9th European Software Engineering Conference and the 10th International Symposium on Foundations of Software Engineering (ESEC/FSE), 2003
+</p>
+<p>
+
+</p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src-tptp"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="tests/src/unitNotAutomated"/>
+	<classpathentry kind="src" path="tests/src/unit"/>
+	<classpathentry kind="src" path="tests/src/bugs"/>
+	<classpathentry kind="src" path="messages"/>
+	<classpathentry excluding="it/unimib/disco/lta/bct/bctjavaeclipse/core/monitoring/ForkMonitor.java" kind="src" path="src-console"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,152 @@
+
+logDaSottrazione :::ENTER
+y
+2
+1
+x
+1
+1
+
+logDaSottrazione :::EXIT1
+y
+2
+1
+x
+1
+1
+returnValue.eax
+0
+1
+
+logDaSottrazione :::ENTER
+y
+0.899999976
+1
+x
+0.5
+1
+
+logDaSottrazione :::EXIT1
+y
+0.899999976
+1
+x
+0.5
+1
+returnValue.eax
+-1083534840
+1
+
+logDaSottrazione :::ENTER
+y
+5
+1
+x
+5
+1
+
+logDaSottrazione :::EXIT1
+y
+5
+1
+x
+5
+1
+returnValue.eax
+-8388608
+1
+
+logDaSottrazione :::ENTER
+y
+1
+1
+x
+2
+1
+
+logDaSottrazione :::EXIT1
+y
+1
+1
+x
+2
+1
+returnValue.eax
+0
+1
+
+logDaSottrazione :::ENTER
+y
+10
+1
+x
+0.400000006
+1
+
+logDaSottrazione :::EXIT1
+y
+10
+1
+x
+0.400000006
+1
+returnValue.eax
+1074839738
+1
+
+logDaSottrazione :::ENTER
+y
+100
+1
+x
+100
+1
+
+logDaSottrazione :::EXIT1
+y
+100
+1
+x
+100
+1
+returnValue.eax
+-8388608
+1
+
+logDaSottrazione :::ENTER
+y
+4.19999981
+1
+x
+4.5
+1
+
+logDaSottrazione :::EXIT1
+y
+4.19999981
+1
+x
+4.5
+1
+returnValue.eax
+-1080419390
+1
+
+logDaSottrazione :::ENTER
+y
+0.600000024
+1
+x
+0.600000024
+1
+
+logDaSottrazione :::EXIT1
+y
+0.600000024
+1
+x
+0.600000024
+1
+returnValue.eax
+-8388608
+1

@@ -1,0 +1,8 @@
+#Mon Jul 07 10:20:40 CEST 2008
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/it.unimib.disco.lta.bct.bctjavaeclipse.fsa/model/fsa.genmodel
+gmf_dashboard/domainModel=platform\:/resource/it.unimib.disco.lta.bct.bctjavaeclipse.fsa/model/fsa.ecore
+gmf_dashboard/generationModel=platform\:/resource/it.unimib.disco.lta.bct.bctjavaeclipse.fsa/model/fsa.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/it.unimib.disco.lta.bct.bctjavaeclipse.fsa/model/fsa.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/ggraph/model/Ggraph.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/it.unimib.disco.lta.bct.bctjavaeclipse.fsa/model/fsa.gmftool

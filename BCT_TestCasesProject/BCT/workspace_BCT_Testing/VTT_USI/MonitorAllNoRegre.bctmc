@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_22" class="java.beans.XMLDecoder"> 
+ <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.MonitoringConfiguration"> 
+  <void property="additionalConfigurations"> 
+   <void method="put"> 
+    <null/> 
+    <null/> 
+   </void> 
+   <void method="put"> 
+    <class>it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.CConfiguration</class> 
+    <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.CConfiguration"> 
+     <void property="deriveLineInvariants"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="excludeUnusedVariables"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="monitorFunctionEnterExitPoints"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="monitorFunctionsCalledByTargetFunctions"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="monitorGlobalVariables"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="monitorLocalVariables"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="monitorProjectFunctionsOnly"> 
+      <boolean>true</boolean> 
+     </void> 
+     <void property="originalSwExecutable"> 
+      <string>/home/BCT/workspace_BCT_Testing/VTT_USI/program</string> 
+     </void> 
+     <void property="originalSwSourcesFolder"> 
+      <string>/home/BCT/workspace_BCT_Testing/VTT_USI/src</string> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+  <void property="componentsConfiguration"> 
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ComponentsConfiguration"> 
+    <void property="components"> 
+     <void method="add"> 
+      <object class="util.componentsDeclaration.Component"> 
+       <void property="name"> 
+        <string>All</string> 
+       </void> 
+       <void property="rules"> 
+        <void method="add"> 
+         <object class="util.componentsDeclaration.MatchingRuleInclude"> 
+          <void property="classExpr"> 
+           <string>.*</string> 
+          </void> 
+          <void property="methodExpr"> 
+           <string>.*</string> 
+          </void> 
+          <void property="packageExpr"> 
+           <string>.*</string> 
+          </void> 
+         </object> 
+        </void> 
+       </void> 
+       <void property="signatureParser"> 
+        <object class="util.componentsDeclaration.CppMangledSignatureParser"/> 
+       </void> 
+      </object> 
+     </void> 
+    </void> 
+    <void property="configurationName"> 
+     <string>MonitorAllNoRegre</string> 
+    </void> 
+    <void property="monitorInternalCalls"> 
+     <boolean>true</boolean> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="configurationName"> 
+   <string>MonitorAllNoRegre</string> 
+  </void> 
+  <void property="configurationType"> 
+   <int>2</int> 
+  </void> 
+  <void property="referredProjectName"> 
+   <string>/VTT_USI</string> 
+  </void> 
+  <void property="storageConfiguration"> 
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.FileStorageConfiguration"> 
+    <void property="dataDirPath"> 
+     <string>/VTT_USI/BCT_DATA/MonitorAllNoRegre</string> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

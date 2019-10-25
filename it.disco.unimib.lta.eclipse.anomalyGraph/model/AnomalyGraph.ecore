@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="it"
+    nsURI="it" nsPrefix="it">
+  <eSubpackages name="unimib" nsURI="it.unimib" nsPrefix="it.unimib">
+    <eSubpackages name="disco" nsURI="it.unimib.disco" nsPrefix="it.unimib.disco">
+      <eSubpackages name="lta" nsURI="it.unimib.disco.lta" nsPrefix="it.unimib.disco.lta">
+        <eSubpackages name="eclipse" nsURI="it.unimib.disco.lta.eclipse" nsPrefix="it.unimib.disco.lta.eclipse">
+          <eSubpackages name="anomalyGraph" nsURI="it.unimib.disco.lta.eclipse.anomalyGraph"
+              nsPrefix="it.unimib.disco.lta.eclipse.anomalyGraph">
+            <eClassifiers xsi:type="ecore:EClass" name="Graph">
+              <eStructuralFeatures xsi:type="ecore:EReference" name="violations" upperBound="-1"
+                  eType="#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation"
+                  containment="true"/>
+              <eStructuralFeatures xsi:type="ecore:EReference" name="relationships"
+                  upperBound="-1" eType="#//unimib/disco/lta/eclipse/anomalyGraph/Relationship"
+                  containment="true"/>
+            </eClassifiers>
+            <eClassifiers xsi:type="ecore:EClass" name="BctModelViolation" abstract="true">
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="violatedModel"
+                  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="violation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationTime"
+                  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="activeActions"
+                  upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="activeTests"
+                  upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="pid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="threadId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="stackTrace" upperBound="-1"
+                  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="violationType"
+                  eType="#//unimib/disco/lta/eclipse/anomalyGraph/ViolationTypes"/>
+            </eClassifiers>
+            <eClassifiers xsi:type="ecore:EClass" name="BctIOModelViolation" eSuperTypes="#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation">
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="actualParametersStates"
+                  upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eClassifiers>
+            <eClassifiers xsi:type="ecore:EClass" name="BctFSAModelViolation" eSuperTypes="#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation">
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentStates"
+                  upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eClassifiers>
+            <eClassifiers xsi:type="ecore:EClass" name="Relationship">
+              <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1"
+                  eType="#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation"/>
+              <eStructuralFeatures xsi:type="ecore:EReference" name="to" lowerBound="1"
+                  eType="#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation"/>
+              <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+            </eClassifiers>
+            <eClassifiers xsi:type="ecore:EEnum" name="ViolationTypes">
+              <eLiterals name="UnexpectedEvent"/>
+              <eLiterals name="PrematureEnd"/>
+              <eLiterals name="ParameterInvariantViolated" literal="ParameterInvariantViolated"/>
+            </eClassifiers>
+          </eSubpackages>
+        </eSubpackages>
+      </eSubpackages>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_7-6agIDEEd2bBp8TFX8u-w" type="Class" name="monitoringConfiguration.dnx">
+  <children xmi:id="__XGeUIDEEd2bBp8TFX8u-w">
+    <children xmi:id="__XRdcIDEEd2bBp8TFX8u-w" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="__XRdcYDEEd2bBp8TFX8u-w" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="__XSEgIDEEd2bBp8TFX8u-w" type="Stereotype"/>
+    <children xmi:id="__XSEgYDEEd2bBp8TFX8u-w" type="Name"/>
+    <children xmi:id="__XSrkIDEEd2bBp8TFX8u-w" type="Parent"/>
+    <children xmi:id="__XSrkYDEEd2bBp8TFX8u-w" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__XSrkoDEEd2bBp8TFX8u-w" collapsed="true"/>
+    </children>
+    <children xmi:id="__XTSoIDEEd2bBp8TFX8u-w" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__XTSoYDEEd2bBp8TFX8u-w" collapsed="true"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__XGeUYDEEd2bBp8TFX8u-w" fontName="Sans Serif" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__XGeUoDEEd2bBp8TFX8u-w" x="5909" y="3110"/>
+  </children>
+  <children xmi:id="_GgXnEIDFEd2bBp8TFX8u-w">
+    <children xmi:id="_GgYOIIDFEd2bBp8TFX8u-w" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_GgYOIYDFEd2bBp8TFX8u-w" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_GgYOIoDFEd2bBp8TFX8u-w" type="Stereotype"/>
+    <children xmi:id="_GgY1MIDFEd2bBp8TFX8u-w" type="Name"/>
+    <children xmi:id="_GgY1MYDFEd2bBp8TFX8u-w" type="Parent"/>
+    <children xmi:id="_GgY1MoDFEd2bBp8TFX8u-w" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GgY1M4DFEd2bBp8TFX8u-w" collapsed="true"/>
+    </children>
+    <children xmi:id="_GgZcQIDFEd2bBp8TFX8u-w" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GgZcQYDFEd2bBp8TFX8u-w" collapsed="true"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_GgXnEYDFEd2bBp8TFX8u-w" fontName="Sans Serif" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=FlattenerOptions%5Bjcu%5Ename=FlattenerOptions.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GgXnEoDFEd2bBp8TFX8u-w" x="1917" y="6220"/>
+  </children>
+  <children xmi:id="_MOjR4IDFEd2bBp8TFX8u-w">
+    <children xmi:id="_MOj48IDFEd2bBp8TFX8u-w" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_MOj48YDFEd2bBp8TFX8u-w" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_MOj48oDFEd2bBp8TFX8u-w" type="Stereotype"/>
+    <children xmi:id="_MOkgAIDFEd2bBp8TFX8u-w" type="Name"/>
+    <children xmi:id="_MOkgAYDFEd2bBp8TFX8u-w" type="Parent"/>
+    <children xmi:id="_MOkgAoDFEd2bBp8TFX8u-w" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MOkgA4DFEd2bBp8TFX8u-w" collapsed="true"/>
+    </children>
+    <children xmi:id="_MOkgBIDFEd2bBp8TFX8u-w" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MOkgBYDFEd2bBp8TFX8u-w" collapsed="true"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_MOjR4YDFEd2bBp8TFX8u-w" fontName="Sans Serif" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ComponentsConfiguration%5Bjcu%5Ename=ComponentsConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MOjR4oDFEd2bBp8TFX8u-w" x="9460" y="6427"/>
+  </children>
+  <children xmi:id="_RkVq0IDFEd2bBp8TFX8u-w">
+    <children xmi:id="_RkWR4IDFEd2bBp8TFX8u-w" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_RkWR4YDFEd2bBp8TFX8u-w" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_RkW48IDFEd2bBp8TFX8u-w" type="Stereotype"/>
+    <children xmi:id="_RkW48YDFEd2bBp8TFX8u-w" type="Name"/>
+    <children xmi:id="_RkW48oDFEd2bBp8TFX8u-w" type="Parent"/>
+    <children xmi:id="_RkW484DFEd2bBp8TFX8u-w" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_RkXgAIDFEd2bBp8TFX8u-w"/>
+    </children>
+    <children xmi:id="_RkXgAYDFEd2bBp8TFX8u-w" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_RkXgAoDFEd2bBp8TFX8u-w"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_RkVq0YDFEd2bBp8TFX8u-w" fontName="Sans Serif" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=TestCasesMonitoringOptions%5Bjcu%5Ename=TestCasesMonitoringOptions.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RkVq0oDFEd2bBp8TFX8u-w" x="2488" y="8708"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_7-6agYDEEd2bBp8TFX8u-w"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_Gh-JkIDFEd2bBp8TFX8u-w" source="__XGeUIDEEd2bBp8TFX8u-w" target="_GgXnEIDFEd2bBp8TFX8u-w">
+    <children xmi:id="_GiDCEIDFEd2bBp8TFX8u-w" type="KindLabel">
+      <children xmi:id="_GiDpIIDFEd2bBp8TFX8u-w" type="Stereotype"/>
+      <children xmi:id="_GiDpIoDFEd2bBp8TFX8u-w" type="Kind"/>
+      <children xmi:id="_GiDpIYDFEd2bBp8TFX8u-w" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GiDCEYDFEd2bBp8TFX8u-w" y="-182"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Gh-JkYDFEd2bBp8TFX8u-w" fontName="Sans Serif" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=FlattenerOptions%5Bjcu%5Ename=FlattenerOptions.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Gh-JkoDFEd2bBp8TFX8u-w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_MVhckIDFEd2bBp8TFX8u-w" source="__XGeUIDEEd2bBp8TFX8u-w" target="_MOjR4IDFEd2bBp8TFX8u-w">
+    <children xmi:id="_MViDoIDFEd2bBp8TFX8u-w" type="KindLabel">
+      <children xmi:id="_MViDooDFEd2bBp8TFX8u-w" type="Stereotype"/>
+      <children xmi:id="_MVj40IDFEd2bBp8TFX8u-w" type="Kind"/>
+      <children xmi:id="_MViDo4DFEd2bBp8TFX8u-w" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MViDoYDFEd2bBp8TFX8u-w" y="-182"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MVhckYDFEd2bBp8TFX8u-w" fontName="Sans Serif" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ComponentsConfiguration%5Bjcu%5Ename=ComponentsConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MVhckoDFEd2bBp8TFX8u-w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_RlAZMIDFEd2bBp8TFX8u-w" source="__XGeUIDEEd2bBp8TFX8u-w" target="_RkVq0IDFEd2bBp8TFX8u-w">
+    <children xmi:id="_RlBAQIDFEd2bBp8TFX8u-w" type="KindLabel">
+      <children xmi:id="_RlBAQoDFEd2bBp8TFX8u-w" type="Stereotype"/>
+      <children xmi:id="_RlBnUIDFEd2bBp8TFX8u-w" type="Kind"/>
+      <children xmi:id="_RlBAQ4DFEd2bBp8TFX8u-w" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RlBAQYDFEd2bBp8TFX8u-w" y="-182"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RlAZMYDFEd2bBp8TFX8u-w" fontName="Sans Serif" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=TestCasesMonitoringOptions%5Bjcu%5Ename=TestCasesMonitoringOptions.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RlAZMoDFEd2bBp8TFX8u-w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

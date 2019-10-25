@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_55" class="java.beans.XMLDecoder">
+ <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.MonitoringConfiguration">
+  <void property="actionsMonitoringOptions">
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions"/>
+  </void>
+  <void property="additionalConfigurations">
+   <void method="put">
+    <class>it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.CConfiguration</class>
+    <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.CConfiguration">
+     <void property="originalSwExecutable">
+      <string>EsempioV2/test</string>
+     </void>
+     <void property="originalSwSourcesFolder">
+      <string>EsempioV2/</string>
+     </void>
+     <void property="traceAllLinesOfMonitoredFunctions">
+      <boolean>false</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <class>it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.CRegressionConfiguration</class>
+    <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.CRegressionConfiguration">
+     <void property="modifiedSwExecutable">
+      <string>EsempioV0/test</string>
+     </void>
+     <void property="modifiedSwSourcesFolder">
+      <string>/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV0</string>
+     </void>
+     <void property="monitorAddedAndDeletedFunctions">
+      <boolean>true</boolean>
+     </void>
+     <void property="monitorCallersOfModifiedFunctions">
+      <boolean>false</boolean>
+     </void>
+     <void property="monitorFunctionsCalledByTargetFunctions">
+      <boolean>false</boolean>
+     </void>
+     <void property="monitorOnlyNotModifiedLines">
+      <boolean>true</boolean>
+     </void>
+     <void property="originalSwExecutable">
+      <string>EsempioV2/test</string>
+     </void>
+     <void property="originalSwSourcesFolder">
+      <string>/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2</string>
+     </void>
+     <void property="traceAllLinesOfMonitoredFunctions">
+      <boolean>false</boolean>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="componentsConfiguration">
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ComponentsConfiguration">
+    <void property="components">
+     <void method="add">
+      <object class="util.componentsDeclaration.Component">
+       <void property="name">
+        <string>ModifiedFunctions</string>
+       </void>
+       <void property="rules">
+        <void method="add">
+         <object class="util.componentsDeclaration.MatchingRuleInclude">
+          <void property="classExpr">
+           <string>.*</string>
+          </void>
+          <void property="methodExpr">
+           <string>.*</string>
+          </void>
+          <void property="packageExpr">
+           <string>.*</string>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void property="signatureParser">
+        <object class="util.componentsDeclaration.CppMangledSignatureParser" id="CppMangledSignatureParser0"/>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="util.componentsDeclaration.Component">
+       <void property="name">
+        <string>AddedFunctions</string>
+       </void>
+       <void property="signatureParser">
+        <object idref="CppMangledSignatureParser0"/>
+       </void>
+      </object>
+     </void>
+     <void method="add">
+      <object class="util.componentsDeclaration.Component">
+       <void property="name">
+        <string>DeletedFunctions</string>
+       </void>
+       <void property="signatureParser">
+        <object idref="CppMangledSignatureParser0"/>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="configurationName">
+     <string>BCT</string>
+    </void>
+    <void property="monitorInternalCalls">
+     <boolean>true</boolean>
+    </void>
+   </object>
+  </void>
+  <void property="configurationName">
+   <string>BCT</string>
+  </void>
+  <void property="configurationType">
+   <int>1</int>
+  </void>
+  <void property="flattenerOptions">
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.FlattenerOptions">
+    <void property="classToIgnore">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="fieldRetriever">
+     <string>all</string>
+    </void>
+    <void property="maxDepth">
+     <int>3</int>
+    </void>
+   </object>
+  </void>
+  <void property="fsaEngineOptions">
+   <object class="java.util.Properties">
+    <void method="put">
+     <string>cutOffSearch</string>
+     <string>true</string>
+    </void>
+    <void method="put">
+     <string>stepSave</string>
+     <string>false</string>
+    </void>
+    <void method="put">
+     <string>logger</string>
+     <string>console</string>
+    </void>
+    <void method="put">
+     <string>enableMinimization</string>
+     <string>step</string>
+    </void>
+    <void method="put">
+     <string>maxTrustLen</string>
+     <string>4</string>
+    </void>
+    <void method="put">
+     <string>minTrustLen</string>
+     <string>2</string>
+    </void>
+    <void method="put">
+     <string>level</string>
+     <string>1</string>
+    </void>
+   </object>
+  </void>
+  <void property="invariantGeneratorOptions">
+   <object class="java.util.Properties">
+    <void method="put">
+     <string>daikonPath</string>
+     <string>/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar</string>
+    </void>
+    <void method="put">
+     <string>normalizedTraceHandlerFile.interactionDir</string>
+     <string>%%BCT_HOME%%/Preprocessing/interaction</string>
+    </void>
+    <void method="put">
+     <string>normalizedTraceHandlerFile.declsDir</string>
+     <string>%%BCT_HOME%%/Preprocessing/decls</string>
+    </void>
+    <void method="put">
+     <string>addAdditionalInvariants</string>
+     <string>true</string>
+    </void>
+    <void method="put">
+     <string>daikonConfidenceLevel</string>
+     <string>0</string>
+    </void>
+    <void method="put">
+     <string>traceReader.type</string>
+     <string>traceReaders.raw.FileTracesReader</string>
+    </void>
+    <void method="put">
+     <string>traceReader.tracesPath</string>
+     <string>%%BCT_HOME%%/DataRecording/</string>
+    </void>
+    <void method="put">
+     <string>expandReferences</string>
+     <string>true</string>
+    </void>
+    <void method="put">
+     <string>normalizedTraceHandler.type</string>
+     <string>traceReaders.normalized.NormalizedTraceHandlerFile</string>
+    </void>
+    <void method="put">
+     <string>FSAEngine</string>
+     <string>KBehavior</string>
+    </void>
+    <void method="put">
+     <string>deleteTemporaryDir</string>
+     <string>true</string>
+    </void>
+    <void method="put">
+     <string>daikonConfig</string>
+     <string>essentials</string>
+    </void>
+    <void method="put">
+     <string>type</string>
+     <string>tools.InvariantGenerator</string>
+    </void>
+    <void method="put">
+     <string>normalizedTraceHandlerFile.dtraceDir</string>
+     <string>%%BCT_HOME%%/Preprocessing/dtrace</string>
+    </void>
+    <void method="put">
+     <string>temporaryDir</string>
+     <string>%%BCT_HOME%%/tmp</string>
+    </void>
+    <void method="put">
+     <string>traceReader.interactionTracesDirName</string>
+     <string>interactionInvariantLogs</string>
+    </void>
+    <void method="put">
+     <string>traceReader.ioTracesDirName</string>
+     <string>ioInvariantLogs</string>
+    </void>
+   </object>
+  </void>
+  <void property="referredProjectName">
+   <string>/BCT</string>
+  </void>
+  <void property="storageConfiguration">
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.FileStorageConfiguration">
+    <void property="dataDirPath">
+     <string>/BCT/BCT_DATA/BCT</string>
+    </void>
+   </object>
+  </void>
+  <void property="testCasesMonitoringOptions">
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.TestCasesMonitoringOptions"/>
+  </void>
+ </object>
+</java>

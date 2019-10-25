@@ -1,0 +1,104 @@
+
+assert :::ENTER
+x
+1
+1
+
+assert :::EXIT1
+x
+1
+1
+returnValue.eax
+1
+1
+
+assert :::ENTER
+x
+0
+1
+
+assert :::EXIT1
+x
+0
+1
+returnValue.eax
+0
+1
+
+assert :::ENTER
+x
+1
+1
+
+assert :::EXIT1
+x
+1
+1
+returnValue.eax
+1
+1
+
+assert :::ENTER
+x
+1
+1
+
+assert :::EXIT1
+x
+1
+1
+returnValue.eax
+1
+1
+
+assert :::ENTER
+x
+0
+1
+
+assert :::EXIT1
+x
+0
+1
+returnValue.eax
+0
+1
+
+assert :::ENTER
+x
+1
+1
+
+assert :::EXIT1
+x
+1
+1
+returnValue.eax
+1
+1
+
+assert :::ENTER
+x
+0
+1
+
+assert :::EXIT1
+x
+0
+1
+returnValue.eax
+0
+1
+
+assert :::ENTER
+x
+1
+1
+
+assert :::EXIT1
+x
+1
+1
+returnValue.eax
+1
+1

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes">
+      <?gmfgen generated="true"?>
+      <fileTypes
+         type="text"
+         extension="anomalyGraph_diagram">
+      </fileTypes>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <?gmfgen generated="true"?>
+      <parser
+         type="anomalyGraph_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <?gmfgen generated="true"?>
+      <editor
+         id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/AnomalyGraphDiagramFile.gif"
+         extensions="anomalyGraph_diagram"
+         default="true"
+         class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramEditor"
+         matchingStrategy="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphMatchingStrategy"
+         contributorClass="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/AnomalyGraphDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphCreationWizard"
+  	     id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            adaptable="false"
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.LoadResource"
+            objectClass="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.parts.GraphEditPart">
+         <action
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphLoadResourceAction"
+               enablesFor="1"
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.LoadResourceAction"
+               label="%loadResourceActionLabel"
+               menubarPath="additions">
+         </action>
+      </objectContribution>           
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.InitDiagram"
+            nameFilter="*.anomalyGraph"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="AnomalyGraphPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="AnomalyGraphPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="AnomalyGraphRender">
+         <Priority name="Lowest"/>
+         <ViewId id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.contributionItemProviders">
+      <?gmfgen generated="true"?>
+      <contributionItemProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContributionItemProvider"
+            checkPluginLoaded="false">
+         <Priority name="Low"/>
+         <popupContribution class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContextMenuProvider">
+            <popupStructuredContributionCriteria objectClass="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.parts.RelationshipWeightEditPart"/>
+            <popupPredefinedItem id="deleteFromDiagramAction" remove="true"/>
+            <popupPredefinedItem id="deleteFromModelAction" remove="true"/>
+         </popupContribution>
+      </contributionItemProvider>
+   </extension>
+
+   <extension point="org.eclipse.core.runtime.preferences">
+      <?gmfgen generated="true"?>
+      <initializer class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages">
+      <?gmfgen generated="true"?>
+      <page
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            name="%preference.page.title.it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.appearance"
+            name="%preference.page.title.it.unimib.disco.lta.eclipse.anomalyGraph.diagram.appearance"
+            category="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.connections"
+            name="%preference.page.title.it.unimib.disco.lta.eclipse.anomalyGraph.diagram.connections"
+            category="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.printing"
+            name="%preference.page.title.it.unimib.disco.lta.eclipse.anomalyGraph.diagram.printing"
+            category="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.rulersAndGrid"
+            name="%preference.page.title.it.unimib.disco.lta.eclipse.anomalyGraph.diagram.rulersAndGrid"
+            category="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+      <page
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.pathmaps"
+            name="%preference.page.title.it.unimib.disco.lta.eclipse.anomalyGraph.diagram.pathmaps"
+            category="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.general"
+            class="org.eclipse.gmf.runtime.emf.ui.preferences.PathmapsPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="it.unimib.disco.lta.eclipse.anomalyGraph.diagram"
+            labelProvider="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.sheet.AnomalyGraphSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="it.unimib.disco.lta.eclipse.anomalyGraph.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="it.unimib.disco.lta.eclipse.anomalyGraph.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.sheet.AnomalyGraphPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders">
+      <?gmfgen generated="true"?>
+      <viewProvider class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.providers.AnomalyGraphViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="AnomalyGraph"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints=""/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints=""/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.providers.AnomalyGraphEditPartProvider">
+         <Priority name="Lowest"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.providers.AnomalyGraphModelingAssistantProvider">
+         <Priority name="Lowest"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders">
+      <?gmfgen generated="true"?>
+      <IconProvider class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.providers.AnomalyGraphIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.providers.AnomalyGraphParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="it.unimib.disco.lta.eclipse.anomalyGraph">
+         <metamodelType
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.Graph_79"
+               name="%metatype.name.Graph_79"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Graph"
+               edithelper="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.helpers.GraphEditHelper">
+            <param name="semanticHint" value="79"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="it.unimib.disco.lta.eclipse.anomalyGraph">
+         <metamodelType
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.BctIOModelViolation_1001"
+               name="%metatype.name.BctIOModelViolation_1001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="BctIOModelViolation"
+               edithelper="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.helpers.BctIOModelViolationEditHelper">
+            <param name="semanticHint" value="1001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="it.unimib.disco.lta.eclipse.anomalyGraph">
+         <metamodelType
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.BctFSAModelViolation_1002"
+               name="%metatype.name.BctFSAModelViolation_1002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="BctFSAModelViolation"
+               edithelper="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.helpers.BctFSAModelViolationEditHelper">
+            <param name="semanticHint" value="1002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="it.unimib.disco.lta.eclipse.anomalyGraph">
+         <metamodelType
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.Relationship_3001"
+               name="%metatype.name.Relationship_3001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Relationship"
+               edithelper="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.helpers.RelationshipEditHelper">
+            <param name="semanticHint" value="3001"/>
+         </metamodelType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="AnomalyGraphClientContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="AnomalyGraphClientContext">
+         <elementType ref="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.Graph_79"/>
+         <elementType ref="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.BctIOModelViolation_1001"/>
+         <elementType ref="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.BctFSAModelViolation_1002"/>
+         <elementType ref="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.Relationship_3001"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="it.unimib.disco.lta.eclipse.anomalyGraph.diagram"
+           properties="isURIEditorInput"
+           class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.core.expressions.propertyTesters">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.DomainModelElementPropertyTester"
+           type="org.eclipse.emf.ecore.EObject"
+           namespace="it.unimib.disco.lta.eclipse.anomalyGraph.diagram"
+           properties="isDomainModelElement"
+           class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDomainModelElementTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.resourceContent"/>
+			<contentExtension pattern="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.domainResourceContent"/>
+            <contentExtension pattern="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphNavigatorContentProvider" 
+            labelProvider="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphNavigatorLabelProvider"
+            icon="icons/obj16/AnomalyGraphDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="anomalyGraph_diagram"/>
+               </and>
+               <instanceof value="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphAbstractNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphAbstractNavigatorItem"/>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigatorSorter" 
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="anomalyGraph_diagram"/>
+                  </and>
+                  <instanceof value="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphDomainNavigatorContentProvider" 
+            labelProvider="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphDomainNavigatorLabelProvider"
+            icon="icons/obj16/AnomalyGraphDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="anomalyGraph"/>
+               </and>
+               <and>
+                  <instanceof value="org.eclipse.emf.ecore.EObject"/>
+                  <test property="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.isDomainModelElement"/>
+               </and>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <and>
+       	       <instanceof value="org.eclipse.emf.ecore.EObject"/>
+       	       <test property="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.isDomainModelElement"/>
+       	    </and>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigatorActionProvider"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphAbstractNavigatorItem"/>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigatorLinkHelper"
+            class="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.navigator.AnomalyGraphAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.part.AnomalyGraphDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.updateDiagram"
+         contextId="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+</plugin>

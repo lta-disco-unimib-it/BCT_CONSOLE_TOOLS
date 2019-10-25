@@ -1,0 +1,8 @@
+#Mon Jul 07 11:07:56 CEST 2008
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/it.unimib.disco.lta.eclipse.anomalyGraph/model/AnomalyGraph.genmodel
+gmf_dashboard/domainModel=platform\:/resource/it.unimib.disco.lta.eclipse.anomalyGraph/model/AnomalyGraph.ecore
+gmf_dashboard/generationModel=platform\:/resource/it.unimib.disco.lta.eclipse.anomalyGraph/model/AnomalyGraph.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/it.unimib.disco.lta.eclipse.anomalyGraph/model/AnomalyGraph.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/it.unimib.disco.lta.eclipse.anomalyGraph/model/AnomalyGraph.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/it.unimib.disco.lta.eclipse.anomalyGraph/model/AnomalyGraph.gmftool

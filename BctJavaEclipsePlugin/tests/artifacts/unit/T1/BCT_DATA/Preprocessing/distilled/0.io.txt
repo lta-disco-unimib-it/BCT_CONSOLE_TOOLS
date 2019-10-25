@@ -1,0 +1,16 @@
+Daikon version 4.3.0, released July 1, 2007; http://pag.csail.mit.edu/daikon.
+Reading declaration files .[8:17:32 AM]: Reading 0.decls (line 6) ...                                                                                                                     (read 1 decls file)
+                                                                               Processing trace data; reading 1 dtrace file:
+[8:17:32 AM]: Finished reading 0.dtrace                                        
+                                                                               ===========================================================================
+testPackage.Test0.changeAge(int,User):::ENTER
+parameter[0] == 1
+parameter[1].age one of { 9, 90 }
+===========================================================================
+testPackage.Test0.changeAge(int,User):::EXIT
+parameter[0] == orig(parameter[0])
+parameter[1].age == returnValue
+parameter[0] == 1
+returnValue one of { 9, 10, 13 }
+(orig(parameter[1].age) >> returnValue == 0)
+Exiting Daikon.

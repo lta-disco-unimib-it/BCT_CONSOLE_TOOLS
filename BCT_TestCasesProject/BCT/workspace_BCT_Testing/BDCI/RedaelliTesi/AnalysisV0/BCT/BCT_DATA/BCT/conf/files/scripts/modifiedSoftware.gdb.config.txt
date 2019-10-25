@@ -1,0 +1,231 @@
+delete
+set pagination off
+set editing off
+set confirm off
+set verbose off
+set logging redirect
+set logging file /home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/AnalysisV0/BCT/BCT_DATA/BCT/tracesToVerify/gdb.monitor.txt
+set logging on
+set print address
+set print array
+set print array-indexes
+set print elements 20
+set print frame-arguments none
+set print inferior-events
+set print null-stop
+set print object
+set print pretty
+set print repeats 20
+set print sevenbit-strings
+set print static-members off
+set print thread-events
+set print union
+set breakpoint pending on
+define bct_print_pointers
+echo !!!BCT-VARIABLE $arg0\n
+output $arg0
+echo \n
+if $arg0 > 1
+echo !!!BCT-VARIABLE *$arg0\n
+output *$arg0
+echo \n
+end
+end
+set follow-fork-mode parent
+set detach-on-fork on
+#CHILDREN MONITORING CONFIG
+#TARGET MONITORING
+#breakpoint 1
+# code for parent ENTER assert
+b *0x400795
+commands
+silent
+echo !!!BCT-ENTER: assert\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+#assert
+echo !!!BCT-locals-end\n
+c
+end
+#breakpoint 2
+# code for parent EXIT assert
+b *0x400796
+commands
+silent
+echo !!!BCT-EXIT: assert\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+info locals
+#assert
+echo !!!BCT-locals-end\n
+echo !!!BCT-registers\n
+info register eax
+echo !!!BCT-registers-end\n
+c
+end
+#breakpoint 3
+# code for parent ENTER logDaSottrazione
+b *0x40074c
+commands
+silent
+echo !!!BCT-ENTER: logDaSottrazione\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+#logDaSottrazione
+echo !!!BCT-locals-end\n
+c
+end
+#breakpoint 4
+# code for parent EXIT logDaSottrazione
+b *0x40078c
+commands
+silent
+echo !!!BCT-EXIT: logDaSottrazione\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+info locals
+#logDaSottrazione
+echo !!!BCT-locals-end\n
+echo !!!BCT-registers\n
+info register eax
+echo !!!BCT-registers-end\n
+c
+end
+#breakpoint 5
+# code for parent ENTER main
+b *0x40079f
+commands
+silent
+echo !!!BCT-ENTER: main\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+#main
+echo !!!BCT-locals-end\n
+c
+end
+#breakpoint 6
+# code for parent EXIT main
+b *0x400ab1
+commands
+silent
+echo !!!BCT-EXIT: main\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+info locals
+#main
+echo !!!BCT-locals-end\n
+echo !!!BCT-registers\n
+info register eax
+echo !!!BCT-registers-end\n
+c
+end
+#breakpoint 7
+# code for parent ENTER sottrazione
+b *0x40064f
+commands
+silent
+echo !!!BCT-ENTER: sottrazione\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+#sottrazione
+echo !!!BCT-locals-end\n
+c
+end
+#breakpoint 8
+# code for parent EXIT sottrazione
+b *0x4006f2
+commands
+silent
+echo !!!BCT-EXIT: sottrazione\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+info locals
+#sottrazione
+echo !!!BCT-locals-end\n
+echo !!!BCT-registers\n
+info register eax
+echo !!!BCT-registers-end\n
+c
+end
+#breakpoint 9
+# code for parent ENTER logaritmo
+b *0x400701
+commands
+silent
+echo !!!BCT-ENTER: logaritmo\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+#logaritmo
+echo !!!BCT-locals-end\n
+c
+end
+#breakpoint 10
+# code for parent EXIT logaritmo
+b *0x400738
+commands
+silent
+echo !!!BCT-EXIT: logaritmo\n
+echo !!!BCT-stack\n
+bt
+echo !!!BCT-stack-end\n
+echo !!!BCT-args\n
+info args
+echo !!!BCT-args-end\n
+echo !!!BCT-locals\n
+info locals
+#logaritmo
+echo !!!BCT-locals-end\n
+echo !!!BCT-registers\n
+info register eax
+echo !!!BCT-registers-end\n
+c
+end
+#PARENT MONITORING
+echo !!!BCT-NEW-EXECUTION\n
+run
+quit

@@ -1,0 +1,174 @@
+All defined variables:
+
+File init.c:
+const int _IO_stdin_used;
+
+File src/game_test.c:
+int allTestCases;
+int currentFail;
+int failingTestCases;
+int passingTestCases;
+
+Non-debugging symbols:
+0x08048eb8  _fp_hw
+0x08049044  __FRAME_END__
+0x0804af0c  __CTOR_LIST__
+0x0804af0c  __init_array_end
+0x0804af0c  __init_array_start
+0x0804af10  __CTOR_END__
+0x0804af14  __DTOR_LIST__
+0x0804af18  __DTOR_END__
+0x0804af1c  __JCR_END__
+0x0804af1c  __JCR_LIST__
+0x0804af20  _DYNAMIC
+0x0804aff4  _GLOBAL_OFFSET_TABLE_
+0x0804b024  __data_start
+0x0804b024  data_start
+0x0804b028  __dso_handle
+0x0804b02c  completed.6990
+0x0804b030  dtor_idx.6992
+All defined variables:
+
+File init.c:
+const int _IO_stdin_used;
+
+File src/game_test.c:
+int allTestCases;
+int currentFail;
+int failingTestCases;
+int passingTestCases;
+
+Non-debugging symbols:
+0x08048ed8  _fp_hw
+0x08049064  __FRAME_END__
+0x0804af0c  __CTOR_LIST__
+0x0804af0c  __init_array_end
+0x0804af0c  __init_array_start
+0x0804af10  __CTOR_END__
+0x0804af14  __DTOR_LIST__
+0x0804af18  __DTOR_END__
+0x0804af1c  __JCR_END__
+0x0804af1c  __JCR_LIST__
+0x0804af20  _DYNAMIC
+0x0804aff4  _GLOBAL_OFFSET_TABLE_
+0x0804b024  __data_start
+0x0804b024  data_start
+0x0804b028  __dso_handle
+0x0804b02c  completed.6990
+0x0804b030  dtor_idx.6992
+All defined variables:
+
+File init.c:
+const int _IO_stdin_used;
+
+File src/game_test.c:
+int allTestCases;
+int currentFail;
+int failingTestCases;
+int passingTestCases;
+
+Non-debugging symbols:
+0x08048eb8  _fp_hw
+0x08049044  __FRAME_END__
+0x0804af0c  __CTOR_LIST__
+0x0804af0c  __init_array_end
+0x0804af0c  __init_array_start
+0x0804af10  __CTOR_END__
+0x0804af14  __DTOR_LIST__
+0x0804af18  __DTOR_END__
+0x0804af1c  __JCR_END__
+0x0804af1c  __JCR_LIST__
+0x0804af20  _DYNAMIC
+0x0804aff4  _GLOBAL_OFFSET_TABLE_
+0x0804b024  __data_start
+0x0804b024  data_start
+0x0804b028  __dso_handle
+0x0804b02c  completed.6990
+0x0804b030  dtor_idx.6992
+All defined variables:
+
+File init.c:
+const int _IO_stdin_used;
+
+File src/game_test.c:
+int allTestCases;
+int currentFail;
+int failingTestCases;
+int passingTestCases;
+
+Non-debugging symbols:
+0x08048ed8  _fp_hw
+0x08049064  __FRAME_END__
+0x0804af0c  __CTOR_LIST__
+0x0804af0c  __init_array_end
+0x0804af0c  __init_array_start
+0x0804af10  __CTOR_END__
+0x0804af14  __DTOR_LIST__
+0x0804af18  __DTOR_END__
+0x0804af1c  __JCR_END__
+0x0804af1c  __JCR_LIST__
+0x0804af20  _DYNAMIC
+0x0804aff4  _GLOBAL_OFFSET_TABLE_
+0x0804b024  __data_start
+0x0804b024  data_start
+0x0804b028  __dso_handle
+0x0804b02c  completed.6990
+0x0804b030  dtor_idx.6992
+All defined variables:
+
+File init.c:
+const int _IO_stdin_used;
+
+File src/game_test.c:
+int allTestCases;
+int currentFail;
+int failingTestCases;
+int passingTestCases;
+
+Non-debugging symbols:
+0x08048eb8  _fp_hw
+0x08049044  __FRAME_END__
+0x0804af0c  __CTOR_LIST__
+0x0804af0c  __init_array_end
+0x0804af0c  __init_array_start
+0x0804af10  __CTOR_END__
+0x0804af14  __DTOR_LIST__
+0x0804af18  __DTOR_END__
+0x0804af1c  __JCR_END__
+0x0804af1c  __JCR_LIST__
+0x0804af20  _DYNAMIC
+0x0804aff4  _GLOBAL_OFFSET_TABLE_
+0x0804b024  __data_start
+0x0804b024  data_start
+0x0804b028  __dso_handle
+0x0804b02c  completed.6990
+0x0804b030  dtor_idx.6992
+All defined variables:
+
+File init.c:
+const int _IO_stdin_used;
+
+File src/game_test.c:
+int allTestCases;
+int currentFail;
+int failingTestCases;
+int passingTestCases;
+
+Non-debugging symbols:
+0x08048eb8  _fp_hw
+0x08049044  __FRAME_END__
+0x0804af0c  __CTOR_LIST__
+0x0804af0c  __init_array_end
+0x0804af0c  __init_array_start
+0x0804af10  __CTOR_END__
+0x0804af14  __DTOR_LIST__
+0x0804af18  __DTOR_END__
+0x0804af1c  __JCR_END__
+0x0804af1c  __JCR_LIST__
+0x0804af20  _DYNAMIC
+0x0804aff4  _GLOBAL_OFFSET_TABLE_
+0x0804b024  __data_start
+0x0804b024  data_start
+0x0804b028  __dso_handle
+0x0804b02c  completed.6990
+0x0804b030  dtor_idx.6992

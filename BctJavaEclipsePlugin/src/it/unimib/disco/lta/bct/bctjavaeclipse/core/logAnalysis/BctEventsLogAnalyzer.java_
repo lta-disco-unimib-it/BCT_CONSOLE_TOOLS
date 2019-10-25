@@ -1,0 +1,28 @@
+package it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis;
+
+import org.eclipse.hyades.analysis.engine.IAnalysisMonitor;
+import org.eclipse.hyades.analysis.engine.ILogAnalyzer;
+
+public class BctEventsLogAnalyzer implements ILogAnalyzer {
+
+	public BctEventsLogAnalyzer() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String analyze(Object arg0, IAnalysisMonitor arg1) {
+		return "";
+	}
+
+	public String errorMsg() {
+		return "";
+	}
+
+	public void loadDatabase() {
+		
+	}
+
+	public void unloadDatabase() {
+		
+	}
+
+}

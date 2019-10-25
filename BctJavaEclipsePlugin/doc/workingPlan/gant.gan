@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2007-08-26" view-index="0" gantt-divider-location="360" resource-divider-location="301" version="2.0">
+<description></description>
+<view zooming-state="default:3"/>
+<!-- -->
+<calendars>
+<day-types>
+<day-type id="0"/>
+<day-type id="1"/>
+<calendar id="1" name="default">
+<default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+<overriden-day-types/>
+<days/>
+</calendar>
+</day-types>
+<date year="2007" month="8" date="10"/>
+<date year="2007" month="8" date="25"/>
+</calendars>
+<tasks color="#8cb6ce">
+<taskproperties>
+<taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+<taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+<taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+<taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+<taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+<taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+<taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+<taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+<taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+<taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+</taskproperties>
+<task id="1" name="Configurazione" color="#8cb6ce" meeting="false" start="2007-08-27" duration="2" complete="0" priority="1" expand="true"/>
+<task id="2" name="Preferenze" color="#8cb6ce" meeting="false" start="2007-08-02" duration="2" complete="0" priority="1" expand="true"/>
+<task id="3" name="Risorse" color="#8cb6ce" meeting="false" start="2007-08-03" duration="1" complete="0" priority="1" expand="false">
+<task id="4" name="UML" color="#8cb6ce" meeting="false" start="2007-08-03" duration="1" complete="0" priority="1" expand="true"/>
+<task id="5" name="Salvataggio" color="#8cb6ce" meeting="false" start="2007-08-03" duration="1" complete="0" priority="1" expand="true"/>
+</task>
+<task id="6" name="Prototipo Vista BCT" color="#8cb6ce" meeting="false" start="2007-08-02" duration="1" complete="0" priority="1" expand="true"/>
+<task id="8" name="Strato di integrazione" color="#8cb6ce" meeting="false" start="2007-08-01" duration="3" complete="0" priority="1" expand="true">
+<depend id="7" type="2" difference="0" hardness="Strong"/>
+</task>
+<task id="9" name="Instrumentazione statica TPTP" color="#8cb6ce" meeting="false" start="2007-09-07" duration="9" complete="0" priority="1" expand="true"/>
+<task id="10" name="Instrumentazione dinamica TPTP" color="#8cb6ce" meeting="false" start="2007-09-07" duration="7" complete="0" priority="1" expand="true"/>
+<task id="11" name="Visualizzazione dati registrati" color="#8cb6ce" meeting="false" start="2007-08-06" duration="34" complete="0" priority="1" expand="true">
+<task id="64" name="Prototipo editor testuale" color="#8cb6ce" meeting="false" start="2007-08-27" duration="1" complete="0" priority="1" expand="true">
+<depend id="17" type="2" difference="0" hardness="Strong"/>
+</task>
+<task id="7" name="Grafi UML caricamento salvataggio, business entities" color="#8cb6ce" meeting="false" start="2007-08-06" duration="1" complete="0" priority="1" expand="true">
+<depend id="12" type="2" difference="0" hardness="Strong"/>
+</task>
+<task id="12" name="Implentazione Finder/Mapper" color="#8cb6ce" meeting="false" start="2007-08-07" duration="2" complete="0" priority="1" expand="true"/>
+<task id="13" name="Popolamento vista" color="#8cb6ce" meeting="false" start="2007-08-08" duration="2" complete="0" priority="1" expand="true"/>
+<task id="63" name="Prototipo visualizzazione" color="#8cb6ce" meeting="false" start="2007-08-06" duration="1" complete="0" priority="1" expand="true"/>
+<task id="17" name="Visualizzazione Tracce" color="#8cb6ce" meeting="false" start="2007-08-28" duration="2" complete="0" priority="1" expand="true">
+<depend id="31" type="2" difference="0" hardness="Strong"/>
+<task id="19" name="IO" color="#8cb6ce" meeting="false" start="2007-08-28" duration="2" complete="0" priority="1" expand="true"/>
+<task id="21" name="IoInteraction" color="#8cb6ce" meeting="false" start="2007-08-28" duration="2" complete="0" priority="1" expand="true"/>
+<task id="20" name="Interaction" color="#8cb6ce" meeting="false" start="2007-08-28" duration="2" complete="0" priority="1" expand="true"/>
+</task>
+<task id="31" name="Visualizzazione Tracce Normalizzate" color="#8cb6ce" meeting="false" start="2007-08-30" duration="2" complete="0" priority="1" expand="true">
+<depend id="23" type="2" difference="0" hardness="Strong"/>
+<task id="33" name="IO" color="#8cb6ce" meeting="false" start="2007-08-30" duration="2" complete="0" priority="1" expand="false"/>
+<task id="35" name="IoInteraction" color="#8cb6ce" meeting="false" start="2007-08-30" duration="2" complete="0" priority="1" expand="false"/>
+<task id="37" name="Interaction" color="#8cb6ce" meeting="false" start="2007-08-30" duration="2" complete="0" priority="1" expand="false"/>
+</task>
+<task id="23" name="Visualizzazione Modelli" color="#8cb6ce" meeting="false" start="2007-09-03" duration="3" complete="0" priority="1" expand="true">
+<task id="25" name="IO" color="#8cb6ce" meeting="false" start="2007-09-03" duration="3" complete="0" priority="1" expand="false"/>
+<task id="27" name="IoInteraction" color="#8cb6ce" meeting="false" start="2007-09-03" duration="3" complete="0" priority="1" expand="false"/>
+<task id="29" name="Interaction" color="#8cb6ce" meeting="false" start="2007-09-03" duration="3" complete="0" priority="1" expand="false"/>
+</task>
+<task id="39" name="Editing Modelli" color="#8cb6ce" meeting="false" start="2007-09-06" duration="12" complete="0" priority="1" expand="true">
+<task id="41" name="IO" color="#8cb6ce" meeting="false" start="2007-09-06" duration="12" complete="0" priority="1" expand="false"/>
+<task id="43" name="IoInteraction" color="#8cb6ce" meeting="false" start="2007-09-06" duration="12" complete="0" priority="1" expand="false"/>
+<task id="45" name="Interaction" color="#8cb6ce" meeting="false" start="2007-09-06" duration="12" complete="0" priority="1" expand="false"/>
+</task>
+<task id="47" name="Editing tracce" color="#8cb6ce" meeting="false" start="2007-09-06" duration="5" complete="0" priority="1" expand="true">
+<depend id="55" type="2" difference="0" hardness="Strong"/>
+<task id="49" name="IO" color="#8cb6ce" meeting="false" start="2007-09-06" duration="5" complete="0" priority="1" expand="false"/>
+<task id="51" name="IoInteraction" color="#8cb6ce" meeting="false" start="2007-09-06" duration="5" complete="0" priority="1" expand="false"/>
+<task id="53" name="Interaction" color="#8cb6ce" meeting="false" start="2007-09-06" duration="5" complete="0" priority="1" expand="false"/>
+</task>
+<task id="55" name="Editing tracce normalizzate" color="#8cb6ce" meeting="false" start="2007-09-13" duration="6" complete="0" priority="1" expand="true">
+<task id="57" name="IO" color="#8cb6ce" meeting="false" start="2007-09-13" duration="6" complete="0" priority="1" expand="false"/>
+<task id="59" name="IoInteraction" color="#8cb6ce" meeting="false" start="2007-09-14" duration="5" complete="0" priority="1" expand="false"/>
+<task id="61" name="Interaction" color="#8cb6ce" meeting="false" start="2007-09-13" duration="6" complete="0" priority="1" expand="false"/>
+</task>
+</task>
+</tasks>
+<resources>
+<resource id="0" name="Francesco" function="Default:0" contacts="" phone=""/>
+<resource id="1" name="Fabrizio" function="Default:0" contacts="" phone=""/>
+</resources>
+<allocations>
+<allocation task-id="6" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+<allocation task-id="21" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+</allocations>
+<vacations>
+<vacation start="2007-08-10" end="2007-08-25" resourceid="0"/>
+<vacation start="2007-08-10" end="2007-08-18" resourceid="1"/>
+</vacations>
+<taskdisplaycolumns>
+<displaycolumn property-id="tpd3" order="0" width="405"/>
+<displaycolumn property-id="tpd4" order="1" width="15"/>
+<displaycolumn property-id="tpd5" order="2" width="15"/>
+</taskdisplaycolumns>
+<previous/>
+<roles roleset-name="Default"/>
+</project>

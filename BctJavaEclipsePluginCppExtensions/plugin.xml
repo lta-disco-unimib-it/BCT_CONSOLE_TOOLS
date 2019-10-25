@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="BctJavaEclipsePluginCppExtensions.objectContribution1"
+            objectClass="java.lang.Object">
+         <action
+               class="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.ShowDeclarations"
+               enablesFor="1"
+               id="BctJavaEclipsePluginCppExtensions.extractDeclarations"
+               label="ShowDeclarations"
+               menubarPath="BctJavaEclipsePluginCppExtensions.menuBCT">
+         </action>
+         <!--s
+         <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.ExportModelsForCBMCAction"
+            id="BctJavaEclipsePluginCppExtensions.exportModelsForCBMCAction"
+            label="Export Models for CBMC validation"
+            menubarPath="BctJavaEclipsePluginCppExtensions.menumc/BctJavaEclipsePlugin.trueProperties">
+      </action>
+      -->
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.ShowVariablesAction"
+            id="BctJavaEclipsePlugin.showVariables"
+            label="Show Variables"
+            menubarPath="BctJavaEclipsePluginCppExtensions.menuBCT/BctJavaEclipsePluginCppExtensions.separator1">
+      </action>
+      
+         <menu
+               id="BctJavaEclipsePluginCppExtensions.menuBCT"
+               label="BCTCC"
+               path="additions">
+            <separator
+                  name="BctJavaEclipsePluginCppExtensions.separator1">
+            </separator>
+         </menu>
+      </objectContribution>
+
+   
+<viewerContribution id="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.BCT"
+targetID="#CEditorContext">
+<action id="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.AddTracePoint" label="Trace With BCT"
+menubarPath="BctJavaEclipsePluginCppExtensions.menuBCT" tooltip="a tooltip"
+class="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.AddTracePoint"/>
+<menu
+      id="BctJavaEclipsePluginCppExtensions.menuBCT"
+      label="BCT">
+</menu>
+</viewerContribution>
+<objectContribution
+      adaptable="false"
+      id="BctJavaEclipsePluginCppExtensions.objectContributionRADAR"
+      nameFilter="*.bctmc"
+      objectClass="org.eclipse.core.resources.IFile">
+   <menu
+         id="BctJavaEclipsePluginCppExtensions.menuRADAR"
+         label="RADAR"
+         path="additions">
+          <separator
+               name="BctJavaEclipsePluginCppExtensions.analyze">
+         </separator>
+   </menu>
+          <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.AnalyzeRegression"
+            id="BctJavaEclipsePlugin.AnalyzeRegression"
+            label="Analyze Regression"
+            menubarPath="BctJavaEclipsePluginCppExtensions.menuRADAR/BctJavaEclipsePluginCppExtensions.analyze">
+      </action>
+</objectContribution>
+</extension>
+
+<extension
+      point="it.unimib.disco.lta.bct.bctJavaEclipse.ui.actions.violationsFilterActions">
+   <violationsFilterAction
+         class="it.unimib.disco.lta.bct.bctjavaeclipsecpp.core.logAnalysis.VoidReturnViolationsFilterAction">
+   </violationsFilterAction>
+</extension>
+<extension
+      point="org.eclipse.ui.newWizards">
+   <category
+         id="BctJavaEclipsePluginCppExtensions.RADAR"
+         name="RADAR">
+   </category>
+      <wizard
+         category="BctJavaEclipsePluginCppExtensions.RADAR"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.NewBCTCRegressionConfigurationWizard"
+         icon="icons/sample.gif"
+         id="BctJavaEclipsePluginCppExtensions.RADAR.wizards.NewBCTRegressionConfigurationWizard"
+         name="RADAR C/C++ Regression Configuration">
+   </wizard>
+</extension>
+
+</plugin>

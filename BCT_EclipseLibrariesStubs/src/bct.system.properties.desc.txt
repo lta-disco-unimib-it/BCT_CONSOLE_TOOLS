@@ -1,0 +1,299 @@
+	///PROPERTIES-DESCRIPTION: Options that control the identification of anomalies with RADAR/VART
+
+	///if true executes only the identification of anomalies, i.e. stops after inferring models and identifying anomalous values (default false)
+bct.skipModelChecking
+
+	///if true does not run automated monitoring based on Makefile (default: false)
+bct.skipMonitoring
+
+	///PROPERTIES-DESCRIPTION: Options that control model inference with BCT/RADAR/VART
+
+	///indicate whether or not to record information about pointer values
+bct.processPointers
+
+	///list of regular expressions separated by ';' that indicates the program points to include when analyzing a trace. This option allows to analyze only a subset of the program points recorded in a trace.
+bct.programPointsToInclude
+	///Type of the TestCasesRegistry to use
+bct.testCasesRegistry
+	///indicates whether to identify the address where to set the break point for function ENTRY using an additional gdb batch run for each function (dafault true)
+bct.useEntryPointDetector
+
+	///PROPERTIES-DESCRIPTION: Properties that manage the execution of VART
+
+	///export data properties that regard lines
+bct.exportLines
+
+	///exclude data properties that include the vars in the list (separated by ;)
+bct.exporter.varsToExclude
+
+	///include only the data properties that contain all the variables in the list. Provide a list of variables sets, each set is separated by ',', each variable is separated by ':' . The following list x:y,result will include only those data properties that contains both variables "x" and "y", or that contain variable "result"
+bct.exporter.includeOnly
+
+	///unwind option to be passed to the model checker (number of times loops should be unrolled)
+bct.cbmc.unwind
+
+	///skip checking of anomalies that depend on intended changes, i.e. anomalies triggered by passing test cases of th eupgraded program
+bct.skipValidAnomaliesCheck
+
+	///path to the goto program (relative to source folder)
+bct.cbmc.gotoProgram
+
+	///path to the goto program (relative to source folder)
+bct.cbmc.gotoProgram.compiled
+
+	///command to use to compile with goto-cc
+bct.cbmc.compileCommand
+
+	///indicates whether to skip the execution of goto-cc
+bct.skipGoToCCExecution
+
+	///indicates whether to skip the execution of cbmc
+bct.skipCbmcExecution
+
+	///indicates whether to skip the processing (compile and execute cbmc) of the original program 
+bct.cbmc.skipProcessingOfOriginal
+
+	///indicates whether to skip the processing (compile and execute cbmc) of the upgraded program 
+bct.cbmc.skipProcessingOfModified
+
+	///skip the injection of assertions (true/false)
+bct.skipAssertionsInjection
+
+	///export only assertions for target functions
+bct.exportTargetsOnly
+
+	///redefine functions declared in math.h and hide math.h for speedup
+bct.vart.redefineMathFuncs
+	///setup the default daikon config to use during inference
+bct.inference.daikon.config.default
+	///specifies the criterion to use to retrieve the object fields to save
+bct.flattener.fieldsRetriever
+
+	///PROPERTIES-DESCRIPTION: Options that manage the generation of the BCT/RADAR setup folder
+
+	///list of regular expressions that match the mangled name of a function. Separated by ;. Used to specify the functions to monitor. You can specify an expression that separately matches namesapce, class and function by using the space char. for example we can match all methods of Visitor classes implemented in namespace myNamespace using the following expression: myNamesapce::.* .*Visitor .* 
+bct.inclusionRules
+
+	///list of regular expressions that match the mangled name of a function to exclude form monitoring. Separated by ;. Used to specify the functions to monitor. You can specify an expression that separately matches namesapce, class and function by using the space char. for example we can match all methods of Visitor classes implemented in namespace myNamespace using the following expression: myNamesapce::.* .*Visitor .* 
+bct.exclusionRules
+
+	///list of regular expressions that match the mangled name of an environment function to exclude form monitoring. Separated by ;. Used to specify the functions to monitor. You can specify an expression that separately matches namesapce, class and function by using the space char. for example we can match all methods of Visitor classes implemented in namespace myNamespace using the following expression: myNamesapce::.* .*Visitor .* 
+bct.envExclusionRules
+
+	///monitor only the functions expressively indicated by the user
+bct.customOnly
+
+	///if true filterout all the function for which at least an EXIT point is missing
+bct.filterNotClosed
+
+	///if true simulates the closing of functions when the execution is broken in the middle (useful for cyclic executions)
+bct.simulateClosingOfFunctions
+
+	///if true monitor all the lines of the target functions
+bct.traceAll
+
+	///if true monitor all the functions of the program
+bct.completeMonitoring
+
+	///if true monitor all the program functions if no change is identified
+bct.monitorAllIfNoChange
+
+	///list of mangled function names not to monitor. Separated by ;
+bct.functionsToFilterOut
+
+	///if true, in C++ programs, record information about the object "this" (fault true)
+bct.monitorPointerToThis
+
+	///if true monitor global variables
+bct.monitorGlobalVariables
+
+	///PROPERTIES-DESCRIPTION: Options that control the formatting of the BCT/RADAR output
+
+	///path to file wwith custom properties to use for Daikon
+bct.inference.daikon.config.file
+
+	///specifies the folder where to save BCT reports (csv,html,txt)
+bct.output.folder
+
+	///sets the number/id for the updated software
+bct.radar.updatedVersion
+
+	///sets the number/id for the base software
+bct.radar.baseVersion
+
+	///sets the column separator for entries of file bct.anomalies.csv
+bct.anomalies.entries.separator
+
+	///if true skips the inference of models (default false)
+bct.skipInference
+
+	///if true skips the identification of anomalous data values (default false), i.e. intended changes
+bct.skipCheck
+
+	///PROPERTIES-DESCRIPTION: Options that manage the generation of the VART configuration
+
+	///PROPERTIES-DESCRIPTION: Options that control how VART insert assertions in C code
+
+	///comment out the lines of the functions that were not monitored during test cases execution
+bct.cbmc.commentOutLinesNotMonitored
+
+	///if set to "all" all the functions that were not monitored are commented out. Otherwise also the callers of the monitored functions are not cmmented out.
+bct.cbmc.commentMode
+
+	///delta relative to the first line of the function to comment out to be used to start commenting lines (negative numbers are accepted too)
+bct.cbmc.commentOutDelta
+
+	///prefix to be used for commenting lines, default is //BCT-STUBBED-OUT "
+bct.cbmc.commentOutPrefix
+
+	///prefix to be used for commenting import of standard cpp libs in c++, default is true
+bct.cbmc.redefineCppLibs
+
+	///list of test functions that must be used as entry points by model checker
+bct.testCases 
+
+	///PROPERTIES-DESCRIPTION: Options that manage the execution of CBMC
+
+	///if true rename all the references to source files ending with .c or .cc to source files ending with .i or .ii
+bct.cbmc.mapCtoI
+
+	///path to the CBMC executable
+bct.cbmc.exec
+
+	///if true executes the model checker to check all the claims alltogether (default true)
+bct.cbmc.allClaims
+
+	///used when goto-cc program is compiled relatively to a folder different from the source folder indicated to BCT
+bct.cbmc.sourceFolder
+
+	///PROPERTIES-DESCRIPTION: Options for the execution of goto-cc
+
+	///if false redefines some functions implemented by libc that create problem with goto-cc, otherwise skips this workaround (dafault false)
+bct.gotocc.skipFuncDefsWorkaround
+
+	///PROPERTIES-DESCRIPTION: Options for the exporting of data properties as assertions
+
+	///if true skip exporting struct fields
+bct.export.skipStructFields
+	///if true skip monitoring global variables
+bct.export.skipGlobals
+
+	///list of tokens to replace in the C assertions generated from data properties. Use ; to separate each replacing rule, Use : to separate original and replacement. E.g. <originalString1>:<newString1>;<originalString2>:<newString2>; 
+bct.export.replace
+
+	///list of tokens to replace in the data properties
+bct.export.replacePre
+
+	///list of models to export (separated by ;)
+bct.export.modelsToExport
+
+	///PROPERTIES-DESCRIPTION: Options that control the execution environment
+
+	///indicates the path of the cygwin folder on windows
+bct.cygwin
+
+	///indicate the max heap size to use (e.g. 1024M)
+bct.maxHeap
+
+	///indicate the default drive to be used by BCT on windows
+bct.drive
+
+	///PROPERTIES-DESCRIPTION: Options that control the identification of regression test suites
+
+	///configure the BranchRegressionSuiteGenerator to not use delta (true/false)
+bct.noDelta
+
+	///configure the BranchRegressionSuiteGenerator to use greedy search (true/false)
+bct.greedy
+
+	///PROPERTIES-DESCRIPTION: Options that control the generation of configurations script for RADAR/VART/BDCI
+
+	///indicates the location where PIN has been installed 
+bct.pinHome
+
+	///if true do not use buffer when monitoring with PIN (default: false)
+bct.PINprobesWithoutBuffer
+
+	///if true PIN probes are created  (default: false)
+bct.generatePINprobes
+
+	///if true traces the line number of the return instruction taken
+bct.traceReturnLines
+
+	///comma separated list of lines to monitor, each line is written as <file>:<line>
+bct.monitoring.linesToMonitor
+
+	///list of folder paths not to be considered as source folders. Path relative to project path. Separated by ; .
+bct.foldersToFilterOut
+
+	///if true, all the variables declared before the current breakpoint are inspected with a gdb print instruction
+bct.inspectLocalsOneByOne
+	///skip checking of invariants filtered out by daikon
+bct.checking.daikonFilter
+
+	///skip checking of invariants that were not printed out by daikon
+bct.checking.doTextualFilter
+
+	///PROPERTIES-DESCRIPTION: Options for the checking of data properties using daikon serialized models
+
+	///if true remove a boolean property from the list of properties to check the first time it is invalidated, i.e. check violated properties only once (default :false)
+bct.check.removeInvalidIO
+
+	///if true do not compare pointers and constants (default: false)
+bct.check.dontComparePointersAndConstants
+
+	///PROPERTIES-DESCRIPTION: Options that control the parsing of BCT/RADAR traces
+
+	///indicate to skip ionference of FSA
+bct.inference.skipFSA
+
+	///indicate whether or not to dump checking traces
+bct.skipDumpingCheckingTrace
+
+	///indicate whether or not to compare pointers
+bct.comparePointers
+
+	///if true use Daikon serialized models to execute the checking, otherwise use the tetxual data properties
+bct.checkWithDaikon
+
+	///PROPERTIES-DESCRIPTION: Options that control the parsing of BCT/RADAR thread traces
+
+	///if false BCT fixes the first line of function by looking for proper values invoking gdb during the processing of objdump (default false) 
+bct.gdbThreadTraceParser.avoidFixingLineNumbers
+
+	///if false record whether a variable is not NULL only in the case it is a pointer. If true always record this info in the case of fields/objects/structs. (default false).
+bct.gdbThreadTraceParser.alwaysTraceNotNull
+
+	///if true BCT transforms hex to integer values
+bct.gdbThreadTraceParser.hexToInt
+
+	///PROPERTIES-DESCRIPTION: Options that control the execution of Java commands as standalone processes using JavaRunner
+
+	///forces the incluion of the classpath of the running application into the children classpaths (when processes are run with JavaRunner)
+bct.util.javaRunner.includeCurrentClasspath
+
+	///PROPERTIES-DESCRIPTION: Options that control how data is preprocessed
+
+	///allows BCT to compare the value of pointer variables
+bct.comparePointers
+
+	///PROPERTIES-DESCRIPTION: Options that control how data is recorded
+
+	///diasables recording of IO data
+bct.dataRecording.io.disable
+
+	///PROPERTIES-DESCRIPTION: Options that control the inference of models
+
+	///force BCT to expand equivalence classes. Given two expressions x == y , y > 0  this option will lead to x == y , y > 0, x > 0 
+bct.inference.expandEquivalences
+
+	///run Daikon with undo optimizations otion set to true
+bct.inference.undoDaikonOptimizations
+
+	///don't generate/use data properties that contain array variables (identified by looking for '[' in the expression)
+bct.inference.skipArrays
+
+	///skip the generation of invariant daikon.inv.binary.twoScalar.NumericInt.ShiftZero (default is true)
+bct.inference.skipShift
+
+				if ( line.startsWith("///PROPERTIES-DESCRIPTION:") ){

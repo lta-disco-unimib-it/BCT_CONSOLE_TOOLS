@@ -1,0 +1,40 @@
+
+
+
+
+GIT_EXEC_PATH='/home/pastore/BDCI/BDCI_7/V0/exec'
+if test -n "$NO_SET_GIT_TEMPLATE_DIR"
+then
+        unset GIT_TEMPLATE_DIR
+else
+        GIT_TEMPLATE_DIR='/home/pastore/BDCI/BDCI_7/V0/templates/blt'
+        export GIT_TEMPLATE_DIR
+fi
+GITPERLLIB='/home/pastore/BDCI/BDCI_7/V0/perl/blib/lib'"${GITPERLLIB:+:$GITPERLLIB}"
+GIT_TEXTDOMAINDIR='/home/pastore/BDCI/BDCI_7/V0/po/build/locale'
+#PATH='/home/pastore/BDCI/BDCI_7/V0/bin-wrappers:'"$PATH"
+PATH=/home/pastore/BDCI/BDCI_7/V0/:$PATH
+
+
+#if [ $# -gt 1 ] && [ "$1" = "repack" ]
+#then	
+#	env >> repack.env
+#	echo "\n\n\n\n" >> repack.env
+#	exec /home/pastore/BDCI/BDCI_7/V0/exec/git "$@"
+#fi 
+
+echo "\n\n\n" >> /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt
+ps ef >> /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt
+echo "!!!BCT-EXECUTING $0 $@" >> /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt
+#$HOME/PIN/pin.sh -t /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes/bdciProbe.so -- /home/pastore/BDCI/BDCI_7/V0/exec/git "$@"
+#v=$?
+
+
+/home/pastore/PIN/intel64/bin/pinbin -p32 /home/pastore/PIN/ia32/bin/pinbin -t /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes/bdciProbe.so -o /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/ -- /home/pastore/BDCI/BDCI_7/V0/exec/git "$@"
+v=$?
+
+echo "!!!BCT-STOP $v $0 $@" >> /home/pastore/BDCI/BDCI_7/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt
+
+exit $v
+
+

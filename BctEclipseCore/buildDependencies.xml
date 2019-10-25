@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="help" name="Show the possible targets for BCT">
+    <!--ANT 1.7+ is required                                        -->
+    
+	<tstamp>
+		     <format property="BUILD_STAMP" pattern="yyyyMMddHHmm" />
+		   </tstamp>
+	
+	<property name="bctStandalone" value="lib/bct-standalone.jar" />
+	<property name="bin" value="bin" />
+		
+	<property name="buildClasspath" value="${bctStandalone}" />
+
+	<property name="version.num" value="0.1"/>
+
+	<property name="bctDir" value="../BCT" />
+	
+	
+	<target name="buildDependencies" >
+		<echo>Building dependencies</echo>
+			<ant dir="${bctDir}" target="standalone" inheritAll="false" />
+			<copy file="${bctDir}/dist/bct-standalone.jar" toFile="${bctStandalone}" />		
+	</target>
+	
+	  <target name="clean">
+	  	<delete dir="dist" />
+	       <delete includeemptydirs="true">
+	         <fileset dir="bin" excludes="CVS/*" includes="**/*"/>
+	       </delete>  
+	  </target>
+
+
+	<target name="init">
+		<!--
+		<mkdir dir="bin" />
+		<mkdir dir="dist" />
+		<mkdir dir="dist/bin" />
+		
+		<copy todir="dist/bin">
+			<fileset dir="scripts/bin" includes="**/*"/>
+		</copy>
+		-->
+	</target>
+	
+	<!--
+	<target name="build" depends="init" >
+		
+		<javac destdir="${bin}" classpath="${buildClasspath}">
+			
+			<src path="src" />
+			<src path="src-javalogs" />
+			<src path="src-opencsv"/>
+		</javac>
+	</target>
+	-->
+	
+	<target name="help" >
+			<echo>Possible targets:</echo>
+			<echo>buildDependencies : compile all the dependencies (BCT) and put the jars in the "lib" folder</echo>
+	</target>
+	
+</project>

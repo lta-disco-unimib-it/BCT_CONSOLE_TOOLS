@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<style type="text/css">
+	em {font-style:italic;};
+img {text-align:center; width:600px; margin:20px;}
+.caption {text-align:center; height:0.8em;}
+</style>
+	<title>Debugging regression faults with RADAR</title>
+</head>
+
+<body>
+
+<div style="width:900px;">
+<h1>Debugging regression faults with RADAR</h1>
+<p>
+You can use RADAR to debug regression faults. In particular RADAR identifies 
+the chain of behavioral anomalies caused by the regression fault that  lead to the failure; 
+the inspection of the anomalies will help you to debug the fault.
+</p>
+
+<p>
+RADAR identifies anomalies by comparing the behavior of the upgraded software with the behavior of the base version of the software.
+To this end RADAR:
+<ul>
+<li>Records traces that capture the runtime behavior of the base and upgraded version of the software software.</li>
+<li>Derives models that generalize the behavior observed during the execution of the base version of the software.</li>
+<li>Compares the traces recorded during failing executions of the upgraded software with the inferred models, and trace the anomalies observed: unexpected data values or unexpected method invocations; these anomalies pinpoint behaviors that differ from the ones observed in passing executions of the base version, for this reason they may be relevant to understand the cause of the failure;</li>
+<li>Compares the traces recorded during passing executions of the upgraded software  with the inferred models, and trace the anomalies observed.</li>
+<li>Shows to the software developer a list with the anomalies observed in failing executions (anomalies that occurred also in passing executions have been filtered out from this list). </li>
+</ul>
+</p>
+
+<p>
+The analysis performed by RADAR is completely automated, for this reason you need to perform only three activities to use RADAR:
+<ol>
+<li>Configure RADAR</li>
+<li>Monitor the execution of the base and upgraded version of the program using GDB.</li>
+<li>Analyze the anomalies identified by RADAR</li>
+</ol>
+</p>
+
+<p>
+RADAR identifies silent regression faults only on Unix like systems.
+You need to install <em>gdb</em>, <em>c++filt</em> and <em>objdump</em> to run RADAR.
+You need to compile programs with the options, <em>-g3 -O0</em>, to enable effective monitoring with RADAR.
+</p>
+
+<h1>Tutorial</h1>
+
+<p>
+This tutorial shows how you can use RADAR to debug a 
+regression fault that affect the upgraded version of Store, a software that manages the warehouse of a store chain.
+The functionality affected by the regression regard the displaying of the items available in a particular store. 
+In the base version of the software all the items are properly displayed, in the upgraded version the item Mac Book Pro is missing.
+</p>
+
+<img src="debug_regression/0_failure.png" />
+
+<p>
+To simplify the tutorial we assume that the fault is covered by a unit test for class <em>StoreHandler</em> the class that populates the list of available items.
+</p>
+
+<p>
+The regression was introduced by a change in method <em>Store::availableQty(string productId)</em>, this method returns the number of items available for a given product ID. The upgraded version of the softwrae returns -1 when a product does not belong to the store catalogue. Altough this new behavior is valid (it corresponds to new specifications), it causes a regression in method StoreHandler::availableItems(list ids). Figure shows the implementation of method <em>StoreHandler::availableItems</em>. Method <em>availableItems</em> act like a filter, given a list of items that should be shown on the GUI, it returns a list with the name of the items available in a particular store.
+</p>
+
+
+<p>
+Following paragraphs show how a software developer can use RADAR to debug a regression fault that affect Store, a software that manages the warehouse of a Store chain.
+</p>
+
+
+
+<h2>Step 0: Import the example workspace</h2>
+
+<p>
+We provide an Eclipse workspace with two versions of the <em>Store</em> software. 
+</p>
+
+<p>
+Download the compressed workspace with the two C++ project from this url 
+<a href="http://www.lta.disco.unimib.it/downloadsLTA/tools/bct/workspaceStore.tar.gz" >
+http://www.lta.disco.unimib.it/downloadsLTA/tools/bct/workspaceStore.tar.gz</a>.
+<br/>
+Uncompress the .tar.gz workspace, for example in ~/workspaceCPP_RegressionExample.
+</p>
+<p>
+Then compile the two C++ projects:
+<kbd>
+<br/>
+cd ~/workspaceStore/Store_V1/
+<br/>
+make clean
+<br/>
+make
+<br/>
+cd ~/workspaceStore/Store_V2/
+<br/>
+make clean
+<br/>
+make
+</kbd>
+</p>
+<p>
+Then open the workspace in Eclipse:
+<br/>
+<code>
+path/to/eclipse -data  ~/workspaceStore/
+</code>
+</p>
+
+<img src="debug_regression/0_Workspace.png"  />
+
+<h2>Step 1: Create the RADAR Monitoring configuration</h2>
+
+<p>
+To use RADAR to identify silent regression faults,  you need first to create a <em>RADAR C++ Monitoring configuration</em>.
+</p>
+
+<p>
+You can create the RADAR monitoring configuration either in one of the two projects of the workspace, or in a separate project.
+We suggest to create a separate project by clicking on <em>New>Project>Generic>Project</em>. Name the project <em>Analysis</em>.
+</p>
+
+<p>
+You can create a new configuration by right clicking on the project where you want to save the <em>RADAR monitoring configuration</em> 
+and by clicking on <em>new>Other>RADAR>RADAR C/C++ Regression Configuration.</em>.
+</p>
+
+<img src="debug_regression/1_NewConfiguration_RADAR.png" />
+
+<p>
+ RADAR asks to enter a name for the new configuration, use <em>CheckStore</em> for example.  
+</p>
+
+
+<img src="debug_regression/2_ConfigurationName.png"  />
+
+
+<p>
+After pressing next RADAR asks for the paths of both the source folder and executable of the stable and modified version of the software.
+Enter the following paths (write your HOME dir path instead of the ~ symbol): 
+<ul>
+<li>
+<em>Original software source folder: ~/workspaceStore/Store_V1/src</em>. 
+</li>
+<li>
+<em>Original software executable: ~/workspaceStore/Store_V1/Store</em>. 
+</li>
+<li>
+<em>Upgraded software source folder: ~/workspaceStore/Store_V2/src</em> 
+</li>
+<li>
+<em>Upgraded software executable: ~/workspaceStore/Store_V2/Store</em>. 
+</li>
+</ul>
+</p>
+
+<img src="debug_regression/1_folders.png"  />
+
+<p>
+After pressing <em>Finish</em> RADAR prepare the environment for running the analysis: 
+compares the two software sources to identify the modified functions, generates the <em>gdb</em> configuration files required for monitoring the software,  
+and creates the monitoring configuration file <em>Analysis/CheckStore.bctmc</em>.
+</p>
+
+<p>
+The monitoring configuration file <em>Analysis/CheckStore.bctmc</em> plays a 
+central role in the use of RADAR for debugging regression faults. 
+This file in fact not only contains all the configuration options that can be opened with an editor, 
+but it also provides access to the data generated by RADAR, and is an entry point for executing RADAR analysis.
+By right clicking on the monitoring configuration file you can visualize the RADAR menu that allows the execution of the analysis.
+By expanding the RADAR configuration file, you can access all the data recorded and generated by RADAR: traces, models, analysis results.
+The following figure shows the tree associated with the RADAR configuration, from the figure it is possible to observe the name of the FSA models associated with this file.
+</p>
+
+<img src="debug_regression/12.1_ModelsFSA.png"  />
+
+
+
+<br/>
+
+<p>
+If you double click on the monitoring configuration file <em>Analysis/CheckStore.bctmc</em> the configuration editor opens. This editor allows you to tune RADAR execution.
+This editor shows three tabs: <em>Resource location</em>, <em>Components Configuration</em>, <em>Regression Analysis Configuration</em>. 
+</p>
+
+Tab <em>Resource location</em> simply shows information about the configuration files stored by RADAR. 
+<img src="debug_regression/3_1_ConfigurationEditor_ResourceLocation.png"  />
+
+<br/>
+
+<p>
+Tab <em>Components Configuration</em> shows the target functions, i.e. the functions that are impacted by the change. These functions by default correspond with the modified functions.
+RADAR groups these functions by change type. 
+The list item named <em>ModifiedFunctions</em> contains the list of functions that have been modified in version 2, 
+<em>AddedFunctions</em> and <em>DeletedFunctions</em> contain the functions that have been respectively added and deleted in version 2.
+By pressing button add you can add new functions to the set of monitored ones.
+</p>
+
+
+<img src="debug_regression/3.2_ConfigurationEditor_Components.png"  />
+
+<br/>
+<p>
+To show the functions that have been modified in version 2 of Store you can click on <em>ModifiedFunctions</em>  and press Edit. 
+In this case only function availableQty have been modified, so this will be the only function appearing in the list.
+For the same reason <em>AddedFunctions</em> and <em>DeletedFunctions</em> are empty.
+</p>
+<img src="debug_regression/3.3_ConfigurationEditor_ModifiedFunctions.png"  />
+
+<br/>
+
+<p>
+<p>
+Tab <em>Regression Analysis Configuration</em> shows the location of the base and upgraded versions of the software, and a list of configuration options  
+that allows to tune RADAR execution.
+</p>
+
+<table border="1">
+
+<tr>
+<th width="100px">
+Option
+</th>
+<th>
+Description
+</th>
+</tr>
+
+<tr>
+<td>
+DLL
+</td>
+<td>
+Used when the executable is a shared library.
+</td>
+</tr>
+
+<tr>
+<td>
+Use demangled names
+</td>
+<td>
+Force the usage of demangled names in the regular expressions used for matching the functions to monitor.
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor project functions only
+</td>
+<td>
+If set, RADAR uses as targets only the functions defined within the source files contained in the source folder (does not monitor libraries).
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor calls to library functions
+</td>
+<td>
+If set, RADAR will monitor also calls from a target function to a library function.
+</td>
+</tr>
+
+<tr>
+<td>
+Simulate termination of function calls not terminated at the end of the trace
+</td>
+<td>
+If the program is stopped during the execution some of the monitored calls are not terminated (the exit point is not recorded in the trace). This option simulate the termination of these functions by adding virtual exit points.
+</td>
+</tr>
+
+<tr>
+<td>
+Filter out function calls not terminated
+</td>
+<td>
+If the program is stopped during the execution some of the monitored calls are not terminated (the exit point is not recorded in the trace). 
+Similarly also when monitoring calls to certain OS functions implemented with assembly code the exit point is not captured by RADAR. This option ignores single function calls not terminated.
+</td>
+</tr>
+
+<tr>
+<td>
+Filter out functions  not terminated at least once
+</td>
+<td>
+If the program is stopped during the execution some of the monitored calls are not terminated (the exit point is not recorded in the trace). 
+Similarly also when monitoring calls to certain OS functions implemented with assembly code the exit point is not captured by RADAR. This option ignore all the calls to functions that are not terminated at least once.
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor function Enter/Exit points
+</td>
+<td>
+If set RADAR monitors enter the entry/exit point of each monitored function.
+</td>
+</tr>
+
+<tr>
+<td>
+Trace all lines of monitored functions.
+</td>
+<td>
+If set RADAR monitors all the lines executed by a monitored function.
+</td>
+</tr>
+
+<tr>
+<td>
+Derive function invariants.
+</td>
+<td>
+If set RADAR  also identifies the data properties that hold within the whole function body.
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor local variables.
+</td>
+<td>
+If set, RADAR record the value of the local variables.
+</td>
+</tr>
+
+<tr>
+<td>
+Derive line invariants.
+</td>
+<td>
+If set, RADAR record the value of global variables (to speed up monitoring RADAR monitors only variables whose name appear in the compilation unit that contains the monitored function).
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor functions called by target functions.
+</td>
+<td>
+If set, RADAR monitors also the execution of the functions that are called by the functions indicated in <em>Components Configuration</em>. Since <em>Components Configuration</em> by default lists the functions modified by the upgraded version of the software, this options is used to monitor callers of the modified functions.
+</td>
+</tr>
+
+<tr>
+<td>
+Record calling context data.
+</td>
+<td>
+If set, RADAR record also the values of the local variables of caller of the function under execution.
+</td>
+</tr>
+
+<tr>
+<td>
+Exclude line info from FSA.
+</td>
+<td>
+FSA represent the sequences of operations performed by a function/method. If this option is set, RADAR derives FSA that capture only the sequences of functions invoked by the function, otherwise the FSA capture both the sequences of executed lines and functions.
+</td>
+</tr>
+
+<tr>
+<td>
+Exclude unused variables.
+</td>
+<td>
+If set RADAR does not report anomalies that regard variables whose name does not appear in the code of the function under execution.
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor also callers of modified methods.
+</td>
+<td>
+If set, RADAR monitors also the execution of the functions that are called by the functions indicated in <em>Components Configuration</em>. Since <em>Components Configuration</em> by default lists the functions modified by the upgraded version of the software, this options is used to monitor callers of the modified functions.
+</td>
+</tr>
+
+<tr>
+<td>
+Trace all lines of children.
+</td>
+<td>
+If set, RADAR trace the execution of all the lines of the functions called by the target functions.
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor added and deleted functions.
+</td>
+<td>
+If unset, RADAR does not trace the execution of the functions listed in Tab <em>Components Configuration</em> under the items <em>AddedFunctions</em> and <em>DeletedFunctions</em>.
+</td>
+</tr>
+
+<tr>
+<td>
+Hide added and deleted functions from models.
+</td>
+<td>
+If set, RADAR hides the entry and exit points of added and deleted functions. This implies that RADAR does not generate neither the FSA nor the data properties for these functions. This option is useful to properly handle refactorings.
+</td>
+</tr>
+
+<tr>
+<td>
+Monitor only not modified lines.
+</td>
+<td>
+If set, RADAR does not monitor modified lines. This is useful because modified lines may lead to false positives.
+</td>
+</tr>
+
+<tr>
+<td>
+Use updated names in models.
+</td>
+<td>
+If set, RADAR use the ids of the upgraded software when building models form the original software. In practice if line 5 of the base software corresponds to line 8 of the upgraded software, the model for line 5 will be named as it was line 8. This is necessary to filter out false positives.
+</td>
+</tr>
+
+</table>
+
+<p>
+By clicking on button <em>Refresh components to monitor</em> 
+you can update the list of monitored components after performing some more changes to the program, e.g. after modifying another method of class <em>Store</em>.
+</p>
+<img src="debug_regression/3.3_ConfigurationEditor_Options.png"  />
+
+
+<br/>
+
+
+
+
+
+
+
+<h2>Step 2: Monitor the execution of the stable and modified  version of the software</h2>
+
+<p>
+The <em>Help</em> button in the <em>Regression Analysis Configuration</em> tab of the <em>Monitoring configuration editor</em> shows the commands to execute to monitor the two programs.
+</p>
+
+
+<br/>
+
+<img src="regression/monitoringOptions.jpg"  />
+
+<p>
+Execute the following commands to monitor the stable version of Store:</p>
+
+<br/>
+
+<code>
+cd ~/workspaceStore/Store_V1
+<br/>
+GDB_CONFIG=~/workspaceStore/Analysis/CheckStore/BCT_DATA/CheckStore/conf/files/scripts/originalSoftware.gdb.config.txt
+<br/>
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"'
+<br/>
+$GDB ./Store
+</code>
+</p>
+
+<p>
+You then need to monitor the upgraded version of Store. 
+To improve RADAR results is better to monitor passing and failing test cases separately.
+Execute the following commands to monitor the upgraded version of Store:</p>
+<code>
+cd ~/workspaceCPP_RegressionExample/WorkersMap/Debug
+<br/>
+GDB_CONFIG=~/workspaceCPP_RegressionExample/WorkersMap_validation/BCT_DATA/WorkersMap-v2-validation/conf/files/scripts/originalSoftware.gdb.config.txt
+<br/>
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"'
+<br/>
+#this command monitors the passing test cases
+$GDB ./Store testNoItems testOneItem testOneItemNotAvailable testTwoItems testHandlerAllItemsAvailable
+#this command monitors the failing test case
+$GDB ./Store testHandlerSomeItemsAvailable
+</code>
+</p>
+
+<img src="debug_regression/6.1_MonitoringUpgraded_Setup.png"   />
+<img src="debug_regression/6.2_MonitoringUpgraded_Passing.png"   />
+<img src="debug_regression/6.3_MonitoringUpgraded_Failing.png"   />
+
+
+<p>After the monitoring two trace files are available in the workspace (if you do not see the traces press F5 on the <em>Analysis</em> project to refresh folder contents ): 
+<ul>
+<li>
+one for the stable version of the software, <em>Analysis/BCT_DATA/CheckStore/validTraces/gdb.monitor.txt</em>, 
+</li>
+<li>
+one for the new (and buggy) version, <em>Analysis/BCT_DATA/CheckStore/tracesToVerify/gdb.monitor.txt</em>. 
+</p>
+</li>
+</ul>
+<img src="debug_regression/7_RecordedTraces.png"   />
+
+
+<h2>Step 3: Analyze the Traces</h2>
+
+<p>You can analyze the traces by right clicking on the monitoring configuration file, and by selecting <em>RADAR/Analyze Traces</em>.
+A wizard with different options will open; these option tune the inference of the models used to identify anomalies in the execution of the upgraded software. 
+You can simply use the default options of the wizard.</p>
+
+
+<img src="debug_regression/8.1_Analyze_RADAR.png"  />
+
+
+
+<img src="debug_regression/8.2_Analyze_DataSetup.png"  />
+
+
+
+<img src="debug_regression/8.3_Analyze_FSASetup.png"  />
+
+
+
+
+<p>The RADAR analysis proceed in three steps:
+<ul>
+<li>
+Process the traces recorded by GDB and generates readable traces;
+</li>
+<li>
+Infer models that capture the behavior of the base version of the software;
+</li>
+<li>
+Identify anomalies in the trace recorded during the failing execution of the software.
+</li>
+</p>
+
+
+<p>After identifying anomalies RADAR automatically opens and editor with the list of anomalies found. The anomalies reported by RADAR helps understanding the problem, in fact they show that:
+<ul>
+<li>variable <em>items</em> is unexpectedly equal to <em>-1</em>;</li>
+<li>the anomaly propagates and causes the unexpected execution of line 29;</li>
+<li>in valid executions line 29 was executed only if variable <em>storeItems</em> was null. The execution of line 29 thus causes teh overwriting of list <em>storeItems</em>.</li>
+</ul>
+</p>
+
+
+
+<img src="debug_regression/9.1_AnomaliesList.png"  />
+
+<p>
+If you double click on an anomaly in the list RADAR opens the source code editor  and highlights the
+line that caused the anomaly. The first anomaly in the list shows that the data property <em>items >= 0</em> that was expected to hold before the execution of line 33 was violated during the execution
+of the failing test. The property view on the bottom of Eclipse show the actual value of variable <em>items</em>, which is <em>-1</em>.
+</p>
+
+<img src="debug_regression/9.2_AnomaliesEditor_1.png" />
+
+<p>
+The anomaly propagates through the execution of the loop, and is identified during the execution of lines </p>
+
+<img src="debug_regression/9.2_AnomaliesEditor_1.png" />
+
+<img src="debug_regression/9.3_AnomaliesEditor_2.png" />
+
+<img src="debug_regression/9.4_AnomaliesEditor_3.png" />
+
+<p>
+The propagation of anomalous values caused the unexpected execution of line 29.
+</p>
+
+<img src="debug_regression/9.5_AnomaliesEditor_4.png" />
+
+<p>
+In passing executions line 29 was executed only when <em>storeItems</em> was equal to <em>null</em>. 
+In the failing execution it isn't, this means that the software overwrote an already assigned list (this is the reason of the failure, all the items already present in the list are lost).
+</p>
+
+<img src="debug_regression/9.6_AnomaliesEditor_5.png" />
+
+
+
+<img src="debug_regression/9.7_AnomaliesEditor_6.png" />
+
+<p>The <em>Analysis Setup</em> tab of the anomalies editor allows to tune the analysis of the anomalies by manually identifying failing executions or by selecting the analyzed failure.</p>
+<p>
+RADAR automatically detects failing executions on the basis of their return value (programs returning <em>0</em> are considered passing). 
+In case this criterion does not work, you can select the failing processes from the list of processes shown in tab processes (failing processes are checked).
+</p>
+<p>RADAR automatically analyzes all failing executions monitored. 
+This could be useless in presence of multiple faults, in this case in fact it could be better to analyze each test failure singularly.
+To analyze each test failure singularly you can select the id of the failing process in the menu named <em>Analyze Failure</em> and the press the button <em>Regression Analysis</em>, 
+ tab <em>Regression Analysis Result</em> will contain a list of anomalies identified during the execution of the selected process only.
+ </p>
+
+
+<img src="debug_regression/9.8_AdvanceAnomaliesEditor.png" />
+
+<h1>Additional Features</h1>
+
+<h2>Inspect Recorded Traces</h2>
+
+<p>You can inspect the sequence of events monitored by RADAR. To this end you need to expand the RADAR configuration in <em>Analysis/CheckStore.bctmc</em>, under <em>Raw Traces/Interaction Traces</em> the list of traces recorded by RADAR is shown. In this case we have two traces: one for the passing execution of the original version of the software, one for the passing execution of the upgraded version of the software, 
+one for the failing execution of the upgraded version of the software.</p>
+ 
+<img src="debug_regression/11.1_InteractionTraces.png" />
+
+
+<p>A trace shows the sequence of monitored program points. When you select a program point the values of the monitored variables are shown in the <em>Program Point View<em>. The following picture shows that when entering method <em>testNoItems</em> the value of variable <em>passingTestCases<.em> was <em>0</em>.</p>
+
+<img src="debug_regression/11.2_Session1Trace.png" />
+
+<h2>Inspect Clustered Data</h2>
+
+<p>RADAR provides additional views that allow to inspect the recorded data clustered in ways that ease its inspection. In particular it allows to either inspect the values of all the program variables recorded during the execution of a specific program point (e.g. line 29 of StoreHandler.cpp); or to visualize all teh sequences of operations (function calls and executed lines) performed by a particular method (e.g. availableItems).
+</p>
+<p>By selecting one of the program points listed in <em>Normalized Recorded Data/Data Properties Traces</em> you can inspect the values recorded during all the executions of that particular porgram point.
+The following image shows for example the values recorded during the executin of the enter and exit points of function <em>availableQty</em>. The figure shows that in one call the return value is <em>0</em>.
+</p>
+
+
+<img src="debug_regression/11.4_IO_AvailableQty.png" />
+
+<p>By selecting one of the functions listed in <em>Normalized Recorded Data/Interaction Traces</em> you can visualize the sequences of operations performed by a function.
+The following image shows for example that function have executed twice in passing test cases (only two function calls are listed listed). By expanding the tree associated with a function call you can visualize the operations performed by the function: it first executes lines 24, 25, 27, 28, 29, 30, 32, then invokes method availableQty, then executes line 33, and so on.
+</p>
+
+<img src="debug_regression/11.5.png" />
+
+ <h2>Visualize Models</h2>
+ 
+<p>RADAR allows to open the models derived from the data. Folders <em>Normalized Recorded Data/Data properties</em> and <em>Normalized Recorded Data/FSA</em> list the derived <em>Data properties</em> and <em>FSA</em> respectively.</p>
+ 
+<img src="debug_regression/11.6.png" /> 
+
+<p>The following image shows the data properties derived for the program points set at the  enter and exit locations of 
+method <em>Store.availableQty</em>. They show for example that the return value is always greater (or equal) than 0.
+</p>
+
+<img src="debug_regression/12.3_DataProperties_AvailableQty.png" />
+
+
+<p>The following image shows the data properties derived for the data recorded at the beginning of execution of line 29 in file StoreHandler.cpp (this line belongs to function <em>availableItems</em>).
+They show for example that variable <em>storeItems</em> is always equal to <em>null</em>, 
+and that the value of variable <em>total</em> is <em>-1</em>.
+</p>
+
+<img src="debug_regression/12.4_DataProperties_AvailableItems_29.png" />
+
+
+
+<p>The following image shows the FSA for method <em>Store.availableQty</em>, the model shows that the method, within line 22, checks if the item is in the catalogue, and then either terminates in line 28, or executes line 26 and then terminates.
+Please note that since GDB set breakpoint before the execution of a line, all the label in a FSA that refer to a line number indicate that the line was already to be executed (this is why function inCatalogue is seen after line 22 in the automata).
+</p>
+<img src="debug_regression/12.2_Model_AvailableQty.png" />
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+testPackage.Test0.changeAge(int,User)=0.dtrace
+testPackage.Test1.m(int)=1.dtrace

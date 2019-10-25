@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src-console"/>
+	<classpathentry kind="src" path="src-core"/>
+	<classpathentry kind="src" path="tests"/>
+	<classpathentry kind="src" path="src-tptp"/>
+	<classpathentry kind="src" path="src-vart"/>
+	<classpathentry kind="src" path="src-ui"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BCT"/>
+	<classpathentry kind="lib" path="lib/bct-standalone.jar" sourcepath="/BCT/src-advance"/>
+	<classpathentry kind="lib" path="lib/cdt_5.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BctJavaEclipsePlugin"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/it.unimib.disco.lta.eclipse.vart"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

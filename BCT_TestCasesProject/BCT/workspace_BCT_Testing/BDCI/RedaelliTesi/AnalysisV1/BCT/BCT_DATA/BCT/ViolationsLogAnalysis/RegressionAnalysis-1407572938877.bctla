@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_55" class="java.beans.XMLDecoder">
+ <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.BctViolationsAnalysisConfiguration">
+  <void property="anomaliesGraphsPath">
+   <string>/BCT/BCT_DATA/BCT/ViolationsLogAnalysis/RegressionAnalysis-1407572938877</string>
+  </void>
+  <void property="filteringResult">
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.run.RegressionAnalysisResult">
+    <void property="filteredViolations">
+     <object class="java.util.ArrayList"/>
+    </void>
+   </object>
+  </void>
+  <void property="filteringStrategyId">
+   <int>1</int>
+  </void>
+  <void property="logFilesNames">
+   <void method="add">
+    <string>/BCT/BCT_DATA/BCT/ViolationsLogAnalysis/RegressionAnalysis-1407572938877/bctCBELog</string>
+   </void>
+  </void>
+ </object>
+</java>

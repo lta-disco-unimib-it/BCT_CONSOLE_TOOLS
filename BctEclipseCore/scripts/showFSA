@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Set BCT_BIN with the complete path of bct.jar"
+BCT_BIN="..\lib\bct-b20080331.jar"
+
+java -cp $BCT_BIN tools.ShowFSA $@

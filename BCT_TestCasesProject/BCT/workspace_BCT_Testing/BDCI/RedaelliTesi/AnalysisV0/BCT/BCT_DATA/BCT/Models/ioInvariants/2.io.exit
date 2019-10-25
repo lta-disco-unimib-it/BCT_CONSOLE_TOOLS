@@ -1,0 +1,10 @@
+risultato >= 0.300000191
+risultato != 0
+y != 0
+returnValue.eax != 0
+y == orig(y)
+x == orig(x)
+returnValue != null
+y >= 0.600000024
+x >= 0.400000006
+x != 0

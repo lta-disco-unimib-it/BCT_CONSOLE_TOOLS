@@ -1,0 +1,248 @@
+Introduction
+
+
+	This example is about a regression fault that affect two versions of the store library implemented in file store.c .
+	The two versions differ for a few lines of code in function is_available.
+
+	The original implementation is the following:
+	
+	int is_available( t_map_t* product ){
+        	if ( isInitialized(product) ){
+                	return 0;
+		}
+        	if ( product->value > 0 ){
+               	 	return 1;
+        	}
+        	return 0;
+	}
+
+	While the upgraded implementation is:
+
+	int is_available( t_map_t* product ){
+        	if ( isInitialized(product) ){
+        	        return 0;
+        	}
+        	if ( product->out_of_catalogue ){
+        	        return -1;
+        	}
+        	if ( product->value > 0 ){
+        	        return 1;
+        	}
+        	return 0;
+	}
+
+	The upgraded version handles the case of "product out of catalogue" differently. It returns -1.
+
+	
+	The versions contains also test cases for Store.c  Developers updated the test case for unit out of catalogue to reflect the new specification.
+	The command "make" builds the test cases executable named "program".
+	The test cases do not fail in both the two versions (i.e. the test cases do not identify the regression).
+	This tutorial shows how the hybrid solution can spot a regression fault not covered by test cases.
+
+	The regression affects function available_items. Available items returns the number of products with at least one item available.
+	In the new version of the program the value of variable total in function available_items may become < 0 and this may lead to erroneous results.
+	The verification of of dynamically generated assertions allows to spot this regression fault.
+
+
+Step 1: Download BCT
+
+
+Download BCT from http://www.lta.disco.unimib.it/downloadsLTA/tools/bct/bct-console-tools-XXXXxxxxXXXX.jar
+and save to ~/bct-console-tools.jar
+
+
+Step 2: Setup the programs
+
+	2.1: Download the example zip
+	
+	Download the example from http://www.lta.disco.unimib.it/downloadsLTA/tools/bct/VSSE_regression_example.zip
+	and unzip it in your home folder
+
+	
+
+
+	2.2: Compile
+	cd to ~/VSSE_regression_example
+	cd to VSSE_short_v1
+	make
+
+	cd to VSSE_short_v1
+	make
+	
+
+
+Step 2: Configure BCT
+
+cd ~/VSSE_regression_example
+
+java -cp ~/bct-console-tools.jar GenerateUnitCheckingScripts BCT_Analysis VSSE_short_v1 VSSE_short_v1/program VSSE_short_v2 VSSE_short_v2/program
+
+
+The last output lines show how to monitor the program versions.
+
+Use the following commands to monitor the original software:
+GDB_CONFIG=/home/fabrizio/VSSE_regression_example/BCT_Analysis/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+$GDB <modifiedProgram or testCases> <args>
+
+Use the following commands to monitor the modified software:
+GDB_CONFIG=/home/fabrizio/VSSE_regression_example/BCT_Analysis/BCT/BCT_DATA/BCT/conf/files/scripts/modifiedSoftware.gdb.config.txt
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+$GDB <modifiedProgram or testCases> <args>
+
+
+
+
+Step 3: Monitor passing test cases of base version
+
+For this example test cases are executed by running ./program
+
+cd to VSSE_short_v1 and paste the commands suggested by "GenerateUnitCheckingScripts"
+
+	Following lines show an example ( string "@ubuntu:~/VSSE_regression_example/VSSE_short_v1" is the program prompt).
+
+	===============  EXAMPLE =============
+
+	@ubuntu:~/VSSE_regression_example/VSSE_short_v1$ GDB_CONFIG=/home/fabrizio/VSSE_regression_example/BCT_Analysis/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt
+	fabrizio@ubuntu:~/VSSE_regression_example/VSSE_short_v1$ GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+	fabrizio@ubuntu:~/VSSE_regression_example/VSSE_short_v1$ $GDB ./program 
+ 	
+	$GDB ./program 
+ 	Running test cases
+ 	Test passed: testAvailableOneUnit 
+ 	Test passed: testAvailableEmptyUnit 
+ 	Test passed: testAvailableMultipleUnits 
+ 	Test passed: testOutOfStockUnit 
+ 	Test passed: testOutOfCatalogue 
+ 	Test passed: testNoUnits 
+	Test passed: testOneUnit 
+	Test passed: testMultipleUnits 
+	Test passed: testMultipleUnitsIncremental 
+
+
+	All test cases were successfully executed
+
+	test cases executed: 9 
+ 	test cases passed: 9 
+ 	test cases failed: 0 
+
+	===============  EXAMPLE END =============
+
+
+
+Step 4: Monitor passing test cases of upgraded version (this step is necessary only to filter out models that were intentionally changes by softwrae developers)
+
+
+cd to VSSE_short_v2 and paste the commands suggested by "GenerateUnitCheckingScripts" (pay attention: the commands used for monitoring the upgraded version are not the same of the base)
+
+	Following lines show an example ( string "@ubuntu:~/VSSE_regression_example/VSSE_short_v1" is the program prompt).
+
+	===============  EXAMPLE =============
+
+	fabrizio@ubuntu:~/VSSE_regression_example/VSSE_short_v2$ GDB_CONFIG=/home/fabrizio/VSSE_regression_example/BCT_Analysis/BCT/BCT_DATA/BCT/conf/files/scripts/modifiedSoftware.gdb.config.txt
+	fabrizio@ubuntu:~/VSSE_regression_example/VSSE_short_v2$ GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+	fabrizio@ubuntu:~/VSSE_regression_example/VSSE_short_v2$ $GDB ./program 
+	Running test cases
+	Test passed: testAvailableOneUnit 
+	Test passed: testAvailableEmptyUnit 
+	Test passed: testAvailableMultipleUnits 
+	Test passed: testOutOfStockUnit 
+	Test passed: testOutOfCatalogue 
+	Test passed: testNoUnits 
+	Test passed: testOneUnit 
+	Test passed: testMultipleUnits 
+	Test passed: testMultipleUnitsIncremental 
+
+
+	All test cases were successfully executed
+
+	test cases executed: 9 
+	test cases passed: 9 
+	test cases failed: 0 
+
+	===============  EXAMPLE END ========
+
+Step 5: Execute the analysis
+cd to ~/VSSE_regression_example
+
+execute:
+
+	java -cp ~/bct-console-tools.jar  -Dbct.gotoProgram=program -Dbct.compileCommand="make CC=goto-cc" RunUnitChecking BCT_Analysis/
+
+
+	This command executes the following activities:
+		1. Infers data properties using daikon.
+		2. Checks which properties are violated by the upgraded version of the software.
+		3. Copies the original version of the software and inserts one assertion for each data property. The version with the assertions is stored under BCT_Analysis/BCT/BCT_DATA/BCT/CBMC.SRC.ORIGINAL/. The list of assertions inserted is stored in file BCT_Analysis/BCT/BCT_DATA/BCT/CBMC/assertions-V0.txt.injected . Sometimes not all the properties are inserted.
+		4 Compiles the command using goto-cc. The java property "bct.compileCommand" indicates how to compile the command using goto-cc (by default invokes goto-cc <all-files.c>, in this case we suggest to use make).
+		5. Identifies true properties by invoking 
+			CBMC --unwind 5 --no-unwinding-assertions <goto.program>
+		   The name of the goto-program is indicated by property bct.gotoProgram (by default it is program.goto)
+		   CBMC results are stored in BCT_Analysis/BCT/BCT_DATA/BCT/CBMC/assertions-V0.txt.validated
+		   True properties with line numbers updated according to upgraded version are stored in file BCT_Analysis/BCT/BCT_DATA/BCT/CBMC/assertions-V1.txt.trueProperties
+		6. Removes from true properties the ones invalidated by passing test cases.
+		   Filtered true properties are stored in file BCT_Analysis/BCT/BCT_DATA/BCT/CBMC/assertions-V1.txt.trueProperties.filtered
+		7. Copies the upgraded version of the software and insers one assertion for each data property. The version with assertioms is stored under BCT_Analysis/BCT/BCT_DATA/BCT/CBMC.SRC.MODIFIED/. The list of assertions inserted is stored in file BCT_Analysis/BCT/BCT_DATA/BCT/CBMC/assertions-V1.txt.trueProperties.filtered.injected.
+		8. Identifies the true properties that no longer hold in teh upgraded version (i.e. the possible bugs) by running CBMC.
+
+	The last lines of the output show the violations. In this exmaple:
+
+
+	WARNING:3 properties have been violated:
+		src/store.c	45	assert( total >= 0 );
+		src/store.c	41	assert( total >= 0 );
+		src/store.c	42	assert( total >= 0 );
+
+
+
+Alternative step 5:
+	CBMC can be manually executed, in this case the user need to run the different steps of "RunUnitChecking" manually. Following lines distinguish between BCT actions and user actions.
+
+	Step 5.1 Infer models and create the original version of the software with assertions.
+		java -cp ~/bct-console-tools.jar  RunUnitChecking\$InferAndCheck BCT_Analysis/
+
+	Step 5.2: Compile original with goto-cc and run CBMC
+		cd BCT_Analysis/BCT/BCT_DATA/BCT/CBMC.SRC.ORIGINAL/
+		make CC=goto-cc
+		cbmc --all-claims --unwind 5 --no-unwinding-assertions program &> cbmc.output
+
+	Step 5.3: Import CBMC results and create the updated version with assertions
+		cd ~/VSSE_regression_example
+		java -cp ~/bct-console-tools.jar  -Dbct.gotoProgram=program RunUnitChecking\$ImportCBMCOriginal BCT_Analysis/BCT/BCT_DATA/BCT/CBMC.SRC.ORIGINAL/cbmc.output  BCT_Analysis/
+
+		The cbmc output log imported by BCT is expected to terminate with results written in the following format:
+
+		** Results:
+		available_items.1: FAILED
+		available_items.2: FAILED
+		available_items.3: FAILED
+		available_items.4: FAILED
+		available_items.5: OK
+		available_items.6: FAILED
+		available_items.7: FAILED
+		available_items.8: OK
+		available_items.9: FAILED
+		testAvailableEmptyUnit.1: OK
+		map_create.1: OK
+
+
+	Step 5.4: Compile upgraded with goto-cc and run CBMC
+		cd BCT_Analysis/BCT/BCT_DATA/BCT/CBMC.SRC.MODIFIED/
+		make CC=goto-cc
+		cbmc --all-claims --unwind 5 --no-unwinding-assertions program &> cbmc.output
+
+	Step 5.5: Identify violated assertions and filter intended changes
+		cd ~/VSSE_regression_example
+		java -cp ~/bct-console-tools.jar  -Dbct.gotoProgram=program RunUnitChecking\$ImportCBMCModified BCT_Analysis/BCT/BCT_DATA/BCT/CBMC.SRC.MODIFIED/cbmc.output  BCT_Analysis/
+		
+	The last lines of the output show the violations. In this exmaple:
+
+
+	WARNING:3 properties have been violated:
+		src/store.c	45	assert( total >= 0 );
+		src/store.c	41	assert( total >= 0 );
+		src/store.c	42	assert( total >= 0 );
+
+
+
+

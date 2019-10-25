@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Piattaforma Rational Modeling (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_agtjwDn-EdyKga0zTVjPKA" name="MonitoringConfigurationFriends">
+  <eAnnotations xmi:id="_agtjwTn-EdyKga0zTVjPKA" source="uml2.diagrams" references="_agtjwjn-EdyKga0zTVjPKA">
+    <contents xmi:type="notation:Diagram" xmi:id="_agtjwjn-EdyKga0zTVjPKA" type="Class" name="Main">
+      <children xmi:id="_MZRAkDoBEdyKga0zTVjPKA">
+        <children xmi:id="_MZRAkToBEdyKga0zTVjPKA" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_MZRAkjoBEdyKga0zTVjPKA" width="1296" height="1296"/>
+        </children>
+        <children xmi:id="_MZRAkzoBEdyKga0zTVjPKA" type="Stereotype"/>
+        <children xmi:id="_MZRAlDoBEdyKga0zTVjPKA" type="Name"/>
+        <children xmi:id="_MZRAlToBEdyKga0zTVjPKA" type="Parent"/>
+        <children xmi:id="_MZRAljoBEdyKga0zTVjPKA" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MZRAlzoBEdyKga0zTVjPKA"/>
+        </children>
+        <children xmi:id="_MZRAmDoBEdyKga0zTVjPKA" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MZRAmToBEdyKga0zTVjPKA"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_MZRAmjoBEdyKga0zTVjPKA" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Component%5Bjcu%5Ename=Component.java%5Bjpack%5Ename=util.componentsDeclaration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BCT_gui_old%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MZRAmzoBEdyKga0zTVjPKA" x="15536" y="24152"/>
+      </children>
+      <children xmi:id="_k8Z_MDoBEdyKga0zTVjPKA">
+        <children xmi:id="_k8Z_MzoBEdyKga0zTVjPKA" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_k8Z_NDoBEdyKga0zTVjPKA" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_k8gF0DoBEdyKga0zTVjPKA" type="Stereotype"/>
+        <children xmi:id="_k8gF0ToBEdyKga0zTVjPKA" type="Name"/>
+        <children xmi:id="_k8gF0joBEdyKga0zTVjPKA" type="Parent"/>
+        <children xmi:id="_k8gF0zoBEdyKga0zTVjPKA" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_k8gF1DoBEdyKga0zTVjPKA"/>
+        </children>
+        <children xmi:id="_k8gF1ToBEdyKga0zTVjPKA" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_k8gF1joBEdyKga0zTVjPKA"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_k8Z_MToBEdyKga0zTVjPKA" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8Z_MjoBEdyKga0zTVjPKA" x="12363" y="15533" width="6641" height="3175"/>
+      </children>
+      <children xmi:id="_JPrmoHG-EdyIHcE9aApW2g">
+        <children xmi:id="_JPxtQHG-EdyIHcE9aApW2g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_JPxtQXG-EdyIHcE9aApW2g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_JP3z4HG-EdyIHcE9aApW2g" type="Stereotype"/>
+        <children xmi:id="_JP3z4XG-EdyIHcE9aApW2g" type="Name"/>
+        <children xmi:id="_JP3z4nG-EdyIHcE9aApW2g" type="Parent"/>
+        <children xmi:id="_JP3z43G-EdyIHcE9aApW2g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JP3z5HG-EdyIHcE9aApW2g"/>
+        </children>
+        <children xmi:id="_JP3z5XG-EdyIHcE9aApW2g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_JP3z5nG-EdyIHcE9aApW2g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_JPrmoXG-EdyIHcE9aApW2g" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=FlattenerOptions%5Bjcu%5Ename=FlattenerOptions.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration.ui%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JPrmonG-EdyIHcE9aApW2g" x="2804" y="23415" width="8890" height="3810"/>
+      </children>
+      <children xmi:id="_hAUfYXHAEdyIHcE9aApW2g">
+        <children xmi:id="_hAs54HHAEdyIHcE9aApW2g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_hAs54XHAEdyIHcE9aApW2g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_hAs54nHAEdyIHcE9aApW2g" type="Stereotype"/>
+        <children xmi:id="_hAs543HAEdyIHcE9aApW2g" type="Name"/>
+        <children xmi:id="_hAs55HHAEdyIHcE9aApW2g" type="Parent"/>
+        <children xmi:id="_hAs55XHAEdyIHcE9aApW2g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hAs55nHAEdyIHcE9aApW2g"/>
+        </children>
+        <children xmi:id="_hAs553HAEdyIHcE9aApW2g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hAs56HHAEdyIHcE9aApW2g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_hAUfYnHAEdyIHcE9aApW2g" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=CallToRule%5Bjcu%5Ename=CallToRule.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hAUfY3HAEdyIHcE9aApW2g" x="2389" y="16615"/>
+      </children>
+      <children xmi:id="_jl1JEHHAEdyIHcE9aApW2g">
+        <children xmi:id="_jl1JE3HAEdyIHcE9aApW2g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_jl1JFHHAEdyIHcE9aApW2g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_jl1JFXHAEdyIHcE9aApW2g" type="Stereotype"/>
+        <children xmi:id="_jl1JFnHAEdyIHcE9aApW2g" type="Name"/>
+        <children xmi:id="_jl1JF3HAEdyIHcE9aApW2g" type="Parent"/>
+        <children xmi:id="_jl1JGHHAEdyIHcE9aApW2g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jl1JGXHAEdyIHcE9aApW2g"/>
+        </children>
+        <children xmi:id="_jl1JGnHAEdyIHcE9aApW2g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jl1JG3HAEdyIHcE9aApW2g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_jl1JEXHAEdyIHcE9aApW2g" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=CallToRuleExclude%5Bjcu%5Ename=CallToRuleExclude.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration.ui%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jl1JEnHAEdyIHcE9aApW2g" x="-847" y="20778"/>
+      </children>
+      <children xmi:id="_l5qz8HHAEdyIHcE9aApW2g">
+        <children xmi:id="_l5qz83HAEdyIHcE9aApW2g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_l5qz9HHAEdyIHcE9aApW2g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_l5qz9XHAEdyIHcE9aApW2g" type="Stereotype"/>
+        <children xmi:id="_l5qz9nHAEdyIHcE9aApW2g" type="Name"/>
+        <children xmi:id="_l5qz93HAEdyIHcE9aApW2g" type="Parent"/>
+        <children xmi:id="_l5qz-HHAEdyIHcE9aApW2g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_l5qz-XHAEdyIHcE9aApW2g"/>
+        </children>
+        <children xmi:id="_l5qz-nHAEdyIHcE9aApW2g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_l5qz-3HAEdyIHcE9aApW2g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_l5qz8XHAEdyIHcE9aApW2g" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=CallToRuleInclude%5Bjcu%5Ename=CallToRuleInclude.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration.ui%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l5qz8nHAEdyIHcE9aApW2g" x="5072" y="20605"/>
+      </children>
+      <children xmi:id="_Nj5tgHHBEdyIHcE9aApW2g">
+        <children xmi:id="_Nj5tg3HBEdyIHcE9aApW2g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_Nj5thHHBEdyIHcE9aApW2g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_Nj5thXHBEdyIHcE9aApW2g" type="Stereotype"/>
+        <children xmi:id="_Nj5thnHBEdyIHcE9aApW2g" type="Name"/>
+        <children xmi:id="_Nj5th3HBEdyIHcE9aApW2g" type="Parent"/>
+        <children xmi:id="_Nj5tiHHBEdyIHcE9aApW2g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Nj5tiXHBEdyIHcE9aApW2g"/>
+        </children>
+        <children xmi:id="_Nj5tinHBEdyIHcE9aApW2g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Nj5ti3HBEdyIHcE9aApW2g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Nj5tgXHBEdyIHcE9aApW2g" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=CallFilter%5Bjcu%5Ename=CallFilter.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Nj5tgnHBEdyIHcE9aApW2g" x="5080" y="13890"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_agtjwzn-EdyKga0zTVjPKA"/>
+      <edges xmi:id="_9vPUwDoDEdyKga0zTVjPKA" source="_k8Z_MDoBEdyKga0zTVjPKA" target="_MZRAkDoBEdyKga0zTVjPKA">
+        <children xmi:id="_9vPUwzoDEdyKga0zTVjPKA" type="FromMultiplicityLabel">
+          <children xmi:id="_9vPUxToDEdyKga0zTVjPKA" type="FromMultiplicity"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9vPUxDoDEdyKga0zTVjPKA" y="396"/>
+        </children>
+        <children xmi:id="_9vPUxjoDEdyKga0zTVjPKA" type="FromRoleLabel">
+          <children xmi:id="_9vPUyDoDEdyKga0zTVjPKA" type="FromRole"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9vPUxzoDEdyKga0zTVjPKA" y="-397"/>
+        </children>
+        <children xmi:id="_9vPUyToDEdyKga0zTVjPKA" type="associationTypeLabel">
+          <children xmi:id="_9vPUyzoDEdyKga0zTVjPKA" type="associationTypeCompartment"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_9vPUyjoDEdyKga0zTVjPKA" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9vPUwToDEdyKga0zTVjPKA" showStereotype="Text"/>
+        <element xmi:type="uml:Property" href="mmi:///#jfield%5Ename=components%5Bjsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Property"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9vPUwjoDEdyKga0zTVjPKA" points="[-1, 1918, -4141, -4261]$[4127, 3506, -13, -2673]"/>
+      </edges>
+      <edges xmi:id="_jnpG8HHAEdyIHcE9aApW2g" source="_jl1JEHHAEdyIHcE9aApW2g" target="_hAUfYXHAEdyIHcE9aApW2g">
+        <children xmi:id="_jnpG83HAEdyIHcE9aApW2g" type="NameLabel">
+          <children xmi:id="_jnpG9XHAEdyIHcE9aApW2g" type="Stereotype"/>
+          <children xmi:id="_jnpG9nHAEdyIHcE9aApW2g" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jnpG9HHAEdyIHcE9aApW2g" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jnpG8XHAEdyIHcE9aApW2g" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=CallToRuleExclude%5Bjcu%5Ename=CallToRuleExclude.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration.ui%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=CallToRule%5Bjcu%5Ename=CallToRule.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Generalization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jnpG8nHAEdyIHcE9aApW2g" points="[0, 0, -102, -495]$[97, 470, -5, -25]"/>
+      </edges>
+      <edges xmi:id="_l7SkkHHAEdyIHcE9aApW2g" source="_l5qz8HHAEdyIHcE9aApW2g" target="_hAUfYXHAEdyIHcE9aApW2g">
+        <children xmi:id="_l7Skk3HAEdyIHcE9aApW2g" type="NameLabel">
+          <children xmi:id="_l7SklXHAEdyIHcE9aApW2g" type="Stereotype"/>
+          <children xmi:id="_l7SklnHAEdyIHcE9aApW2g" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l7SklHHAEdyIHcE9aApW2g" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_l7SkkXHAEdyIHcE9aApW2g" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=CallToRuleInclude%5Bjcu%5Ename=CallToRuleInclude.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration.ui%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=CallToRule%5Bjcu%5Ename=CallToRule.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Generalization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l7SkknHAEdyIHcE9aApW2g" points="[0, 0, -102, -495]$[97, 470, -5, -25]"/>
+      </edges>
+      <edges xmi:id="_Srw_MHHBEdyIHcE9aApW2g" source="_Nj5tgHHBEdyIHcE9aApW2g" target="_hAUfYXHAEdyIHcE9aApW2g">
+        <children xmi:id="_Srw_M3HBEdyIHcE9aApW2g" type="FromMultiplicityLabel">
+          <children xmi:id="_Srw_NXHBEdyIHcE9aApW2g" type="FromMultiplicity"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Srw_NHHBEdyIHcE9aApW2g" y="396"/>
+        </children>
+        <children xmi:id="_Sr9McHHBEdyIHcE9aApW2g" type="FromRoleLabel">
+          <children xmi:id="_Sr9McnHBEdyIHcE9aApW2g" type="FromRole"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Sr9McXHBEdyIHcE9aApW2g" y="-397"/>
+        </children>
+        <children xmi:id="_Sr9Mc3HBEdyIHcE9aApW2g" type="associationTypeLabel">
+          <children xmi:id="_Sr9MdXHBEdyIHcE9aApW2g" type="associationTypeCompartment"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Sr9MdHHBEdyIHcE9aApW2g" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Srw_MXHBEdyIHcE9aApW2g" showStereotype="Text"/>
+        <element xmi:type="uml:Property" href="mmi:///#jfield%5Ename=callToRules%5Bjsrctype%5Ename=CallFilter%5Bjcu%5Ename=CallFilter.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Property"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Srw_MnHBEdyIHcE9aApW2g" points="[-17, 25, 45, -54]$[-32, 54, 30, -25]"/>
+      </edges>
+      <edges xmi:id="_Uv2W0HHBEdyIHcE9aApW2g" source="_k8Z_MDoBEdyKga0zTVjPKA" target="_Nj5tgHHBEdyIHcE9aApW2g">
+        <children xmi:id="_Uv8dcHHBEdyIHcE9aApW2g" type="FromMultiplicityLabel">
+          <children xmi:id="_Uv8dcnHBEdyIHcE9aApW2g" type="FromMultiplicity"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Uv8dcXHBEdyIHcE9aApW2g" y="396"/>
+        </children>
+        <children xmi:id="_Uv8dc3HBEdyIHcE9aApW2g" type="FromRoleLabel">
+          <children xmi:id="_Uv8ddXHBEdyIHcE9aApW2g" type="FromRole"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Uv8ddHHBEdyIHcE9aApW2g" y="-397"/>
+        </children>
+        <children xmi:id="_Uv8ddnHBEdyIHcE9aApW2g" type="associationTypeLabel">
+          <children xmi:id="_Uv8deHHBEdyIHcE9aApW2g" type="associationTypeCompartment"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Uv8dd3HBEdyIHcE9aApW2g" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Uv2W0XHBEdyIHcE9aApW2g" showStereotype="Text"/>
+        <element xmi:type="uml:Property" href="mmi:///#jfield%5Ename=callFilter%5Bjsrctype%5Ename=MonitoringConfiguration%5Bjcu%5Ename=MonitoringConfiguration.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.configuration%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Property"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Uv2W0nHBEdyIHcE9aApW2g" points="[-65, -45, 144, 115]$[-211, -135, -2, 25]"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_agtjxDn-EdyKga0zTVjPKA">
+    <importedPackage xmi:type="uml:Model" href="jar:file:/opt/IBM/SDP70Shared/plugins/org.eclipse.uml2.uml.resources_2.0.2.v200610251409.jar!/libraries/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_DuM74HGOEdyIHcE9aApW2g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <profileApplication xmi:id="_agtjxTn-EdyKga0zTVjPKA">
+    <eAnnotations xmi:id="_agtjxjn-EdyKga0zTVjPKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_agtjxzn-EdyKga0zTVjPKA">
+    <eAnnotations xmi:id="_agtjyDn-EdyKga0zTVjPKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_agtjyTn-EdyKga0zTVjPKA">
+    <eAnnotations xmi:id="_agtjyjn-EdyKga0zTVjPKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Model>

@@ -1,0 +1,104 @@
+
+logaritmo :::ENTER
+x
+1
+1
+
+logaritmo :::EXIT1
+x
+1
+1
+returnValue.eax
+0
+1
+
+logaritmo :::ENTER
+x
+0.399999976
+1
+
+logaritmo :::EXIT1
+x
+0.399999976
+1
+returnValue.eax
+-1083534840
+1
+
+logaritmo :::ENTER
+x
+0
+1
+
+logaritmo :::EXIT1
+x
+0
+1
+returnValue.eax
+-8388608
+1
+
+logaritmo :::ENTER
+x
+1
+1
+
+logaritmo :::EXIT1
+x
+1
+1
+returnValue.eax
+0
+1
+
+logaritmo :::ENTER
+x
+9.60000038
+1
+
+logaritmo :::EXIT1
+x
+9.60000038
+1
+returnValue.eax
+1074839738
+1
+
+logaritmo :::ENTER
+x
+0
+1
+
+logaritmo :::EXIT1
+x
+0
+1
+returnValue.eax
+-8388608
+1
+
+logaritmo :::ENTER
+x
+0.300000191
+1
+
+logaritmo :::EXIT1
+x
+0.300000191
+1
+returnValue.eax
+-1080419390
+1
+
+logaritmo :::ENTER
+x
+0
+1
+
+logaritmo :::EXIT1
+x
+0
+1
+returnValue.eax
+-8388608
+1

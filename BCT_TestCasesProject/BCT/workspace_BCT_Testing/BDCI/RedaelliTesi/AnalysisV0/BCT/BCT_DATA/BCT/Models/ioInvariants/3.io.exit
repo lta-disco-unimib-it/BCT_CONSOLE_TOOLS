@@ -1,0 +1,7 @@
+x <= 0.600000024
+result == returnValue.eax
+x >= 0.600000024
+result == 0
+x == y
+returnValue != null
+x != 0

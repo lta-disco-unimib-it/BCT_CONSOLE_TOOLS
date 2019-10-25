@@ -1,0 +1,869 @@
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 2 at 0x4007cf: file util.c, line 18.
+Breakpoint 3 at 0x400831: file test.c, line 13.
+Breakpoint 4 at 0x400b43: file test.c, line 45.
+Breakpoint 5 at 0x400827: file test.c, line 10.
+Breakpoint 6 at 0x400828: file test.c, line 10.
+Breakpoint 7 at 0x40064f: file util.c, line 7.
+Breakpoint 8 at 0x400789: file util.c, line 13.
+Breakpoint 9 at 0x4007e3: file util.c, line 21.
+Breakpoint 10 at 0x40081e: file util.c, line 22.
+!!!BCT-NEW-EXECUTION
+!!!BCT-ENTER: main
+!!!BCT-stack
+#0  main () at test.c:13
+!!!BCT-stack-end
+!!!BCT-args
+No arguments.
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x000000000040085e in main () at test.c:18
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+y = 2
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x000000000040085e in main () at test.c:18
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+y = 2
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x000000000040085e in main () at test.c:18
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+y = 2
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -1
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf800000	-1082130432
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x000000000040085e in main () at test.c:18
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x000000000040085e in main () at test.c:18
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x000000000040085e in main () at test.c:18
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+y = 2
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x000000000040088c in main () at test.c:19
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x000000000040088c in main () at test.c:19
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x1	1
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x00000000004008b9 in main () at test.c:22
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.5
+y = 0.899999976
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004008b9 in main () at test.c:22
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.5
+y = 0.899999976
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004008b9 in main () at test.c:22
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.5
+y = 0.899999976
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -0.399999976
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbecccccc	-1093874484
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004008b9 in main () at test.c:22
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.399999976
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004008b9 in main () at test.c:22
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.399999976
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf6a9208	-1083534840
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x00000000004008b9 in main () at test.c:22
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.5
+y = 0.899999976
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf6a9208	-1083534840
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x0000000000400908 in main () at test.c:24
+!!!BCT-stack-end
+!!!BCT-args
+x = 0
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x0000000000400908 in main () at test.c:24
+!!!BCT-stack-end
+!!!BCT-args
+x = 0
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x0000000000400935 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 5
+y = 5
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400935 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 5
+y = 5
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400935 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 5
+y = 5
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -1
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf800000	-1082130432
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400935 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400935 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x0000000000400935 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 5
+y = 5
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x0000000000400963 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x0000000000400963 in main () at test.c:27
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x1	1
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x0000000000400990 in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 2
+y = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400990 in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 2
+y = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400990 in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 2
+y = 1
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -1
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf800000	-1082130432
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400990 in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400990 in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x0000000000400990 in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 2
+y = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x00000000004009be in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x00000000004009be in main () at test.c:30
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x1	1
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x00000000004009eb in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.400000006
+y = 10
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004009eb in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.400000006
+y = 10
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004009eb in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.400000006
+y = 10
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -9.60000038
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xc119999a	-1055286886
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004009eb in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 9.60000038
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x00000000004009eb in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 9.60000038
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x4010c0ba	1074839738
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x00000000004009eb in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.400000006
+y = 10
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x4010c0ba	1074839738
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x0000000000400a23 in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 0
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x0000000000400a23 in main () at test.c:33
+!!!BCT-stack-end
+!!!BCT-args
+x = 0
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x0000000000400a50 in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 100
+y = 100
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400a50 in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 100
+y = 100
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400a50 in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 100
+y = 100
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -1
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf800000	-1082130432
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400a50 in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400a50 in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x0000000000400a50 in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 100
+y = 100
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x0000000000400a7e in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x0000000000400a7e in main () at test.c:36
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x1	1
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x0000000000400aab in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 4.5
+y = 4.19999981
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400aab in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 4.5
+y = 4.19999981
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400aab in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 4.5
+y = 4.19999981
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -0.300000191
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbe9999a0	-1097229920
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400aab in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.300000191
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400aab in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.300000191
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf9a1bc2	-1080419390
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x0000000000400aab in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 4.5
+y = 4.19999981
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf9a1bc2	-1080419390
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x0000000000400ae3 in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 0
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x0000000000400ae3 in main () at test.c:39
+!!!BCT-stack-end
+!!!BCT-args
+x = 0
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: logDaSottrazione
+!!!BCT-stack
+#0  logDaSottrazione (x=..., y=...) at util.c:21
+#1  0x0000000000400b10 in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.600000024
+y = 0.600000024
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-ENTER: sottrazione
+!!!BCT-stack
+#0  sottrazione (x=..., y=...) at util.c:7
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400b10 in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.600000024
+y = 0.600000024
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: sottrazione
+!!!BCT-stack
+#0  0x0000000000400789 in sottrazione (x=..., y=...) at util.c:13
+#1  0x00000000004007fe in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400b10 in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.600000024
+y = 0.600000024
+!!!BCT-args-end
+!!!BCT-locals
+risultato = -1
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0xbf800000	-1082130432
+!!!BCT-registers-end
+!!!BCT-ENTER: logaritmo
+!!!BCT-stack
+#0  logaritmo (x=...) at util.c:16
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400b10 in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: logaritmo
+!!!BCT-stack
+#0  0x00000000004007cf in logaritmo (x=...) at util.c:18
+#1  0x000000000040080e in logDaSottrazione (x=..., y=...) at util.c:21
+#2  0x0000000000400b10 in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-EXIT: logDaSottrazione
+!!!BCT-stack
+#0  0x000000000040081e in logDaSottrazione (x=..., y=...) at util.c:22
+#1  0x0000000000400b10 in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 0.600000024
+y = 0.600000024
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+!!!BCT-ENTER: assert
+!!!BCT-stack
+#0  assert (x=...) at test.c:10
+#1  0x0000000000400b3e in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+!!!BCT-locals-end
+!!!BCT-EXIT: assert
+!!!BCT-stack
+#0  0x0000000000400828 in assert (x=...) at test.c:10
+#1  0x0000000000400b3e in main () at test.c:42
+!!!BCT-stack-end
+!!!BCT-args
+x = 1
+!!!BCT-args-end
+!!!BCT-locals
+No locals.
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x1	1
+!!!BCT-registers-end
+!!!BCT-EXIT: main
+!!!BCT-stack
+#0  main () at test.c:45
+!!!BCT-stack-end
+!!!BCT-args
+No arguments.
+!!!BCT-args-end
+!!!BCT-locals
+x = 0.600000024
+y = 0.600000024
+result = 0
+!!!BCT-locals-end
+!!!BCT-registers
+eax            0x0	0
+!!!BCT-registers-end
+[Inferior 1 (process 2629) exited normally]
+[Inferior 2629 exited]

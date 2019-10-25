@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+        
+   <objectContribution
+         id="it.unimib.disco.lta.eclipse.vart.bctmc"
+         nameFilter="*.bctmc"
+         objectClass="org.eclipse.core.resources.IFile">
+      <menu
+            id="it.unimib.disco.lta.eclipse.vart.menu1"
+            label="VART"
+            path="additions">
+            <separator
+               name="VARTanalyze">
+         	</separator>
+      </menu>
+      
+      <action
+            class="it.unimib.disco.lta.eclipse.vart.ui.popup.actions.VerifyUpgrade"
+            enablesFor="1"
+            id="it.unimib.disco.lta.eclipse.vart.ui.popup.actions.VerifyUpgrade"
+            label="Verify Upgrade"
+            menubarPath="it.unimib.disco.lta.eclipse.vart.menu1/VARTanalyze">
+      </action>
+      
+      </objectContribution>
+      
+
+      <viewerContribution
+            id="it.unimib.disco.lta.vart.editor.popups"
+            targetID="#CEditorContext">
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipseExtensions.ui.popup.actions.FocusOnVariableAction"
+            id="VART.focusOnThisVariable"
+            label="Focus on this Variable"
+            menubarPath="it.unimib.disco.lta.eclipse.vart.menu2/VARTanalyze">
+      </action>
+      
+         <menu
+               id="it.unimib.disco.lta.eclipse.vart.menu2"
+               label="VART"
+               path="additions">
+            <separator
+                  name="VARTanalyze">
+            </separator>
+         </menu>
+      </viewerContribution>
+      
+      
+   </extension>
+   
+   <extension
+      point="org.eclipse.ui.newWizards">
+   <category
+         id="VART"
+         name="VART">
+   </category>
+   <wizard
+         category="VART"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.NewVARTConfigurationWizard"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.eclipse.vart.NewVARTConfigurationWizard"
+         name="VART Configuration">
+   </wizard>
+   </extension>
+   
+   <extension point="org.eclipse.ui.popupMenus">
+     <objectContribution
+                id="it.unimib.disco.lta.eclipse.vart.popupMenus"
+             objectClass="it.unimib.disco.lta.bct.bctjavaeclipse.core.vart.VARTDataProperty">
+                <action 
+                        id="it.unimib.disco.lta.vart.actions.showCounterExample"
+                        label="Show CounterExample" 
+                        menubarPath="additions" 
+                        class="it.unimib.disco.lta.eclipse.vart.ui.popup.actions.ShowCounterExampleAction"/>
+        </objectContribution>
+</extension>
+   
+   <!--
+   <extension point="org.eclipse.ui.popupMenus">
+     <objectContribution
+                id="it.unimib.disco.lta.eclipse.vart.popupMenus"
+             objectClass="it.unimib.disco.lta.bct.bctjavaeclipse.core.vart.VARTDataProperty">
+                <action 
+                        id="it.unimib.disco.lta.vart.actions.cleanUpMarkers"
+                        label="Clean up Markers" 
+                        menubarPath="vartAdditions" 
+                        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.vart.CleanUpMarkersAction"/>
+        </objectContribution>
+</extension>
+-->
+
+ <extension point="org.eclipse.ui.views">
+     <category 
+           id="it.unimib.disco.lta.eclipse.vart"
+           name="VART">
+        </category>
+        <view id="it.unimib.disco.lta.eclipse.vart.views.assertionsVerification"
+                name="Regressions"
+                icon="icons\vart.gif"
+             category="it.unimib.disco.lta.eclipse.vart"
+                class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.vart.VartRegressedPropertiesView"/>
+                <view id="it.unimib.disco.lta.eclipse.vart.views.nonRegressionProperties"
+                name="Non Regression Properties"
+                icon="icons\vart.gif"
+             category="it.unimib.disco.lta.eclipse.vart"
+                class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.vart.VartNonRegressionPropertiesView"/>
+                <view id="it.unimib.disco.lta.eclipse.vart.views.dynamicProperties"
+                name="Dynamic Properties"
+                icon="icons\vart.gif"
+             category="it.unimib.disco.lta.eclipse.vart"
+                class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.vart.VartDynamicPropertiesView"/>
+                
+        <view id="it.unimib.disco.lta.eclipse.vart.views.outdatedProperties"
+                name="Oudated Properties"
+                icon="icons\vart.gif"
+             category="it.unimib.disco.lta.eclipse.vart"
+                class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.vart.VartOutdatedPropertiesView"/>   
+                
+                
+        <view id="it.unimib.disco.lta.eclipse.vart.views.DebuggingProperties"
+                name="VART Debugging"
+                icon="icons\vart.gif"
+             category="it.unimib.disco.lta.eclipse.vart"
+                class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.vart.VartDebuggingPropertiesView"/>        
+</extension>
+
+<extension
+    id="it.unimib.disco.lta.vart.markers.NRP"
+    name="NonRegressionProperty"
+    point="org.eclipse.core.resources.markers">
+  <super
+    type="org.eclipse.core.resources.textmarker">
+  </super>
+</extension>
+
+<extension
+      point="org.eclipse.ui.editors.annotationTypes">
+   <type
+         markerType="it.unimib.disco.lta.vart.markers.NRP"
+         name="it.unimib.disco.lta.vart.markers.NRP">
+   </type>
+</extension>
+
+<extension
+      point="org.eclipse.ui.editors.markerAnnotationSpecification">
+   <specification
+         annotationType="oit.unimib.disco.lta.vart.markers.NRP"
+         colorPreferenceKey="org.eclipse.viatra2.slice.color"
+         colorPreferenceValue="192,255,192"
+         contributesToHeader="false"
+         highlightPreferenceKey="it.unimib.disco.lta.vart.markers.NRP.highlight"
+         highlightPreferenceValue="false"
+         includeOnPreferencePage="true"
+         label="NonRegressionProperty"
+         overviewRulerPreferenceKey="it.unimib.disco.lta.vart.markers.NRP.overview"
+         overviewRulerPreferenceValue="true"
+         presentationLayer="1"
+         textPreferenceKey="it.unimib.disco.lta.vart.markers.NRP.text"
+         textPreferenceValue="true"
+         textStylePreferenceValue="BOX"
+         verticalRulerPreferenceKey="it.unimib.disco.lta.vart.markers.NRP.ruler"
+         verticalRulerPreferenceValue="true">
+   </specification>
+</extension>
+
+</plugin>

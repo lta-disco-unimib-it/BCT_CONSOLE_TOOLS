@@ -1,0 +1,7 @@
+# Tracing options for the it.unimib.disco.lta.bct.bctjavaeclipse.fsa.diagram plug-in
+
+# Common issues
+it.unimib.disco.lta.bct.bctjavaeclipse.fsa.diagram/debug=false
+
+# Visual IDs
+it.unimib.disco.lta.bct.bctjavaeclipse.fsa.diagram/debug/visualID=false

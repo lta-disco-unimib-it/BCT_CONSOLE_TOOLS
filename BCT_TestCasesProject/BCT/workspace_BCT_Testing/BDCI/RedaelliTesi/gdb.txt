@@ -1,0 +1,1456 @@
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x40074c: file util.c, line 19.
+Breakpoint 1 at 0x400795: file test.c, line 10.
+Breakpoint 1 at 0x40079f: file test.c, line 13.
+Breakpoint 1 at 0x400701: file util.c, line 14.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400b40  _IO_stdin_used
+0x0000000000400d98  __FRAME_END__
+0x0000000000600e00  __frame_dummy_init_array_entry
+0x0000000000600e00  __init_array_start
+0x0000000000600e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000600e08  __init_array_end
+0x0000000000600e10  __JCR_END__
+0x0000000000600e10  __JCR_LIST__
+0x0000000000600e18  _DYNAMIC
+0x0000000000601000  _GLOBAL_OFFSET_TABLE_
+0x0000000000601038  __data_start
+0x0000000000601038  data_start
+0x0000000000601040  __dso_handle
+0x0000000000601048  __TMC_END__
+0x0000000000601048  __bss_start
+0x0000000000601048  _edata
+0x0000000000601048  completed
+0x0000000000601050  _end
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x400798: file util.c, line 16.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400783: file util.c, line 15.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400798: file util.c, line 16.
+Breakpoint 1 at 0x4007e3: file util.c, line 21.
+Breakpoint 1 at 0x400831: file test.c, line 13.
+Breakpoint 1 at 0x400827: file test.c, line 10.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bd0  _IO_stdin_used
+0x0000000000400e48  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end
+Breakpoint 1 at 0x400783: file util.c, line 15.
+Breakpoint 1 at 0x4007ce: file util.c, line 20.
+Breakpoint 1 at 0x40064f: file util.c, line 7.
+Breakpoint 1 at 0x400817: file test.c, line 10.
+Breakpoint 1 at 0x400821: file test.c, line 13.
+All defined variables:
+
+Non-debugging symbols:
+0x0000000000400bc0  _IO_stdin_used
+0x0000000000400e20  __FRAME_END__
+0x0000000000601e00  __frame_dummy_init_array_entry
+0x0000000000601e00  __init_array_start
+0x0000000000601e08  __do_global_dtors_aux_fini_array_entry
+0x0000000000601e08  __init_array_end
+0x0000000000601e10  __JCR_END__
+0x0000000000601e10  __JCR_LIST__
+0x0000000000601e18  _DYNAMIC
+0x0000000000602000  _GLOBAL_OFFSET_TABLE_
+0x0000000000602038  __data_start
+0x0000000000602038  data_start
+0x0000000000602040  __dso_handle
+0x0000000000602048  __TMC_END__
+0x0000000000602048  __bss_start
+0x0000000000602048  _edata
+0x0000000000602048  completed
+0x0000000000602050  _end

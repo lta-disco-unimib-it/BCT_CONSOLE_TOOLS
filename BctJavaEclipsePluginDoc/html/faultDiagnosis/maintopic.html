@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Diagnosing faults with BTC</title>
+</head>
+
+<body>
+<h1>Overview</h1>
+<p>
+Software developers can successfully use BCT to diagnose faults.
+</p>
+<p>
+Figure 1 shows the activities performed by BCT to help 
+developers in diagnosing faults:
+<ul>
+<li>Software developers define the components to monitor and use BCT to instrument these components with
+ data-recording monitors.</li>
+<li>Developers run the system tests, meanwhile the instrumented monitors record data about the executions.</li>
+<li>BCT infers models that generalize the observed behavior.</li>
+<li>Developers use BCT to instrument the system with checking monitors.</li> 
+<li>While the system runs either in-the-field or in-house, during debugging sessions, 
+BCT compares runtime data with models and identifies violations, i.e. behavioral anomalies</li>
+<li>After a failure, developers use BCT to analyze anomalies. 
+BCT filters out false positives, and correlate the remaining ones to help developers in the diagnosis</li>
+<li>Developers then can use BCT to automatically interpret interaction anomalies.</li>
+</ul>
+</p>
+<div class="image" >
+<img src="BCT.jpg">
+<p>Figure 1 - Diagnosing Faults with BCT</p>
+</div>
+<p>
+</p>
+
+<h1 id="identifyTheComponents">Define a monitoring configuration.</h1>
+<p>The first step of the technique is the identification of the components to monitor. 
+This activity is performed by defining a <i>Monitoring Configuration</i> 
+using the <i>Monitoring Configuration Wizard</i>.
+</p>
+
+<p>
+In order to run BCT you need at least a Java project to monitor. After clicking on <b>File>New>Other...</b> developers can select 
+<b>new Monitoring Configuration</b> within the <b>BCT</b> folder (see Figure 2). 
+A wizard dialog will pop up asking for information about the Monitoring Configuration to create (Figure 3).
+
+</p>
+
+<div class="image" >
+<img src="MonitoringConfigurationWizard.png">
+<p>Figure 2 - Monitoring Configuration Wizard</p>
+</div>
+
+
+
+<div class="image" >
+<img src="MonitoringConfigurationWizard.png">
+<p>Figure 3 - Monitoring Configuration Wizard</p>
+</div>
+
+</body>
+</html>

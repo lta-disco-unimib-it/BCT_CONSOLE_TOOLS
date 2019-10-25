@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_hOdG0DbMEdy7ivhRYoVROg" name="classdiagramInteractionRawTrace">
+  <eAnnotations xmi:id="_hOdG0TbMEdy7ivhRYoVROg" source="uml2.diagrams" references="_hOdG0jbMEdy7ivhRYoVROg">
+    <contents xmi:type="notation:Diagram" xmi:id="_hOdG0jbMEdy7ivhRYoVROg" type="Freeform" name="Main">
+      <children xmi:id="_lKDZsDbMEdy7ivhRYoVROg">
+        <children xmi:id="_lKKucDbMEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_lKKucTbMEdy7ivhRYoVROg" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_lKLVgDbMEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_lKL8kDbMEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_lKL8kTbMEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_lKL8kjbMEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_lKL8kzbMEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_lKNxwDbMEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_lKNxwTbMEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_lKDZsTbMEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=InteractionRawTrace%5Bjcu%5Ename=InteractionRawTrace.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities.traces%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lKDZsjbMEdy7ivhRYoVROg" x="3524" y="3032"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_hOdG0zbMEdy7ivhRYoVROg"/>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_hOdG1DbMEdy7ivhRYoVROg">
+    <importedPackage xmi:type="uml:Model" href="jar:file:/opt/IBM/SDP70Shared/plugins/org.eclipse.uml2.uml.resources_2.0.2.v200610251409.jar!/libraries/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <profileApplication xmi:id="_hOdG1TbMEdy7ivhRYoVROg">
+    <eAnnotations xmi:id="_hOdG1jbMEdy7ivhRYoVROg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_hOdG1zbMEdy7ivhRYoVROg">
+    <eAnnotations xmi:id="_hOdG2DbMEdy7ivhRYoVROg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_hOdG2TbMEdy7ivhRYoVROg">
+    <eAnnotations xmi:id="_hOdG2jbMEdy7ivhRYoVROg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Model>

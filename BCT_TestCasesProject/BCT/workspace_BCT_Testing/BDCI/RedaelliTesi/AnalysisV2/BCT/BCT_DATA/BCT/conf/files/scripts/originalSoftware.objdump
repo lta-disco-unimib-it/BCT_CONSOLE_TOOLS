@@ -1,0 +1,1323 @@
+
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+00000000004004d8 <_init>:
+_init():
+  4004d8:	48 83 ec 08          	sub    $0x8,%rsp
+  4004dc:	48 8b 05 15 1b 20 00 	mov    0x201b15(%rip),%rax        # 601ff8 <_DYNAMIC+0x1e0>
+  4004e3:	48 85 c0             	test   %rax,%rax
+  4004e6:	74 05                	je     4004ed <_init+0x15>
+  4004e8:	e8 43 00 00 00       	callq  400530 <__gmon_start__@plt>
+  4004ed:	48 83 c4 08          	add    $0x8,%rsp
+  4004f1:	c3                   	retq   
+
+Disassembly of section .plt:
+
+0000000000400500 <printf@plt-0x10>:
+  400500:	ff 35 02 1b 20 00    	pushq  0x201b02(%rip)        # 602008 <_GLOBAL_OFFSET_TABLE_+0x8>
+  400506:	ff 25 04 1b 20 00    	jmpq   *0x201b04(%rip)        # 602010 <_GLOBAL_OFFSET_TABLE_+0x10>
+  40050c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000400510 <printf@plt>:
+  400510:	ff 25 02 1b 20 00    	jmpq   *0x201b02(%rip)        # 602018 <_GLOBAL_OFFSET_TABLE_+0x18>
+  400516:	68 00 00 00 00       	pushq  $0x0
+  40051b:	e9 e0 ff ff ff       	jmpq   400500 <_init+0x28>
+
+0000000000400520 <__libc_start_main@plt>:
+  400520:	ff 25 fa 1a 20 00    	jmpq   *0x201afa(%rip)        # 602020 <_GLOBAL_OFFSET_TABLE_+0x20>
+  400526:	68 01 00 00 00       	pushq  $0x1
+  40052b:	e9 d0 ff ff ff       	jmpq   400500 <_init+0x28>
+
+0000000000400530 <__gmon_start__@plt>:
+  400530:	ff 25 f2 1a 20 00    	jmpq   *0x201af2(%rip)        # 602028 <_GLOBAL_OFFSET_TABLE_+0x28>
+  400536:	68 02 00 00 00       	pushq  $0x2
+  40053b:	e9 c0 ff ff ff       	jmpq   400500 <_init+0x28>
+
+0000000000400540 <logf@plt>:
+  400540:	ff 25 ea 1a 20 00    	jmpq   *0x201aea(%rip)        # 602030 <_GLOBAL_OFFSET_TABLE_+0x30>
+  400546:	68 03 00 00 00       	pushq  $0x3
+  40054b:	e9 b0 ff ff ff       	jmpq   400500 <_init+0x28>
+
+Disassembly of section .text:
+
+0000000000400550 <_start>:
+_start():
+  400550:	31 ed                	xor    %ebp,%ebp
+  400552:	49 89 d1             	mov    %rdx,%r9
+  400555:	5e                   	pop    %rsi
+  400556:	48 89 e2             	mov    %rsp,%rdx
+  400559:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+  40055d:	50                   	push   %rax
+  40055e:	54                   	push   %rsp
+  40055f:	49 c7 c0 c0 0b 40 00 	mov    $0x400bc0,%r8
+  400566:	48 c7 c1 50 0b 40 00 	mov    $0x400b50,%rcx
+  40056d:	48 c7 c7 29 08 40 00 	mov    $0x400829,%rdi
+  400574:	e8 a7 ff ff ff       	callq  400520 <__libc_start_main@plt>
+  400579:	f4                   	hlt    
+  40057a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000400580 <deregister_tm_clones>:
+deregister_tm_clones():
+  400580:	b8 4f 20 60 00       	mov    $0x60204f,%eax
+  400585:	55                   	push   %rbp
+  400586:	48 2d 48 20 60 00    	sub    $0x602048,%rax
+  40058c:	48 83 f8 0e          	cmp    $0xe,%rax
+  400590:	48 89 e5             	mov    %rsp,%rbp
+  400593:	77 02                	ja     400597 <deregister_tm_clones+0x17>
+  400595:	5d                   	pop    %rbp
+  400596:	c3                   	retq   
+  400597:	b8 00 00 00 00       	mov    $0x0,%eax
+  40059c:	48 85 c0             	test   %rax,%rax
+  40059f:	74 f4                	je     400595 <deregister_tm_clones+0x15>
+  4005a1:	5d                   	pop    %rbp
+  4005a2:	bf 48 20 60 00       	mov    $0x602048,%edi
+  4005a7:	ff e0                	jmpq   *%rax
+  4005a9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+00000000004005b0 <register_tm_clones>:
+register_tm_clones():
+  4005b0:	b8 48 20 60 00       	mov    $0x602048,%eax
+  4005b5:	55                   	push   %rbp
+  4005b6:	48 2d 48 20 60 00    	sub    $0x602048,%rax
+  4005bc:	48 c1 f8 03          	sar    $0x3,%rax
+  4005c0:	48 89 e5             	mov    %rsp,%rbp
+  4005c3:	48 89 c2             	mov    %rax,%rdx
+  4005c6:	48 c1 ea 3f          	shr    $0x3f,%rdx
+  4005ca:	48 01 d0             	add    %rdx,%rax
+  4005cd:	48 d1 f8             	sar    %rax
+  4005d0:	75 02                	jne    4005d4 <register_tm_clones+0x24>
+  4005d2:	5d                   	pop    %rbp
+  4005d3:	c3                   	retq   
+  4005d4:	ba 00 00 00 00       	mov    $0x0,%edx
+  4005d9:	48 85 d2             	test   %rdx,%rdx
+  4005dc:	74 f4                	je     4005d2 <register_tm_clones+0x22>
+  4005de:	5d                   	pop    %rbp
+  4005df:	48 89 c6             	mov    %rax,%rsi
+  4005e2:	bf 48 20 60 00       	mov    $0x602048,%edi
+  4005e7:	ff e2                	jmpq   *%rdx
+  4005e9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+00000000004005f0 <__do_global_dtors_aux>:
+__do_global_dtors_aux():
+  4005f0:	80 3d 51 1a 20 00 00 	cmpb   $0x0,0x201a51(%rip)        # 602048 <__TMC_END__>
+  4005f7:	75 11                	jne    40060a <__do_global_dtors_aux+0x1a>
+  4005f9:	55                   	push   %rbp
+  4005fa:	48 89 e5             	mov    %rsp,%rbp
+  4005fd:	e8 7e ff ff ff       	callq  400580 <deregister_tm_clones>
+  400602:	5d                   	pop    %rbp
+  400603:	c6 05 3e 1a 20 00 01 	movb   $0x1,0x201a3e(%rip)        # 602048 <__TMC_END__>
+  40060a:	f3 c3                	repz retq 
+  40060c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000400610 <frame_dummy>:
+frame_dummy():
+  400610:	48 83 3d f8 17 20 00 	cmpq   $0x0,0x2017f8(%rip)        # 601e10 <__JCR_END__>
+  400617:	00 
+  400618:	74 1e                	je     400638 <frame_dummy+0x28>
+  40061a:	b8 00 00 00 00       	mov    $0x0,%eax
+  40061f:	48 85 c0             	test   %rax,%rax
+  400622:	74 14                	je     400638 <frame_dummy+0x28>
+  400624:	55                   	push   %rbp
+  400625:	bf 10 1e 60 00       	mov    $0x601e10,%edi
+  40062a:	48 89 e5             	mov    %rsp,%rbp
+  40062d:	ff d0                	callq  *%rax
+  40062f:	5d                   	pop    %rbp
+  400630:	e9 7b ff ff ff       	jmpq   4005b0 <register_tm_clones>
+  400635:	0f 1f 00             	nopl   (%rax)
+  400638:	e9 73 ff ff ff       	jmpq   4005b0 <register_tm_clones>
+
+000000000040063d <sottrazione>:
+sottrazione():
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:5
+  40063d:	55                   	push   %rbp
+  40063e:	48 89 e5             	mov    %rsp,%rbp
+  400641:	48 83 ec 20          	sub    $0x20,%rsp
+  400645:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  40064a:	f3 0f 11 4d e8       	movss  %xmm1,-0x18(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:7
+  40064f:	f3 0f 10 4d e8       	movss  -0x18(%rbp),%xmm1
+  400654:	0f 5a c9             	cvtps2pd %xmm1,%xmm1
+  400657:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  40065c:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  40065f:	bf e0 0b 40 00       	mov    $0x400be0,%edi
+  400664:	b8 02 00 00 00       	mov    $0x2,%eax
+  400669:	e8 a2 fe ff ff       	callq  400510 <printf@plt>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:8
+  40066e:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400673:	f3 0f 10 05 85 05 00 	movss  0x585(%rip),%xmm0        # 400c00 <_IO_stdin_used+0x30>
+  40067a:	00 
+  40067b:	0f 54 c1             	andps  %xmm1,%xmm0
+  40067e:	f3 0f 10 55 e8       	movss  -0x18(%rbp),%xmm2
+  400683:	f3 0f 10 0d 75 05 00 	movss  0x575(%rip),%xmm1        # 400c00 <_IO_stdin_used+0x30>
+  40068a:	00 
+  40068b:	0f 54 ca             	andps  %xmm2,%xmm1
+  40068e:	0f 2e c1             	ucomiss %xmm1,%xmm0
+  400691:	76 29                	jbe    4006bc <sottrazione+0x7f>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:8 (discriminator 1)
+  400693:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400698:	f3 0f 10 05 60 05 00 	movss  0x560(%rip),%xmm0        # 400c00 <_IO_stdin_used+0x30>
+  40069f:	00 
+  4006a0:	0f 54 c1             	andps  %xmm1,%xmm0
+  4006a3:	f3 0f 10 55 e8       	movss  -0x18(%rbp),%xmm2
+  4006a8:	f3 0f 10 0d 50 05 00 	movss  0x550(%rip),%xmm1        # 400c00 <_IO_stdin_used+0x30>
+  4006af:	00 
+  4006b0:	0f 54 ca             	andps  %xmm2,%xmm1
+  4006b3:	f3 0f 5c c1          	subss  %xmm1,%xmm0
+  4006b7:	f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:9
+  4006bc:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  4006c1:	0f 2e 45 e8          	ucomiss -0x18(%rbp),%xmm0
+  4006c5:	7a 54                	jp     40071b <sottrazione+0xde>
+  4006c7:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  4006cc:	0f 2e 45 e8          	ucomiss -0x18(%rbp),%xmm0
+  4006d0:	75 49                	jne    40071b <sottrazione+0xde>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:9 (discriminator 1)
+  4006d2:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  4006d7:	f3 0f 10 05 21 05 00 	movss  0x521(%rip),%xmm0        # 400c00 <_IO_stdin_used+0x30>
+  4006de:	00 
+  4006df:	0f 54 c1             	andps  %xmm1,%xmm0
+  4006e2:	0f 14 c0             	unpcklps %xmm0,%xmm0
+  4006e5:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  4006e8:	f3 0f 10 55 e8       	movss  -0x18(%rbp),%xmm2
+  4006ed:	f3 0f 10 0d 0b 05 00 	movss  0x50b(%rip),%xmm1        # 400c00 <_IO_stdin_used+0x30>
+  4006f4:	00 
+  4006f5:	0f 54 ca             	andps  %xmm2,%xmm1
+  4006f8:	0f 14 c9             	unpcklps %xmm1,%xmm1
+  4006fb:	0f 5a c9             	cvtps2pd %xmm1,%xmm1
+  4006fe:	f2 0f 5c c1          	subsd  %xmm1,%xmm0
+  400702:	f2 0f 10 0d 06 05 00 	movsd  0x506(%rip),%xmm1        # 400c10 <_IO_stdin_used+0x40>
+  400709:	00 
+  40070a:	f2 0f 58 c1          	addsd  %xmm1,%xmm0
+  40070e:	66 0f 14 c0          	unpcklpd %xmm0,%xmm0
+  400712:	66 0f 5a d8          	cvtpd2ps %xmm0,%xmm3
+  400716:	f3 0f 11 5d fc       	movss  %xmm3,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:10
+  40071b:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400720:	f3 0f 10 05 d8 04 00 	movss  0x4d8(%rip),%xmm0        # 400c00 <_IO_stdin_used+0x30>
+  400727:	00 
+  400728:	0f 54 c8             	andps  %xmm0,%xmm1
+  40072b:	f3 0f 10 55 e8       	movss  -0x18(%rbp),%xmm2
+  400730:	f3 0f 10 05 c8 04 00 	movss  0x4c8(%rip),%xmm0        # 400c00 <_IO_stdin_used+0x30>
+  400737:	00 
+  400738:	0f 54 c2             	andps  %xmm2,%xmm0
+  40073b:	0f 2e c1             	ucomiss %xmm1,%xmm0
+  40073e:	76 29                	jbe    400769 <sottrazione+0x12c>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:10 (discriminator 1)
+  400740:	f3 0f 10 4d e8       	movss  -0x18(%rbp),%xmm1
+  400745:	f3 0f 10 05 b3 04 00 	movss  0x4b3(%rip),%xmm0        # 400c00 <_IO_stdin_used+0x30>
+  40074c:	00 
+  40074d:	0f 54 c1             	andps  %xmm1,%xmm0
+  400750:	f3 0f 10 55 ec       	movss  -0x14(%rbp),%xmm2
+  400755:	f3 0f 10 0d a3 04 00 	movss  0x4a3(%rip),%xmm1        # 400c00 <_IO_stdin_used+0x30>
+  40075c:	00 
+  40075d:	0f 54 ca             	andps  %xmm2,%xmm1
+  400760:	f3 0f 5c c1          	subss  %xmm1,%xmm0
+  400764:	f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:11
+  400769:	f3 0f 10 4d fc       	movss  -0x4(%rbp),%xmm1
+  40076e:	f3 0f 10 05 aa 04 00 	movss  0x4aa(%rip),%xmm0        # 400c20 <_IO_stdin_used+0x50>
+  400775:	00 
+  400776:	0f 57 c1             	xorps  %xmm1,%xmm0
+  400779:	f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:12
+  40077e:	8b 45 fc             	mov    -0x4(%rbp),%eax
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:13
+  400781:	89 45 e4             	mov    %eax,-0x1c(%rbp)
+  400784:	f3 0f 10 45 e4       	movss  -0x1c(%rbp),%xmm0
+  400789:	c9                   	leaveq 
+  40078a:	c3                   	retq   
+
+000000000040078b <logaritmo>:
+logaritmo():
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:15
+  40078b:	55                   	push   %rbp
+  40078c:	48 89 e5             	mov    %rsp,%rbp
+  40078f:	48 83 ec 10          	sub    $0x10,%rsp
+  400793:	f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:16
+  400798:	f3 0f 10 45 fc       	movss  -0x4(%rbp),%xmm0
+  40079d:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  4007a0:	bf ee 0b 40 00       	mov    $0x400bee,%edi
+  4007a5:	b8 01 00 00 00       	mov    $0x1,%eax
+  4007aa:	e8 61 fd ff ff       	callq  400510 <printf@plt>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:17
+  4007af:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  4007b2:	89 45 f8             	mov    %eax,-0x8(%rbp)
+  4007b5:	f3 0f 10 45 f8       	movss  -0x8(%rbp),%xmm0
+  4007ba:	e8 81 fd ff ff       	callq  400540 <logf@plt>
+  4007bf:	f3 0f 11 45 f8       	movss  %xmm0,-0x8(%rbp)
+  4007c4:	8b 45 f8             	mov    -0x8(%rbp),%eax
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:18
+  4007c7:	89 45 f8             	mov    %eax,-0x8(%rbp)
+  4007ca:	f3 0f 10 45 f8       	movss  -0x8(%rbp),%xmm0
+  4007cf:	c9                   	leaveq 
+  4007d0:	c3                   	retq   
+
+00000000004007d1 <logDaSottrazione>:
+logDaSottrazione():
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:20
+  4007d1:	55                   	push   %rbp
+  4007d2:	48 89 e5             	mov    %rsp,%rbp
+  4007d5:	48 83 ec 10          	sub    $0x10,%rsp
+  4007d9:	f3 0f 11 45 fc       	movss  %xmm0,-0x4(%rbp)
+  4007de:	f3 0f 11 4d f8       	movss  %xmm1,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:21
+  4007e3:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  4007e6:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  4007e9:	89 55 f4             	mov    %edx,-0xc(%rbp)
+  4007ec:	f3 0f 10 4d f4       	movss  -0xc(%rbp),%xmm1
+  4007f1:	89 45 f4             	mov    %eax,-0xc(%rbp)
+  4007f4:	f3 0f 10 45 f4       	movss  -0xc(%rbp),%xmm0
+  4007f9:	e8 3f fe ff ff       	callq  40063d <sottrazione>
+  4007fe:	f3 0f 10 0d 1a 04 00 	movss  0x41a(%rip),%xmm1        # 400c20 <_IO_stdin_used+0x50>
+  400805:	00 
+  400806:	0f 57 c1             	xorps  %xmm1,%xmm0
+  400809:	e8 7d ff ff ff       	callq  40078b <logaritmo>
+  40080e:	f3 0f 11 45 f4       	movss  %xmm0,-0xc(%rbp)
+  400813:	8b 45 f4             	mov    -0xc(%rbp),%eax
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/util.c:22
+  400816:	89 45 f4             	mov    %eax,-0xc(%rbp)
+  400819:	f3 0f 10 45 f4       	movss  -0xc(%rbp),%xmm0
+  40081e:	c9                   	leaveq 
+  40081f:	c3                   	retq   
+
+0000000000400820 <assert>:
+assert():
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:10
+  400820:	55                   	push   %rbp
+  400821:	48 89 e5             	mov    %rsp,%rbp
+  400824:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  400827:	5d                   	pop    %rbp
+  400828:	c3                   	retq   
+
+0000000000400829 <main>:
+main():
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:12
+  400829:	55                   	push   %rbp
+  40082a:	48 89 e5             	mov    %rsp,%rbp
+  40082d:	48 83 ec 20          	sub    $0x20,%rsp
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:13
+  400831:	8b 05 fd 03 00 00    	mov    0x3fd(%rip),%eax        # 400c34 <_IO_stdin_used+0x64>
+  400837:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:14
+  40083a:	8b 05 f8 03 00 00    	mov    0x3f8(%rip),%eax        # 400c38 <_IO_stdin_used+0x68>
+  400840:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:18
+  400843:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  400846:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  400849:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  40084c:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400851:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  400854:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  400859:	e8 73 ff ff ff       	callq  4007d1 <logDaSottrazione>
+  40085e:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  400863:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  400866:	89 45 fc             	mov    %eax,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:19
+  400869:	0f 57 c0             	xorps  %xmm0,%xmm0
+  40086c:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400870:	0f 9b c2             	setnp  %dl
+  400873:	b8 00 00 00 00       	mov    $0x0,%eax
+  400878:	0f 57 c0             	xorps  %xmm0,%xmm0
+  40087b:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  40087f:	0f 44 c2             	cmove  %edx,%eax
+  400882:	0f b6 c0             	movzbl %al,%eax
+  400885:	89 c7                	mov    %eax,%edi
+  400887:	e8 94 ff ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:20
+  40088c:	8b 05 aa 03 00 00    	mov    0x3aa(%rip),%eax        # 400c3c <_IO_stdin_used+0x6c>
+  400892:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:21
+  400895:	8b 05 a5 03 00 00    	mov    0x3a5(%rip),%eax        # 400c40 <_IO_stdin_used+0x70>
+  40089b:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:22
+  40089e:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  4008a1:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  4008a4:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  4008a7:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  4008ac:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  4008af:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  4008b4:	e8 18 ff ff ff       	callq  4007d1 <logDaSottrazione>
+  4008b9:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  4008be:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  4008c1:	89 45 fc             	mov    %eax,-0x4(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:23
+  4008c4:	f3 0f 10 45 fc       	movss  -0x4(%rbp),%xmm0
+  4008c9:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  4008cc:	bf 30 0c 40 00       	mov    $0x400c30,%edi
+  4008d1:	b8 01 00 00 00       	mov    $0x1,%eax
+  4008d6:	e8 35 fc ff ff       	callq  400510 <printf@plt>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:24
+  4008db:	f3 0f 10 45 fc       	movss  -0x4(%rbp),%xmm0
+  4008e0:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  4008e3:	66 0f 2e 05 5d 03 00 	ucomisd 0x35d(%rip),%xmm0        # 400c48 <_IO_stdin_used+0x78>
+  4008ea:	00 
+  4008eb:	0f 9b c2             	setnp  %dl
+  4008ee:	b8 00 00 00 00       	mov    $0x0,%eax
+  4008f3:	66 0f 2e 05 4d 03 00 	ucomisd 0x34d(%rip),%xmm0        # 400c48 <_IO_stdin_used+0x78>
+  4008fa:	00 
+  4008fb:	0f 44 c2             	cmove  %edx,%eax
+  4008fe:	0f b6 c0             	movzbl %al,%eax
+  400901:	89 c7                	mov    %eax,%edi
+  400903:	e8 18 ff ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:25
+  400908:	8b 05 42 03 00 00    	mov    0x342(%rip),%eax        # 400c50 <_IO_stdin_used+0x80>
+  40090e:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:26
+  400911:	8b 05 39 03 00 00    	mov    0x339(%rip),%eax        # 400c50 <_IO_stdin_used+0x80>
+  400917:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:27
+  40091a:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  40091d:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  400920:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  400923:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400928:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  40092b:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  400930:	e8 9c fe ff ff       	callq  4007d1 <logDaSottrazione>
+  400935:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  40093a:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  40093d:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  400940:	0f 57 c0             	xorps  %xmm0,%xmm0
+  400943:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400947:	0f 9b c2             	setnp  %dl
+  40094a:	b8 00 00 00 00       	mov    $0x0,%eax
+  40094f:	0f 57 c0             	xorps  %xmm0,%xmm0
+  400952:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400956:	0f 44 c2             	cmove  %edx,%eax
+  400959:	0f b6 c0             	movzbl %al,%eax
+  40095c:	89 c7                	mov    %eax,%edi
+  40095e:	e8 bd fe ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:28
+  400963:	8b 05 cf 02 00 00    	mov    0x2cf(%rip),%eax        # 400c38 <_IO_stdin_used+0x68>
+  400969:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:29
+  40096c:	8b 05 c2 02 00 00    	mov    0x2c2(%rip),%eax        # 400c34 <_IO_stdin_used+0x64>
+  400972:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:30
+  400975:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  400978:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  40097b:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  40097e:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400983:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  400986:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  40098b:	e8 41 fe ff ff       	callq  4007d1 <logDaSottrazione>
+  400990:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  400995:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  400998:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  40099b:	0f 57 c0             	xorps  %xmm0,%xmm0
+  40099e:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  4009a2:	0f 9b c2             	setnp  %dl
+  4009a5:	b8 00 00 00 00       	mov    $0x0,%eax
+  4009aa:	0f 57 c0             	xorps  %xmm0,%xmm0
+  4009ad:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  4009b1:	0f 44 c2             	cmove  %edx,%eax
+  4009b4:	0f b6 c0             	movzbl %al,%eax
+  4009b7:	89 c7                	mov    %eax,%edi
+  4009b9:	e8 62 fe ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:31
+  4009be:	8b 05 90 02 00 00    	mov    0x290(%rip),%eax        # 400c54 <_IO_stdin_used+0x84>
+  4009c4:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:32
+  4009c7:	8b 05 8b 02 00 00    	mov    0x28b(%rip),%eax        # 400c58 <_IO_stdin_used+0x88>
+  4009cd:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:33
+  4009d0:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  4009d3:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  4009d6:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  4009d9:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  4009de:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  4009e1:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  4009e6:	e8 e6 fd ff ff       	callq  4007d1 <logDaSottrazione>
+  4009eb:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  4009f0:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  4009f3:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  4009f6:	f3 0f 10 45 fc       	movss  -0x4(%rbp),%xmm0
+  4009fb:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  4009fe:	66 0f 2e 05 5a 02 00 	ucomisd 0x25a(%rip),%xmm0        # 400c60 <_IO_stdin_used+0x90>
+  400a05:	00 
+  400a06:	0f 9b c2             	setnp  %dl
+  400a09:	b8 00 00 00 00       	mov    $0x0,%eax
+  400a0e:	66 0f 2e 05 4a 02 00 	ucomisd 0x24a(%rip),%xmm0        # 400c60 <_IO_stdin_used+0x90>
+  400a15:	00 
+  400a16:	0f 44 c2             	cmove  %edx,%eax
+  400a19:	0f b6 c0             	movzbl %al,%eax
+  400a1c:	89 c7                	mov    %eax,%edi
+  400a1e:	e8 fd fd ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:34
+  400a23:	8b 05 3f 02 00 00    	mov    0x23f(%rip),%eax        # 400c68 <_IO_stdin_used+0x98>
+  400a29:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:35
+  400a2c:	8b 05 36 02 00 00    	mov    0x236(%rip),%eax        # 400c68 <_IO_stdin_used+0x98>
+  400a32:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:36
+  400a35:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  400a38:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  400a3b:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  400a3e:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400a43:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  400a46:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  400a4b:	e8 81 fd ff ff       	callq  4007d1 <logDaSottrazione>
+  400a50:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  400a55:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  400a58:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  400a5b:	0f 57 c0             	xorps  %xmm0,%xmm0
+  400a5e:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400a62:	0f 9b c2             	setnp  %dl
+  400a65:	b8 00 00 00 00       	mov    $0x0,%eax
+  400a6a:	0f 57 c0             	xorps  %xmm0,%xmm0
+  400a6d:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400a71:	0f 44 c2             	cmove  %edx,%eax
+  400a74:	0f b6 c0             	movzbl %al,%eax
+  400a77:	89 c7                	mov    %eax,%edi
+  400a79:	e8 a2 fd ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:37
+  400a7e:	8b 05 e8 01 00 00    	mov    0x1e8(%rip),%eax        # 400c6c <_IO_stdin_used+0x9c>
+  400a84:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:38
+  400a87:	8b 05 e3 01 00 00    	mov    0x1e3(%rip),%eax        # 400c70 <_IO_stdin_used+0xa0>
+  400a8d:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:39
+  400a90:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  400a93:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  400a96:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  400a99:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400a9e:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  400aa1:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  400aa6:	e8 26 fd ff ff       	callq  4007d1 <logDaSottrazione>
+  400aab:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  400ab0:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  400ab3:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  400ab6:	f3 0f 10 45 fc       	movss  -0x4(%rbp),%xmm0
+  400abb:	0f 5a c0             	cvtps2pd %xmm0,%xmm0
+  400abe:	66 0f 2e 05 b2 01 00 	ucomisd 0x1b2(%rip),%xmm0        # 400c78 <_IO_stdin_used+0xa8>
+  400ac5:	00 
+  400ac6:	0f 9b c2             	setnp  %dl
+  400ac9:	b8 00 00 00 00       	mov    $0x0,%eax
+  400ace:	66 0f 2e 05 a2 01 00 	ucomisd 0x1a2(%rip),%xmm0        # 400c78 <_IO_stdin_used+0xa8>
+  400ad5:	00 
+  400ad6:	0f 44 c2             	cmove  %edx,%eax
+  400ad9:	0f b6 c0             	movzbl %al,%eax
+  400adc:	89 c7                	mov    %eax,%edi
+  400ade:	e8 3d fd ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:40
+  400ae3:	8b 05 97 01 00 00    	mov    0x197(%rip),%eax        # 400c80 <_IO_stdin_used+0xb0>
+  400ae9:	89 45 f4             	mov    %eax,-0xc(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:41
+  400aec:	8b 05 8e 01 00 00    	mov    0x18e(%rip),%eax        # 400c80 <_IO_stdin_used+0xb0>
+  400af2:	89 45 f8             	mov    %eax,-0x8(%rbp)
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:42
+  400af5:	8b 55 f8             	mov    -0x8(%rbp),%edx
+  400af8:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  400afb:	89 55 ec             	mov    %edx,-0x14(%rbp)
+  400afe:	f3 0f 10 4d ec       	movss  -0x14(%rbp),%xmm1
+  400b03:	89 45 ec             	mov    %eax,-0x14(%rbp)
+  400b06:	f3 0f 10 45 ec       	movss  -0x14(%rbp),%xmm0
+  400b0b:	e8 c1 fc ff ff       	callq  4007d1 <logDaSottrazione>
+  400b10:	f3 0f 11 45 ec       	movss  %xmm0,-0x14(%rbp)
+  400b15:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  400b18:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  400b1b:	0f 57 c0             	xorps  %xmm0,%xmm0
+  400b1e:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400b22:	0f 9b c2             	setnp  %dl
+  400b25:	b8 00 00 00 00       	mov    $0x0,%eax
+  400b2a:	0f 57 c0             	xorps  %xmm0,%xmm0
+  400b2d:	0f 2e 45 fc          	ucomiss -0x4(%rbp),%xmm0
+  400b31:	0f 44 c2             	cmove  %edx,%eax
+  400b34:	0f b6 c0             	movzbl %al,%eax
+  400b37:	89 c7                	mov    %eax,%edi
+  400b39:	e8 e2 fc ff ff       	callq  400820 <assert>
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:44
+  400b3e:	b8 00 00 00 00       	mov    $0x0,%eax
+/home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2/test.c:45
+  400b43:	c9                   	leaveq 
+  400b44:	c3                   	retq   
+  400b45:	66 2e 0f 1f 84 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+  400b4c:	00 00 00 
+  400b4f:	90                   	nop
+
+0000000000400b50 <__libc_csu_init>:
+__libc_csu_init():
+  400b50:	41 57                	push   %r15
+  400b52:	41 89 ff             	mov    %edi,%r15d
+  400b55:	41 56                	push   %r14
+  400b57:	49 89 f6             	mov    %rsi,%r14
+  400b5a:	41 55                	push   %r13
+  400b5c:	49 89 d5             	mov    %rdx,%r13
+  400b5f:	41 54                	push   %r12
+  400b61:	4c 8d 25 98 12 20 00 	lea    0x201298(%rip),%r12        # 601e00 <__frame_dummy_init_array_entry>
+  400b68:	55                   	push   %rbp
+  400b69:	48 8d 2d 98 12 20 00 	lea    0x201298(%rip),%rbp        # 601e08 <__init_array_end>
+  400b70:	53                   	push   %rbx
+  400b71:	4c 29 e5             	sub    %r12,%rbp
+  400b74:	31 db                	xor    %ebx,%ebx
+  400b76:	48 c1 fd 03          	sar    $0x3,%rbp
+  400b7a:	48 83 ec 08          	sub    $0x8,%rsp
+  400b7e:	e8 55 f9 ff ff       	callq  4004d8 <_init>
+  400b83:	48 85 ed             	test   %rbp,%rbp
+  400b86:	74 1e                	je     400ba6 <__libc_csu_init+0x56>
+  400b88:	0f 1f 84 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+  400b8f:	00 
+  400b90:	4c 89 ea             	mov    %r13,%rdx
+  400b93:	4c 89 f6             	mov    %r14,%rsi
+  400b96:	44 89 ff             	mov    %r15d,%edi
+  400b99:	41 ff 14 dc          	callq  *(%r12,%rbx,8)
+  400b9d:	48 83 c3 01          	add    $0x1,%rbx
+  400ba1:	48 39 eb             	cmp    %rbp,%rbx
+  400ba4:	75 ea                	jne    400b90 <__libc_csu_init+0x40>
+  400ba6:	48 83 c4 08          	add    $0x8,%rsp
+  400baa:	5b                   	pop    %rbx
+  400bab:	5d                   	pop    %rbp
+  400bac:	41 5c                	pop    %r12
+  400bae:	41 5d                	pop    %r13
+  400bb0:	41 5e                	pop    %r14
+  400bb2:	41 5f                	pop    %r15
+  400bb4:	c3                   	retq   
+  400bb5:	66 66 2e 0f 1f 84 00 	data32 nopw %cs:0x0(%rax,%rax,1)
+  400bbc:	00 00 00 00 
+
+0000000000400bc0 <__libc_csu_fini>:
+__libc_csu_fini():
+  400bc0:	f3 c3                	repz retq 
+
+Disassembly of section .fini:
+
+0000000000400bc4 <_fini>:
+_fini():
+  400bc4:	48 83 ec 08          	sub    $0x8,%rsp
+  400bc8:	48 83 c4 08          	add    $0x8,%rsp
+  400bcc:	c3                   	retq   
+Contents of the .eh_frame section:
+
+00000000 0000000000000014 00000000 CIE
+  Version:               1
+  Augmentation:          "zR"
+  Code alignment factor: 1
+  Data alignment factor: -8
+  Return address column: 16
+  Augmentation data:     1b
+
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_offset: r16 (rip) at cfa-8
+  DW_CFA_undefined: r16 (rip)
+
+00000018 0000000000000014 0000001c FDE cie=00000000 pc=fffffffffffff878..fffffffffffff8a2
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000030 0000000000000014 00000000 CIE
+  Version:               1
+  Augmentation:          "zR"
+  Code alignment factor: 1
+  Data alignment factor: -8
+  Return address column: 16
+  Augmentation data:     1b
+
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_offset: r16 (rip) at cfa-8
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000048 0000000000000024 0000001c FDE cie=00000030 pc=fffffffffffff828..fffffffffffff878
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_advance_loc: 6 to fffffffffffff82e
+  DW_CFA_def_cfa_offset: 24
+  DW_CFA_advance_loc: 10 to fffffffffffff838
+  DW_CFA_def_cfa_expression (DW_OP_breg7 (rsp): 8; DW_OP_breg16 (rip): 0; DW_OP_lit15; DW_OP_and; DW_OP_lit11; DW_OP_ge; DW_OP_lit3; DW_OP_shl; DW_OP_plus)
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000070 000000000000001c 00000044 FDE cie=00000030 pc=fffffffffffff965..fffffffffffffab3
+  DW_CFA_advance_loc: 1 to fffffffffffff966
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to fffffffffffff969
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc2: 329 to fffffffffffffab2
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+
+00000090 000000000000001c 00000064 FDE cie=00000030 pc=fffffffffffffab3..fffffffffffffaf9
+  DW_CFA_advance_loc: 1 to fffffffffffffab4
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to fffffffffffffab7
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc1: 65 to fffffffffffffaf8
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+  DW_CFA_nop
+
+000000b0 000000000000001c 00000084 FDE cie=00000030 pc=fffffffffffffaf9..fffffffffffffb48
+  DW_CFA_advance_loc: 1 to fffffffffffffafa
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to fffffffffffffafd
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc1: 74 to fffffffffffffb47
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+  DW_CFA_nop
+
+000000d0 000000000000001c 000000a4 FDE cie=00000030 pc=fffffffffffffb48..fffffffffffffb51
+  DW_CFA_advance_loc: 1 to fffffffffffffb49
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to fffffffffffffb4c
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc: 4 to fffffffffffffb50
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+000000f0 000000000000001c 000000c4 FDE cie=00000030 pc=fffffffffffffb51..fffffffffffffe6d
+  DW_CFA_advance_loc: 1 to fffffffffffffb52
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to fffffffffffffb55
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc2: 791 to fffffffffffffe6c
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+
+00000110 0000000000000044 000000e4 FDE cie=00000030 pc=fffffffffffffe78..fffffffffffffedd
+  DW_CFA_advance_loc: 2 to fffffffffffffe7a
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r15 (r15) at cfa-16
+  DW_CFA_advance_loc: 5 to fffffffffffffe7f
+  DW_CFA_def_cfa_offset: 24
+  DW_CFA_offset: r14 (r14) at cfa-24
+  DW_CFA_advance_loc: 5 to fffffffffffffe84
+  DW_CFA_def_cfa_offset: 32
+  DW_CFA_offset: r13 (r13) at cfa-32
+  DW_CFA_advance_loc: 5 to fffffffffffffe89
+  DW_CFA_def_cfa_offset: 40
+  DW_CFA_offset: r12 (r12) at cfa-40
+  DW_CFA_advance_loc: 8 to fffffffffffffe91
+  DW_CFA_def_cfa_offset: 48
+  DW_CFA_offset: r6 (rbp) at cfa-48
+  DW_CFA_advance_loc: 8 to fffffffffffffe99
+  DW_CFA_def_cfa_offset: 56
+  DW_CFA_offset: r3 (rbx) at cfa-56
+  DW_CFA_advance_loc: 13 to fffffffffffffea6
+  DW_CFA_def_cfa_offset: 64
+  DW_CFA_advance_loc: 44 to fffffffffffffed2
+  DW_CFA_def_cfa_offset: 56
+  DW_CFA_advance_loc: 1 to fffffffffffffed3
+  DW_CFA_def_cfa_offset: 48
+  DW_CFA_advance_loc: 1 to fffffffffffffed4
+  DW_CFA_def_cfa_offset: 40
+  DW_CFA_advance_loc: 2 to fffffffffffffed6
+  DW_CFA_def_cfa_offset: 32
+  DW_CFA_advance_loc: 2 to fffffffffffffed8
+  DW_CFA_def_cfa_offset: 24
+  DW_CFA_advance_loc: 2 to fffffffffffffeda
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_advance_loc: 2 to fffffffffffffedc
+  DW_CFA_def_cfa_offset: 8
+  DW_CFA_nop
+
+00000158 0000000000000014 0000012c FDE cie=00000030 pc=fffffffffffffee8..fffffffffffffeea
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000170 ZERO terminator
+
+
+Contents of the .debug_aranges section:
+
+  Length:                   44
+  Version:                  2
+  Offset into .debug_info:  0x0
+  Pointer Size:             8
+  Segment Size:             0
+
+    Address            Length
+    000000000040063d 00000000000001e3 
+    0000000000000000 0000000000000000 
+  Length:                   44
+  Version:                  2
+  Offset into .debug_info:  0x13c
+  Pointer Size:             8
+  Segment Size:             0
+
+    Address            Length
+    0000000000400820 0000000000000325 
+    0000000000000000 0000000000000000 
+
+Contents of the .debug_info section:
+
+  Compilation Unit @ offset 0x0:
+   Length:        0x138 (32-bit)
+   Version:       4
+   Abbrev Offset: 0x0
+   Pointer Size:  8
+ <0><b>: Abbrev Number: 1 (DW_TAG_compile_unit)
+    <c>   DW_AT_producer    : (indirect string, offset: 0xb7): GNU C 4.8.2 -mtune=generic -march=x86-64 -ggdb -O0 -fstack-protector	
+    <10>   DW_AT_language    : 1	(ANSI C)
+    <11>   DW_AT_name        : (indirect string, offset: 0x5a): util.c	
+    <15>   DW_AT_comp_dir    : (indirect string, offset: 0x7b): /home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2	
+    <19>   DW_AT_low_pc      : 0x40063d	
+    <21>   DW_AT_high_pc     : 0x1e3	
+    <29>   DW_AT_stmt_list   : 0x0	
+ <1><2d>: Abbrev Number: 2 (DW_TAG_base_type)
+    <2e>   DW_AT_byte_size   : 8	
+    <2f>   DW_AT_encoding    : 7	(unsigned)
+    <30>   DW_AT_name        : (indirect string, offset: 0x24): long unsigned int	
+ <1><34>: Abbrev Number: 2 (DW_TAG_base_type)
+    <35>   DW_AT_byte_size   : 1	
+    <36>   DW_AT_encoding    : 8	(unsigned char)
+    <37>   DW_AT_name        : (indirect string, offset: 0x4c): unsigned char	
+ <1><3b>: Abbrev Number: 2 (DW_TAG_base_type)
+    <3c>   DW_AT_byte_size   : 2	
+    <3d>   DW_AT_encoding    : 7	(unsigned)
+    <3e>   DW_AT_name        : (indirect string, offset: 0x68): short unsigned int	
+ <1><42>: Abbrev Number: 2 (DW_TAG_base_type)
+    <43>   DW_AT_byte_size   : 4	
+    <44>   DW_AT_encoding    : 7	(unsigned)
+    <45>   DW_AT_name        : (indirect string, offset: 0x29): unsigned int	
+ <1><49>: Abbrev Number: 2 (DW_TAG_base_type)
+    <4a>   DW_AT_byte_size   : 1	
+    <4b>   DW_AT_encoding    : 6	(signed char)
+    <4c>   DW_AT_name        : (indirect string, offset: 0x4e): signed char	
+ <1><50>: Abbrev Number: 2 (DW_TAG_base_type)
+    <51>   DW_AT_byte_size   : 2	
+    <52>   DW_AT_encoding    : 5	(signed)
+    <53>   DW_AT_name        : (indirect string, offset: 0x102): short int	
+ <1><57>: Abbrev Number: 3 (DW_TAG_base_type)
+    <58>   DW_AT_byte_size   : 4	
+    <59>   DW_AT_encoding    : 5	(signed)
+    <5a>   DW_AT_name        : int	
+ <1><5e>: Abbrev Number: 2 (DW_TAG_base_type)
+    <5f>   DW_AT_byte_size   : 8	
+    <60>   DW_AT_encoding    : 5	(signed)
+    <61>   DW_AT_name        : (indirect string, offset: 0x5): long int	
+ <1><65>: Abbrev Number: 2 (DW_TAG_base_type)
+    <66>   DW_AT_byte_size   : 8	
+    <67>   DW_AT_encoding    : 7	(unsigned)
+    <68>   DW_AT_name        : (indirect string, offset: 0x116): sizetype	
+ <1><6c>: Abbrev Number: 2 (DW_TAG_base_type)
+    <6d>   DW_AT_byte_size   : 1	
+    <6e>   DW_AT_encoding    : 6	(signed char)
+    <6f>   DW_AT_name        : (indirect string, offset: 0x55): char	
+ <1><73>: Abbrev Number: 2 (DW_TAG_base_type)
+    <74>   DW_AT_byte_size   : 8	
+    <75>   DW_AT_encoding    : 5	(signed)
+    <76>   DW_AT_name        : (indirect string, offset: 0x0): long long int	
+ <1><7a>: Abbrev Number: 2 (DW_TAG_base_type)
+    <7b>   DW_AT_byte_size   : 8	
+    <7c>   DW_AT_encoding    : 7	(unsigned)
+    <7d>   DW_AT_name        : (indirect string, offset: 0x1f): long long unsigned int	
+ <1><81>: Abbrev Number: 2 (DW_TAG_base_type)
+    <82>   DW_AT_byte_size   : 4	
+    <83>   DW_AT_encoding    : 4	(float)
+    <84>   DW_AT_name        : (indirect string, offset: 0xfc): float	
+ <1><88>: Abbrev Number: 2 (DW_TAG_base_type)
+    <89>   DW_AT_byte_size   : 8	
+    <8a>   DW_AT_encoding    : 4	(float)
+    <8b>   DW_AT_name        : (indirect string, offset: 0x61): double	
+ <1><8f>: Abbrev Number: 4 (DW_TAG_subprogram)
+    <90>   DW_AT_external    : 1	
+    <90>   DW_AT_name        : (indirect string, offset: 0x40): sottrazione	
+    <94>   DW_AT_decl_file   : 1	
+    <95>   DW_AT_decl_line   : 5	
+    <96>   DW_AT_prototyped  : 1	
+    <96>   DW_AT_type        : <0x81>	
+    <9a>   DW_AT_low_pc      : 0x40063d	
+    <a2>   DW_AT_high_pc     : 0x14e	
+    <aa>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <ac>   DW_AT_GNU_all_tail_call_sites: 1	
+    <ac>   DW_AT_sibling     : <0xd7>	
+ <2><b0>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <b1>   DW_AT_name        : x	
+    <b3>   DW_AT_decl_file   : 1	
+    <b4>   DW_AT_decl_line   : 5	
+    <b5>   DW_AT_type        : <0x81>	
+    <b9>   DW_AT_location    : 2 byte block: 91 5c 	(DW_OP_fbreg: -36)
+ <2><bc>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <bd>   DW_AT_name        : y	
+    <bf>   DW_AT_decl_file   : 1	
+    <c0>   DW_AT_decl_line   : 5	
+    <c1>   DW_AT_type        : <0x81>	
+    <c5>   DW_AT_location    : 2 byte block: 91 58 	(DW_OP_fbreg: -40)
+ <2><c8>: Abbrev Number: 6 (DW_TAG_variable)
+    <c9>   DW_AT_name        : (indirect string, offset: 0x36): risultato	
+    <cd>   DW_AT_decl_file   : 1	
+    <ce>   DW_AT_decl_line   : 6	
+    <cf>   DW_AT_type        : <0x81>	
+    <d3>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><d6>: Abbrev Number: 0
+ <1><d7>: Abbrev Number: 4 (DW_TAG_subprogram)
+    <d8>   DW_AT_external    : 1	
+    <d8>   DW_AT_name        : (indirect string, offset: 0x10c): logaritmo	
+    <dc>   DW_AT_decl_file   : 1	
+    <dd>   DW_AT_decl_line   : 15	
+    <de>   DW_AT_prototyped  : 1	
+    <de>   DW_AT_type        : <0x81>	
+    <e2>   DW_AT_low_pc      : 0x40078b	
+    <ea>   DW_AT_high_pc     : 0x46	
+    <f2>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <f4>   DW_AT_GNU_all_tail_call_sites: 1	
+    <f4>   DW_AT_sibling     : <0x105>	
+ <2><f8>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <f9>   DW_AT_name        : x	
+    <fb>   DW_AT_decl_file   : 1	
+    <fc>   DW_AT_decl_line   : 15	
+    <fd>   DW_AT_type        : <0x81>	
+    <101>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><104>: Abbrev Number: 0
+ <1><105>: Abbrev Number: 7 (DW_TAG_subprogram)
+    <106>   DW_AT_external    : 1	
+    <106>   DW_AT_name        : (indirect string, offset: 0xe): logDaSottrazione	
+    <10a>   DW_AT_decl_file   : 1	
+    <10b>   DW_AT_decl_line   : 20	
+    <10c>   DW_AT_prototyped  : 1	
+    <10c>   DW_AT_type        : <0x81>	
+    <110>   DW_AT_low_pc      : 0x4007d1	
+    <118>   DW_AT_high_pc     : 0x4f	
+    <120>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <122>   DW_AT_GNU_all_tail_call_sites: 1	
+ <2><122>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <123>   DW_AT_name        : x	
+    <125>   DW_AT_decl_file   : 1	
+    <126>   DW_AT_decl_line   : 20	
+    <127>   DW_AT_type        : <0x81>	
+    <12b>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><12e>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <12f>   DW_AT_name        : y	
+    <131>   DW_AT_decl_file   : 1	
+    <132>   DW_AT_decl_line   : 20	
+    <133>   DW_AT_type        : <0x81>	
+    <137>   DW_AT_location    : 2 byte block: 91 68 	(DW_OP_fbreg: -24)
+ <2><13a>: Abbrev Number: 0
+ <1><13b>: Abbrev Number: 0
+  Compilation Unit @ offset 0x13c:
+   Length:        0xe9 (32-bit)
+   Version:       4
+   Abbrev Offset: 0x7e
+   Pointer Size:  8
+ <0><147>: Abbrev Number: 1 (DW_TAG_compile_unit)
+    <148>   DW_AT_producer    : (indirect string, offset: 0xb7): GNU C 4.8.2 -mtune=generic -march=x86-64 -ggdb -O0 -fstack-protector	
+    <14c>   DW_AT_language    : 1	(ANSI C)
+    <14d>   DW_AT_name        : (indirect string, offset: 0x124): test.c	
+    <151>   DW_AT_comp_dir    : (indirect string, offset: 0x7b): /home/BCT/workspace_BCT_Testing/BDCI/RedaelliTesi/EsempioV2	
+    <155>   DW_AT_low_pc      : 0x400820	
+    <15d>   DW_AT_high_pc     : 0x325	
+    <165>   DW_AT_stmt_list   : 0x6e	
+ <1><169>: Abbrev Number: 2 (DW_TAG_base_type)
+    <16a>   DW_AT_byte_size   : 8	
+    <16b>   DW_AT_encoding    : 7	(unsigned)
+    <16c>   DW_AT_name        : (indirect string, offset: 0x24): long unsigned int	
+ <1><170>: Abbrev Number: 2 (DW_TAG_base_type)
+    <171>   DW_AT_byte_size   : 1	
+    <172>   DW_AT_encoding    : 8	(unsigned char)
+    <173>   DW_AT_name        : (indirect string, offset: 0x4c): unsigned char	
+ <1><177>: Abbrev Number: 2 (DW_TAG_base_type)
+    <178>   DW_AT_byte_size   : 2	
+    <179>   DW_AT_encoding    : 7	(unsigned)
+    <17a>   DW_AT_name        : (indirect string, offset: 0x68): short unsigned int	
+ <1><17e>: Abbrev Number: 2 (DW_TAG_base_type)
+    <17f>   DW_AT_byte_size   : 4	
+    <180>   DW_AT_encoding    : 7	(unsigned)
+    <181>   DW_AT_name        : (indirect string, offset: 0x29): unsigned int	
+ <1><185>: Abbrev Number: 2 (DW_TAG_base_type)
+    <186>   DW_AT_byte_size   : 1	
+    <187>   DW_AT_encoding    : 6	(signed char)
+    <188>   DW_AT_name        : (indirect string, offset: 0x4e): signed char	
+ <1><18c>: Abbrev Number: 2 (DW_TAG_base_type)
+    <18d>   DW_AT_byte_size   : 2	
+    <18e>   DW_AT_encoding    : 5	(signed)
+    <18f>   DW_AT_name        : (indirect string, offset: 0x102): short int	
+ <1><193>: Abbrev Number: 3 (DW_TAG_base_type)
+    <194>   DW_AT_byte_size   : 4	
+    <195>   DW_AT_encoding    : 5	(signed)
+    <196>   DW_AT_name        : int	
+ <1><19a>: Abbrev Number: 2 (DW_TAG_base_type)
+    <19b>   DW_AT_byte_size   : 8	
+    <19c>   DW_AT_encoding    : 5	(signed)
+    <19d>   DW_AT_name        : (indirect string, offset: 0x5): long int	
+ <1><1a1>: Abbrev Number: 2 (DW_TAG_base_type)
+    <1a2>   DW_AT_byte_size   : 8	
+    <1a3>   DW_AT_encoding    : 7	(unsigned)
+    <1a4>   DW_AT_name        : (indirect string, offset: 0x116): sizetype	
+ <1><1a8>: Abbrev Number: 2 (DW_TAG_base_type)
+    <1a9>   DW_AT_byte_size   : 1	
+    <1aa>   DW_AT_encoding    : 6	(signed char)
+    <1ab>   DW_AT_name        : (indirect string, offset: 0x55): char	
+ <1><1af>: Abbrev Number: 4 (DW_TAG_subprogram)
+    <1b0>   DW_AT_external    : 1	
+    <1b0>   DW_AT_name        : (indirect string, offset: 0x132): assert	
+    <1b4>   DW_AT_decl_file   : 1	
+    <1b5>   DW_AT_decl_line   : 10	
+    <1b6>   DW_AT_prototyped  : 1	
+    <1b6>   DW_AT_low_pc      : 0x400820	
+    <1be>   DW_AT_high_pc     : 0x9	
+    <1c6>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <1c8>   DW_AT_GNU_all_call_sites: 1	
+    <1c8>   DW_AT_sibling     : <0x1d9>	
+ <2><1cc>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <1cd>   DW_AT_name        : x	
+    <1cf>   DW_AT_decl_file   : 1	
+    <1d0>   DW_AT_decl_line   : 10	
+    <1d1>   DW_AT_type        : <0x193>	
+    <1d5>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><1d8>: Abbrev Number: 0
+ <1><1d9>: Abbrev Number: 6 (DW_TAG_subprogram)
+    <1da>   DW_AT_external    : 1	
+    <1da>   DW_AT_name        : (indirect string, offset: 0x11f): main	
+    <1de>   DW_AT_decl_file   : 1	
+    <1df>   DW_AT_decl_line   : 12	
+    <1e0>   DW_AT_type        : <0x193>	
+    <1e4>   DW_AT_low_pc      : 0x400829	
+    <1ec>   DW_AT_high_pc     : 0x31c	
+    <1f4>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <1f6>   DW_AT_GNU_all_tail_call_sites: 1	
+    <1f6>   DW_AT_sibling     : <0x221>	
+ <2><1fa>: Abbrev Number: 7 (DW_TAG_variable)
+    <1fb>   DW_AT_name        : x	
+    <1fd>   DW_AT_decl_file   : 1	
+    <1fe>   DW_AT_decl_line   : 13	
+    <1ff>   DW_AT_type        : <0x221>	
+    <203>   DW_AT_location    : 2 byte block: 91 64 	(DW_OP_fbreg: -28)
+ <2><206>: Abbrev Number: 7 (DW_TAG_variable)
+    <207>   DW_AT_name        : y	
+    <209>   DW_AT_decl_file   : 1	
+    <20a>   DW_AT_decl_line   : 14	
+    <20b>   DW_AT_type        : <0x221>	
+    <20f>   DW_AT_location    : 2 byte block: 91 68 	(DW_OP_fbreg: -24)
+ <2><212>: Abbrev Number: 8 (DW_TAG_variable)
+    <213>   DW_AT_name        : (indirect string, offset: 0x12b): result	
+    <217>   DW_AT_decl_file   : 1	
+    <218>   DW_AT_decl_line   : 16	
+    <219>   DW_AT_type        : <0x221>	
+    <21d>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><220>: Abbrev Number: 0
+ <1><221>: Abbrev Number: 2 (DW_TAG_base_type)
+    <222>   DW_AT_byte_size   : 4	
+    <223>   DW_AT_encoding    : 4	(float)
+    <224>   DW_AT_name        : (indirect string, offset: 0xfc): float	
+ <1><228>: Abbrev Number: 0
+
+Contents of the .debug_abbrev section:
+
+  Number TAG (0x0)
+   1      DW_TAG_compile_unit    [has children]
+    DW_AT_producer     DW_FORM_strp
+    DW_AT_language     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT_comp_dir     DW_FORM_strp
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_stmt_list    DW_FORM_sec_offset
+    DW_AT value: 0     DW_FORM value: 0
+   2      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT value: 0     DW_FORM value: 0
+   3      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_string
+    DW_AT value: 0     DW_FORM value: 0
+   4      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_prototyped   DW_FORM_flag_present
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_tail_call_sites DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   5      DW_TAG_formal_parameter    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   6      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   7      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_prototyped   DW_FORM_flag_present
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_tail_call_sites DW_FORM_flag_present
+    DW_AT value: 0     DW_FORM value: 0
+  Number TAG (0x7e)
+   1      DW_TAG_compile_unit    [has children]
+    DW_AT_producer     DW_FORM_strp
+    DW_AT_language     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT_comp_dir     DW_FORM_strp
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_stmt_list    DW_FORM_sec_offset
+    DW_AT value: 0     DW_FORM value: 0
+   2      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT value: 0     DW_FORM value: 0
+   3      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_string
+    DW_AT value: 0     DW_FORM value: 0
+   4      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_prototyped   DW_FORM_flag_present
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_call_sites DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   5      DW_TAG_formal_parameter    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   6      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_tail_call_sites DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   7      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   8      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+
+Raw dump of debug contents of section .debug_line:
+
+  Offset:                      0x0
+  Length:                      106
+  DWARF Version:               2
+  Prologue Length:             29
+  Minimum Instruction Length:  1
+  Initial value of 'is_stmt':  1
+  Line Base:                   -5
+  Line Range:                  14
+  Opcode Base:                 13
+
+ Opcodes:
+  Opcode 1 has 0 args
+  Opcode 2 has 1 args
+  Opcode 3 has 1 args
+  Opcode 4 has 1 args
+  Opcode 5 has 1 args
+  Opcode 6 has 0 args
+  Opcode 7 has 0 args
+  Opcode 8 has 0 args
+  Opcode 9 has 1 args
+  Opcode 10 has 0 args
+  Opcode 11 has 0 args
+  Opcode 12 has 1 args
+
+ The Directory Table is empty.
+
+ The File Name Table (offset 0x1c):
+  Entry	Dir	Time	Size	Name
+  1	0	0	0	util.c
+
+ Line Number Statements:
+  [0x00000027]  Extended opcode 2: set Address to 0x40063d
+  [0x00000032]  Special opcode 9: advance Address by 0 to 0x40063d and Line by 4 to 5
+  [0x00000033]  Advance PC by constant 17 to 0x40064e
+  [0x00000034]  Special opcode 21: advance Address by 1 to 0x40064f and Line by 2 to 7
+  [0x00000035]  Advance PC by constant 17 to 0x400660
+  [0x00000036]  Special opcode 202: advance Address by 14 to 0x40066e and Line by 1 to 8
+  [0x00000037]  Extended opcode 4: set Discriminator to 1
+  [0x0000003b]  Set is_stmt to 0
+  [0x0000003c]  Advance PC by 37 to 0x400693
+  [0x0000003e]  Special opcode 5: advance Address by 0 to 0x400693 and Line by 0 to 8
+  [0x0000003f]  Set is_stmt to 1
+  [0x00000040]  Advance PC by 41 to 0x4006bc
+  [0x00000042]  Special opcode 6: advance Address by 0 to 0x4006bc and Line by 1 to 9
+  [0x00000043]  Extended opcode 4: set Discriminator to 1
+  [0x00000047]  Set is_stmt to 0
+  [0x00000048]  Advance PC by constant 17 to 0x4006cd
+  [0x00000049]  Special opcode 75: advance Address by 5 to 0x4006d2 and Line by 0 to 9
+  [0x0000004a]  Set is_stmt to 1
+  [0x0000004b]  Advance PC by 73 to 0x40071b
+  [0x0000004d]  Special opcode 6: advance Address by 0 to 0x40071b and Line by 1 to 10
+  [0x0000004e]  Extended opcode 4: set Discriminator to 1
+  [0x00000052]  Set is_stmt to 0
+  [0x00000053]  Advance PC by 37 to 0x400740
+  [0x00000055]  Special opcode 5: advance Address by 0 to 0x400740 and Line by 0 to 10
+  [0x00000056]  Set is_stmt to 1
+  [0x00000057]  Advance PC by 41 to 0x400769
+  [0x00000059]  Special opcode 6: advance Address by 0 to 0x400769 and Line by 1 to 11
+  [0x0000005a]  Advance PC by constant 17 to 0x40077a
+  [0x0000005b]  Special opcode 62: advance Address by 4 to 0x40077e and Line by 1 to 12
+  [0x0000005c]  Special opcode 48: advance Address by 3 to 0x400781 and Line by 1 to 13
+  [0x0000005d]  Special opcode 147: advance Address by 10 to 0x40078b and Line by 2 to 15
+  [0x0000005e]  Special opcode 188: advance Address by 13 to 0x400798 and Line by 1 to 16
+  [0x0000005f]  Advance PC by constant 17 to 0x4007a9
+  [0x00000060]  Special opcode 90: advance Address by 6 to 0x4007af and Line by 1 to 17
+  [0x00000061]  Advance PC by constant 17 to 0x4007c0
+  [0x00000062]  Special opcode 104: advance Address by 7 to 0x4007c7 and Line by 1 to 18
+  [0x00000063]  Special opcode 147: advance Address by 10 to 0x4007d1 and Line by 2 to 20
+  [0x00000064]  Advance PC by constant 17 to 0x4007e2
+  [0x00000065]  Special opcode 20: advance Address by 1 to 0x4007e3 and Line by 1 to 21
+  [0x00000066]  Advance PC by 51 to 0x400816
+  [0x00000068]  Special opcode 6: advance Address by 0 to 0x400816 and Line by 1 to 22
+  [0x00000069]  Advance PC by 10 to 0x400820
+  [0x0000006b]  Extended opcode 1: End of Sequence
+
+
+  Offset:                      0x6e
+  Length:                      106
+  DWARF Version:               2
+  Prologue Length:             29
+  Minimum Instruction Length:  1
+  Initial value of 'is_stmt':  1
+  Line Base:                   -5
+  Line Range:                  14
+  Opcode Base:                 13
+
+ Opcodes:
+  Opcode 1 has 0 args
+  Opcode 2 has 1 args
+  Opcode 3 has 1 args
+  Opcode 4 has 1 args
+  Opcode 5 has 1 args
+  Opcode 6 has 0 args
+  Opcode 7 has 0 args
+  Opcode 8 has 0 args
+  Opcode 9 has 1 args
+  Opcode 10 has 0 args
+  Opcode 11 has 0 args
+  Opcode 12 has 1 args
+
+ The Directory Table is empty.
+
+ The File Name Table (offset 0x8a):
+  Entry	Dir	Time	Size	Name
+  1	0	0	0	test.c
+
+ Line Number Statements:
+  [0x00000095]  Extended opcode 2: set Address to 0x400820
+  [0x000000a0]  Advance Line by 9 to 10
+  [0x000000a2]  Copy
+  [0x000000a3]  Special opcode 103: advance Address by 7 to 0x400827 and Line by 0 to 10
+  [0x000000a4]  Special opcode 35: advance Address by 2 to 0x400829 and Line by 2 to 12
+  [0x000000a5]  Special opcode 118: advance Address by 8 to 0x400831 and Line by 1 to 13
+  [0x000000a6]  Special opcode 132: advance Address by 9 to 0x40083a and Line by 1 to 14
+  [0x000000a7]  Special opcode 135: advance Address by 9 to 0x400843 and Line by 4 to 18
+  [0x000000a8]  Advance PC by 38 to 0x400869
+  [0x000000aa]  Special opcode 6: advance Address by 0 to 0x400869 and Line by 1 to 19
+  [0x000000ab]  Advance PC by 35 to 0x40088c
+  [0x000000ad]  Special opcode 6: advance Address by 0 to 0x40088c and Line by 1 to 20
+  [0x000000ae]  Special opcode 132: advance Address by 9 to 0x400895 and Line by 1 to 21
+  [0x000000af]  Special opcode 132: advance Address by 9 to 0x40089e and Line by 1 to 22
+  [0x000000b0]  Advance PC by 38 to 0x4008c4
+  [0x000000b2]  Special opcode 6: advance Address by 0 to 0x4008c4 and Line by 1 to 23
+  [0x000000b3]  Advance PC by constant 17 to 0x4008d5
+  [0x000000b4]  Special opcode 90: advance Address by 6 to 0x4008db and Line by 1 to 24
+  [0x000000b5]  Advance PC by 45 to 0x400908
+  [0x000000b7]  Special opcode 6: advance Address by 0 to 0x400908 and Line by 1 to 25
+  [0x000000b8]  Special opcode 132: advance Address by 9 to 0x400911 and Line by 1 to 26
+  [0x000000b9]  Special opcode 132: advance Address by 9 to 0x40091a and Line by 1 to 27
+  [0x000000ba]  Advance PC by 73 to 0x400963
+  [0x000000bc]  Special opcode 6: advance Address by 0 to 0x400963 and Line by 1 to 28
+  [0x000000bd]  Special opcode 132: advance Address by 9 to 0x40096c and Line by 1 to 29
+  [0x000000be]  Special opcode 132: advance Address by 9 to 0x400975 and Line by 1 to 30
+  [0x000000bf]  Advance PC by 73 to 0x4009be
+  [0x000000c1]  Special opcode 6: advance Address by 0 to 0x4009be and Line by 1 to 31
+  [0x000000c2]  Special opcode 132: advance Address by 9 to 0x4009c7 and Line by 1 to 32
+  [0x000000c3]  Special opcode 132: advance Address by 9 to 0x4009d0 and Line by 1 to 33
+  [0x000000c4]  Advance PC by 83 to 0x400a23
+  [0x000000c6]  Special opcode 6: advance Address by 0 to 0x400a23 and Line by 1 to 34
+  [0x000000c7]  Special opcode 132: advance Address by 9 to 0x400a2c and Line by 1 to 35
+  [0x000000c8]  Special opcode 132: advance Address by 9 to 0x400a35 and Line by 1 to 36
+  [0x000000c9]  Advance PC by 73 to 0x400a7e
+  [0x000000cb]  Special opcode 6: advance Address by 0 to 0x400a7e and Line by 1 to 37
+  [0x000000cc]  Special opcode 132: advance Address by 9 to 0x400a87 and Line by 1 to 38
+  [0x000000cd]  Special opcode 132: advance Address by 9 to 0x400a90 and Line by 1 to 39
+  [0x000000ce]  Advance PC by 83 to 0x400ae3
+  [0x000000d0]  Special opcode 6: advance Address by 0 to 0x400ae3 and Line by 1 to 40
+  [0x000000d1]  Special opcode 132: advance Address by 9 to 0x400aec and Line by 1 to 41
+  [0x000000d2]  Special opcode 132: advance Address by 9 to 0x400af5 and Line by 1 to 42
+  [0x000000d3]  Advance PC by 73 to 0x400b3e
+  [0x000000d5]  Special opcode 7: advance Address by 0 to 0x400b3e and Line by 2 to 44
+  [0x000000d6]  Special opcode 76: advance Address by 5 to 0x400b43 and Line by 1 to 45
+  [0x000000d7]  Advance PC by 2 to 0x400b45
+  [0x000000d9]  Extended opcode 1: End of Sequence
+
+
+Contents of the .debug_str section:
+
+  0x00000000 6c6f6e67 206c6f6e 6720696e 74006c6f long long int.lo
+  0x00000010 67446153 6f747472 617a696f 6e65006c gDaSottrazione.l
+  0x00000020 6f6e6720 6c6f6e67 20756e73 69676e65 ong long unsigne
+  0x00000030 6420696e 74007269 73756c74 61746f00 d int.risultato.
+  0x00000040 736f7474 72617a69 6f6e6500 756e7369 sottrazione.unsi
+  0x00000050 676e6564 20636861 72007574 696c2e63 gned char.util.c
+  0x00000060 00646f75 626c6500 73686f72 7420756e .double.short un
+  0x00000070 7369676e 65642069 6e74002f 686f6d65 signed int./home
+  0x00000080 2f424354 2f776f72 6b737061 63655f42 /BCT/workspace_B
+  0x00000090 43545f54 65737469 6e672f42 4443492f CT_Testing/BDCI/
+  0x000000a0 52656461 656c6c69 54657369 2f457365 RedaelliTesi/Ese
+  0x000000b0 6d70696f 56320047 4e552043 20342e38 mpioV2.GNU C 4.8
+  0x000000c0 2e32202d 6d74756e 653d6765 6e657269 .2 -mtune=generi
+  0x000000d0 63202d6d 61726368 3d783836 2d363420 c -march=x86-64 
+  0x000000e0 2d676764 62202d4f 30202d66 73746163 -ggdb -O0 -fstac
+  0x000000f0 6b2d7072 6f746563 746f7200 666c6f61 k-protector.floa
+  0x00000100 74007368 6f727420 696e7400 6c6f6761 t.short int.loga
+  0x00000110 7269746d 6f007369 7a657479 7065006d ritmo.sizetype.m
+  0x00000120 61696e00 74657374 2e630072 6573756c ain.test.c.resul
+  0x00000130 74006173 73657274 00                t.assert.
+

@@ -1,0 +1,5 @@
+parameter[0] == orig(parameter[0])
+parameter[1].age == returnValue
+parameter[0] == 1
+returnValue one of { 9, 10, 13 }
+(orig(parameter[1].age) >> returnValue == 0)

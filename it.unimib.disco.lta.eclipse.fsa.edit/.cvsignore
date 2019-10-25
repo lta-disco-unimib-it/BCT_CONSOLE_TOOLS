@@ -1,0 +1,4 @@
+@dot
+*.jar
+*.args
+build.xml

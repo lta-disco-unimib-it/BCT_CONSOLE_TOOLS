@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_22" class="java.beans.XMLDecoder"> 
+ <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.BctViolationsAnalysisConfiguration"> 
+  <void property="filteringResult"> 
+   <object class="it.unimib.disco.lta.bct.bctjavaeclipse.core.logAnalysis.run.RegressionAnalysisResult"> 
+    <void property="filteredViolations"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="modelsViolations.BctIOModelViolation"> 
+        <void property="creationTime"> 
+         <long>1351864541365</long> 
+        </void> 
+        <void property="currentActions"> 
+         <array class="java.lang.String" length="0"/> 
+        </void> 
+        <void property="currentTests"> 
+         <array class="java.lang.String" length="0"/> 
+        </void> 
+        <void property="id"> 
+         <string>1</string> 
+        </void> 
+        <void property="parameters"> 
+         <string></string> 
+        </void> 
+        <void property="pid"> 
+         <string>1</string> 
+        </void> 
+        <void property="stackTrace"> 
+         <array class="java.lang.String" length="26"> 
+          <void index="0"> 
+           <string>javax.servlet.jsp.JspFactory.getDefaultFactory:75</string> 
+          </void> 
+          <void index="1"> 
+           <string>eltest.ChipsListener.contextInitialized:18</string> 
+          </void> 
+          <void index="2"> 
+           <string>org.apache.catalina.core.StandardContext.listenerStart:3827</string> 
+          </void> 
+          <void index="3"> 
+           <string>org.apache.catalina.core.StandardContext.start:4336</string> 
+          </void> 
+          <void index="4"> 
+           <string>org.apache.catalina.core.ContainerBase.addChildInternal:760</string> 
+          </void> 
+          <void index="5"> 
+           <string>org.apache.catalina.core.ContainerBase.addChild:740</string> 
+          </void> 
+          <void index="6"> 
+           <string>org.apache.catalina.core.StandardHost.addChild:525</string> 
+          </void> 
+          <void index="7"> 
+           <string>org.apache.catalina.startup.HostConfig.deployWAR:825</string> 
+          </void> 
+          <void index="8"> 
+           <string>org.apache.catalina.startup.HostConfig.deployWARs:714</string> 
+          </void> 
+          <void index="9"> 
+           <string>org.apache.catalina.startup.HostConfig.deployApps:490</string> 
+          </void> 
+          <void index="10"> 
+           <string>org.apache.catalina.startup.HostConfig.start:1138</string> 
+          </void> 
+          <void index="11"> 
+           <string>org.apache.catalina.startup.HostConfig.lifecycleEvent:311</string> 
+          </void> 
+          <void index="12"> 
+           <string>org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent:120</string> 
+          </void> 
+          <void index="13"> 
+           <string>org.apache.catalina.core.ContainerBase.start:1022</string> 
+          </void> 
+          <void index="14"> 
+           <string>org.apache.catalina.core.StandardHost.start:719</string> 
+          </void> 
+          <void index="15"> 
+           <string>org.apache.catalina.core.ContainerBase.start:1014</string> 
+          </void> 
+          <void index="16"> 
+           <string>org.apache.catalina.core.StandardEngine.start:443</string> 
+          </void> 
+          <void index="17"> 
+           <string>org.apache.catalina.core.StandardService.start:451</string> 
+          </void> 
+          <void index="18"> 
+           <string>org.apache.catalina.core.StandardServer.start:710</string> 
+          </void> 
+          <void index="19"> 
+           <string>org.apache.catalina.startup.Catalina.start:552</string> 
+          </void> 
+          <void index="20"> 
+           <string>sun.reflect.NativeMethodAccessorImpl.invoke0:-2</string> 
+          </void> 
+          <void index="21"> 
+           <string>sun.reflect.NativeMethodAccessorImpl.invoke:39</string> 
+          </void> 
+          <void index="22"> 
+           <string>sun.reflect.DelegatingMethodAccessorImpl.invoke:25</string> 
+          </void> 
+          <void index="23"> 
+           <string>java.lang.reflect.Method.invoke:585</string> 
+          </void> 
+          <void index="24"> 
+           <string>org.apache.catalina.startup.Bootstrap.start:288</string> 
+          </void> 
+          <void index="25"> 
+           <string>org.apache.catalina.startup.Bootstrap.main:413</string> 
+          </void> 
+         </array> 
+        </void> 
+        <void property="threadId"> 
+         <string>1</string> 
+        </void> 
+        <void property="violatedModel"> 
+         <string>javax.servlet.jsp.JspFactory.getDefaultFactory(()Ljavax.servlet.jsp.JspFactory;):::EXIT</string> 
+        </void> 
+        <void property="violation"> 
+         <string>returnValue != null</string> 
+        </void> 
+        <void property="violationType"> 
+         <string>NotValid</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

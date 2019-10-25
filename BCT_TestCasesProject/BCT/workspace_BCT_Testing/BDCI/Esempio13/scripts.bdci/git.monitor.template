@@ -1,0 +1,51 @@
+
+LOCKDIR=/home/pastore/BDCI/BDCI_1/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.lock 
+
+monitor=1
+
+if [ -d $LOCKDIR ]
+then
+	#echo "NO MONITOR" >> parameters.txt
+	monitor=0
+else
+	#echo "MONITOR" >> parameters.txt
+	mkdir $LOCKDIR &> /dev/null
+
+	if [ $? -ne 0 ]
+	then
+		monitor=0
+	fi
+fi
+
+
+
+GIT_EXEC_PATH='/home/pastore/BDCI/BDCI_1/V0'
+if test -n "$NO_SET_GIT_TEMPLATE_DIR"
+then
+        unset GIT_TEMPLATE_DIR
+else
+        GIT_TEMPLATE_DIR='/home/pastore/BDCI/BDCI_1/V0/templates/blt'
+        export GIT_TEMPLATE_DIR
+fi
+GITPERLLIB='/home/pastore/BDCI/BDCI_1/V0/perl/blib/lib'"${GITPERLLIB:+:$GITPERLLIB}"
+GIT_TEXTDOMAINDIR='/home/pastore/BDCI/BDCI_1/V0/po/build/locale'
+
+if [ $monitor -eq 0 ]
+then
+	#echo "NO MONITOR" "$0" "$1" "$2" >> parameters.txt
+	exec /home/pastore/BDCI/BDCI_1/V0/exec/git "$@"
+fi
+
+echo "!!!BCT-EXECUTING $0 $@" >> /home/pastore/BDCI/BDCI_1/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt
+gdb -batch -silent -n -x /home/pastore/BDCI/BDCI_1/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt --args /home/pastore/BDCI/BDCI_1/V0/exec/git "$@"
+v=`tail -n 2 /home/pastore/BDCI/BDCI_1/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt | head -n 1 | grep normally -c`
+
+rm -r -f $LOCKDIR
+
+if [ $v -eq 1 ]
+then
+	exit 0
+fi
+
+
+exit `tail -n 2 /home/pastore/BDCI/BDCI_1/AnalysisV0/BCT/BCT_DATA/BCT/validTraces/gdb.monitor.txt | head -n 1 | awk '{print $8}' | awk -F\] '{print $1}'`

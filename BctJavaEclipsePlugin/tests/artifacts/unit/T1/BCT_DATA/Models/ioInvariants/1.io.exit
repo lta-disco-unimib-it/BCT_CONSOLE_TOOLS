@@ -1,0 +1,3 @@
+parameter[0] == orig(parameter[0])
+parameter[0] == 1
+returnValue == 10

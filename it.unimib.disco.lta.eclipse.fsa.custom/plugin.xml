@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="it.unimib.disco.lta.eclipse.fsa.custom.menu.openTransition"
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="it.unimib.disco.lta.eclipse.fsa.custom.transitionDescriptionOpen"
+            objectClass="fsa.diagram.edit.parts.TransitionDescriptionEditPart">
+         <menu
+               id="it.unimib.disco.lta.eclipse.fsa.custom.menu.transitionDescriptionOpen"
+               label="FSA inspection">
+         </menu>
+         <action
+               class="it.unimib.disco.lta.eclipse.fsa.custom.editor.OpenTransitionDescriptionAction"
+               id="it.unimib.disco.lta.eclipse.fsa.custom.menu.openTransitionDescriptionAction"
+               label="Open FSA">
+         </action>
+      </objectContribution>
+      <objectContribution
+            id="it.unimib.disco.lta.eclipse.fsa.custom.contribution1"
+            objectClass="org.eclipse.jdt.core.IMethod">
+         <menu
+               id="it.unimib.disco.lta.eclipse.fsa.custom.popupMenu"
+               label="BCT"
+               path="additions">
+            <separator
+                  name="BCT">
+            </separator>
+         </menu>
+         <action
+               class="it.unimib.disco.lta.eclipse.fsa.custom.popup.actions.OpenFSAForMethod"
+               enablesFor="1"
+               id="it.unimib.disco.lta.eclipse.fsa.custom.openFSAForMethod"
+               label="Open FSA"
+               menubarPath="it.unimib.disco.lta.eclipse.fsa.custom.popupMenu/BCT">
+         </action>
+         <action
+               class="it.unimib.disco.lta.eclipse.fsa.custom.popup.actions.OpenFSAForMethod"
+               enablesFor="1"
+               id="it.unimib.disco.lta.eclipse.fsa.custom.openIOModelForMethod"
+               label="Open IO Model"
+               menubarPath="it.unimib.disco.lta.eclipse.fsa.custom.popupMenu/BCT">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

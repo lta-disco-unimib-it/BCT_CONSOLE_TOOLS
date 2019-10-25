@@ -1,0 +1,7 @@
+# Tracing options for the it.unimib.disco.lta.eclipse.anomalyGraph.diagram plug-in
+
+# Common issues
+it.unimib.disco.lta.eclipse.anomalyGraph.diagram/debug=false
+
+# Visual IDs
+it.unimib.disco.lta.eclipse.anomalyGraph.diagram/debug/visualID=false

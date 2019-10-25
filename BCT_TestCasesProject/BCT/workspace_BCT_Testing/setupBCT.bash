@@ -1,0 +1,4 @@
+GDB_CONFIG=/home/BCT/BCT_TestCasesProject/BCT/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt 
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+java console.ScriptsGenerator /home/BCT/BCT_TestCasesProject/BCT/BCT/ /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers/src/ /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers/program.exe /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers_v2/src/ /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers_v2/program.exe 
+java console.ScriptsGenerator /home/BCT/BCT_TestCasesProject/BCT/BCT/ /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers/src/ /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers/program.exe /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers_v2/src/ /home/BCT/BCT_TestCasesProject/BCT/workspace_BCT_Testing/StructPointers_v2/program.exe 

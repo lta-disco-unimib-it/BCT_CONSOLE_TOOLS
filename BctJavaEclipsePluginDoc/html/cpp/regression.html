@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<style type="text/css">
+img {text-align:center; width:600px; margin:20px;}
+</style>
+	<title>Identifying silent regression faults with BCT</title>
+</head>
+
+<body>
+
+<div style="width:700px;">
+<h1>Identifying silent regression faults with BCT</h1>
+
+Software developers can use BCT to check if a new release of their software 
+contains regression faults. BCT allow software developers to identify regression faults even when these faults do not cause any visible failure.
+
+BCT identifies regression faults by comparing models of the behavior of a stable 
+release of the software with the runtime behavior of a new software release.
+
+Softwrae developers pinpoint regression faults with BCT in five steps:
+
+<ol>
+<li>Configuring BCT to locate the sources and the executables of the original and modified programs</li>
+<li>Using BCT with GDB to execute the test cases of the stable and unstable version of the program to monitor the software behavior.</li>
+<li>Running BCT to infer models of the behavior of the stable version of teh program.</li>
+<li>Running BCT to identify anomalous behaviors of the new version of the program.</li>
+<li>Analizing the anomalies</li>
+</ol>
+
+
+BCT identifies silent regression faults only on Unix like systems.
+You need to install <em>gdb</em>, <em>c++filt</em> and <em>objdump</em> to run BCT.
+You need to compile programs with the debugging option, <em>-g</em>, to enable effective monitoring with BCT.
+
+Following paragraphs show a brief tutorial that describe identification of regression faults with BCT more in details.
+
+<h1>Tutorial</h1>
+
+<p>
+This tutorial shows how software developers can use BCT to identify a silent 
+regression fault in a small library class, <em>WorkersMap</em>.
+Class <em>WorkersMap</em> is a map that keeps trace of the salary of a collection of workers (identified by a string id).
+Class <em>WorkersMap</em> provides also some utility methods: 
+<ul>
+<li>
+getSalary(string personId, which returns the salary of a worker;
+</li>
+<li>
+getAverageSalary( list&lt;string&gt; personIds ), which returns the average salary of the persons in the list. 
+If a person is not a worker it is not considered in the computation of the result.
+</li>
+</ul>
+</p>
+
+<p>
+The second version of the library, <em>WorkersMap-v2</em> contains a fault 
+introduced after a bug fix on line 23 of file <em>WorkersMap.cpp</em>. 
+</p>
+<p>
+In version v2 of WorkersMap, software developers modified the implementation of method getSalary.
+In version v2, method  WorkersMap.getSalary returns -1 if the person id passed as parameter does not correspond to a worker.
+The stable version of the program mehod WorkersMap.getSalary returned NULL if the person id passed as parameter did not correspond to a worker.
+The change was performed because NULL corresponds to 0, thus the original implementation of WorkersMap.getSalary did not permit to distinguish between 
+the case of a worker without a salary and the case of a person who is not a worker.
+</p>
+
+<p>
+The change in method getSalary in version v2 may lead to failures in method getAverageSalary, 
+which returns a wrong result if some of the person ids passed to the list do not belongs to workers.
+</p>
+
+<p>
+WorkersMap and WorkersMap-v2 comes with a set of test cases, implemented in WorkersMap_test.cpp that do not reveal the fault in v2.
+BCT idnetifies a behavioral anomaly that pinpoints the error.
+</p>
+<p>
+
+Following paragraphs show how to use BCT to identify teh regresison fault.
+For completeness we provide WorkersMap-v2  with an additional test case, WorkersMap_bug.cpp, that exposes the fault, but we will not use this additional test case in this tutorial.
+</p>
+
+
+
+<h2>Step 0: Import the example workspace</h2>
+
+<p>
+We provide an Eclipse workspace with two versions of WorkersMap (for simplicity we provide the two programs as Eclipse projects, 
+but softwrae developers can use BCT to monitor projects build outside Eclipse). 
+</p>
+
+<p>
+Download the compressed workspace with the two C++ project from this url 
+<a href="http://www.lta.disco.unimib.it/downloadsLTA/tools/bct/workspaceCPP_RegressionExample.tar.gz" >
+http://www.lta.disco.unimib.it/downloadsLTA/tools/bct/workspaceCPP_RegressionExample.tar.gz</a>.
+<br/>
+Uncompress the .tar.gz workspace, for example in ~/workspaceCPP_RegressionExample.
+</p>
+<p>
+Then compile the two C++ projects:
+<kbd>
+<br/>
+cd ~/workspaceCPP_RegressionExample/WorkersMap/Debug
+<br/>
+make clean
+<br/>
+make
+<br/>
+cd ~/workspaceCPP_RegressionExample/WorkersMap/Debug
+<br/>
+make clean
+<br/>
+make
+</kbd>
+</p>
+<p>
+Then open the workspace in Eclipse:
+<br/>
+<code>
+path/to/eclipse -data  ~/workspaceCPP_RegressionExample/
+</code>
+</p>
+
+
+<h2>Step 1: Create a BCT Monitoring configuration</h2>
+
+<p>
+To use BCT to identify silent regression faults,  software developers need first to create a <em>BCT C++ Monitoring configuration</em>.
+</p>
+
+<p>
+Software developers can create the BCT monitoring configuration either in one of the two projects of the workspace, or in a separate project.
+We create a separate project by clicking on <em>New>Project>Generic>Project</em>. We name the project <em>WorkersMap_validate</em>.
+</p>
+
+<p>
+Software developers  can create a new configuration by right clicking on the project where they want to save the <em>BCT monitoring configuration</em> 
+and clicking on <em>new>Other>BCT>BCT C/C++ Regression Configuration.</em>.
+</p>
+
+<img src="regression/newProject.jpg" />
+
+<p>
+ BCT then asks the software developer to enter a name for the new configuration, we used <em>WorkersMap-v2-validation</em>.  
+</p>
+
+
+<img src="regression/confName.jpg"  />
+
+
+<p>
+After software developers press next, BCT asks the source folder of the stable and modified version of WorkersMap.
+Enter <em>~/workspaceCPP_RegressionExample/WorkersMap/src</em> and <em>~/workspaceCPP_RegressionExample/WorkersMap-v2/src</em> (write your HOME dir path instead of the ~ symbol). 
+</p>
+
+<p>
+BCT also asks the location of the executable of the two projects. Use the test cases runner if you intend to monitor unit test cases execution. For this project we used
+<em>~/workspaceCPP_RegressionExample/WorkersMap/Debug/WorkersMap</em> and <em>~/workspaceCPP_RegressionExample/Debug/WorkersMap-v2</em>. 
+When the software developer presses the <em>Finish</em> button BCT compares the two softwrae projects to identify the modified functions and determines how to monitor the two projects for changes. 
+Then BCT creates the monitoring configuration file <em>WorkersMap_validate/WorkersMap-v2-validation.mrc</em>.
+</p>
+
+<img src="regression/location.jpg"  />
+
+<p>
+
+If software developers double click on the monitoring configuration file <em>WorkersMap_validate/WorkersMap-v2-validation.mrc</em> a specific editor opens. 
+This editor shows three tabs: <em>Resource location</em>, <em>Components Configuration</em>, <em>Regression Analysis Configuration</em>. 
+</p>
+
+
+<img src="regression/mcEditor_location.jpg"  />
+
+<br/>
+
+<img src="regression/mcEditor.png"  />
+
+<br/>
+
+<img src="regression/mcEditor_files.png"  />
+
+<br/>
+
+<p>
+Tab <em>Components Configuration</em> shows the monitored functions. 
+The list item named <em>ModifiedFunctions</em> contains the list of functions that have been modified in version v2, and that will be monitored by BCT.
+To show the modified functions users can click on <em>ModifiedFunctions</em>  and press Edit.
+</p>
+
+<img src="regression/modifiedFunctions.jpg"  />
+
+<p>
+Tab <em>Regression Analysis Configuration</em> shows the locations of the files to monitor. By clicking on button <em>Refresh components to monitor</em> 
+softwrae developers can update the list of monitored components after performing some more changes to their program, e.g. after modifying another method of WorkersMap. 
+</p>
+
+<h2>Step 2: Monitor the execution of the stable and modified  version of the software</h2>
+
+<p>
+The <em>Help</em> button in the <em>Regression Analysis Configuration</em> tab of the <em>Monitoring configuration editor</em> shows the commands to execute to monitor the two programs.
+</p>
+
+
+<br/>
+
+<img src="regression/monitoringOptions.jpg"  />
+
+<p>
+Execute the following commands to monitor the stable version of WorkersMap</p>
+
+<br/>
+
+<code>
+cd ~/workspaceCPP_RegressionExample/WorkersMap/Debug
+<br/>
+GDB_CONFIG=~/workspaceCPP_RegressionExample/WorkersMap_validation/BCT_DATA/WorkersMap-v2-validation/conf/files/scripts/originalSoftware.gdb.config.txt
+<br/>
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"'
+<br/>
+$GDB ./WorkersMap
+</code>
+</p>
+
+<p>
+Execute the following commands to monitor the buggy version of WorkersMap</p>
+
+<code>
+cd ~/workspaceCPP_RegressionExample/WorkersMap/Debug
+<br/>
+GDB_CONFIG=~/workspaceCPP_RegressionExample/WorkersMap_validation/BCT_DATA/WorkersMap-v2-validation/conf/files/scripts/originalSoftware.gdb.config.txt
+<br/>
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"'
+<br/>
+$GDB ./WorkersMap-v2
+</code>
+</p>
+
+<p>At this point two trace files are available in the workspace: 
+one for the stable version of the software, <em>WorkersMap_validation/BCT_DATA/WorkersMap-v2-validation/validTraces/gdb.monitor.txt</em>, 
+one for the new (and buggy) version, <em>WorkersMap_validation/BCT_DATA/WorkersMap-v2-validation/tracesToVerify/gdb.monitor.txt</em>. Press F5 on the WorkersMap_validation project to refresh folder contents if you do not see the traces.</p>
+
+<img src="regression/recordedTraces.jpg"   />
+
+<p>After monitoring the test cases of WorkersMap and WorkersMap-v2, software developers can use BCT to check if some fault affects the the system.</p>
+
+<h2>Step 3: Infer models of the stable version of the software</h2>
+
+<p>Software developers can infer models of the behavior of the stable softwrae version 
+by right clicking on the monitoring configuration file, and by selecting <em>BCT/Infer Models</em>.
+A wizard with different options will open. Software developer can use the default options of the wizard to infer useful models.</p>
+
+<img src="regression/inferModelsMenu.jpg"  />
+
+<img src="regression/infer1.jpg" alt="Model Inference Options"  />
+
+<img src="regression/infer2.jpg"  />
+
+<p>The BCT model inference process first generates readable traces with the values recorded by BCT.</p>
+
+<p>From the <em>Project Explorer view</em>  software developers can inspect the raw data by expanding the monitoring 
+configuration item and the subfolder <em>Raw Recorded Data/IO Traces/Environment/</em>. This folder show the mangled names of the methods/functions monitored by BCT.</p>
+
+<p>By clicking on one of these function names, e.g. <em>WorkersMap_cpp.ES...getSalaryESs()</em>, software developers can open the data recorded. 
+Following figure shows the data recorded at the entry and exit point of method <em>WorkersMap.getSalary</em>.</p>
+
+<img src="regression/ioGetSalary.jpg"  />
+
+<p>By clicking on <em>Raw Recorded Data/Interaction Traces/Environment/</em> Software Developers can inspect the sequence of methods monitored by BCT. 
+By clicking on button <em>Switch to Tree View</em> softwrae developers can visualize the sequences of monitored methods as a tree. 
+BCT can be used to record multithreaded program or different program executions. 
+In these cases BCT visualizes the sequence of methods executed by each thread of each program execution (BCT call each program execution <em>Session</em>).</p>
+
+<img src="regression/rawInteractionTraces.jpg"  />
+
+<img src="regression/rawInteractionTracesTree.jpg"  />
+
+<p>By expanding folder <em>WorkersMap_validation/WorkersMap-v2-validation.bctmc/Models/IO/Environment/</em> 
+softwrae developers can see the I/O models, i.e. constraints that hold on input and output parameters of the monitored methods.
+The following figure shows the I/O models for method <em>getSalary</em>. They indicate that the return value is always greater than zero or equal to zero.</p>
+
+<img src="regression/getSalaryIOModel.jpg"  />
+
+<p>By expanding folder <em>WorkersMap_validation/WorkersMap-v2-validation.bctmc/Models/Interaction/Environment/</em> 
+software developers can inspect the interaction model of each monitored method.
+Interaction models are Finite State Automata that generalize the sequences of methods invoked by a method monitored by BCT 
+(i.e. a function modified in the new software or a caller of a modified function).
+Following Figure shows the intraction model for method <em>getSalary</em>.</p>
+
+<img src="regression/getSalaryIntModel.jpg"  />
+
+
+<h2>Step 4: Identify anomalies in the behavior of the modified version of the software.</h2>
+
+<p>Software developers can identify anomalies in the behavior of the modified software by right clicking on the monitoring configuration file 
+<em>WorkersMap_validation/WorkersMap-v2-validation.bctmc</em>, and selecting 
+<em>BCT/Identify Anomalies</em>. BCT runs a background job to identify anomalies and then starts a wizard for the analysis of the anomalies found, if any.</p>
+
+<img src="regression/identifyAnomalies.jpg"  />
+
+<img src="regression/violationAnalysis.jpg"  />
+
+<h2>Step 5: Analyze the anomalies.</h2>
+
+<p>After pressing <em>Finish</em> on the <em>Violations Log Analysis Wizard</em> the <em>Violation Analysis</em> editor opens. 
+Tab <em>Violations</em> shows the model violations identified by BCT.
+By opening the <em>Properties view</em> software developers can inspect the detail of each violation. 
+After unselecting option <em>Group by method</em> software developers see 6 violations for the model <em>returnValue.eax >= 0</em>, 
+which means that method <em>getSalary</em> returned a value lower than zero in in the new software version.
+The properties view shows  the actual value for the value returned by method <em>getSalary</em>  when the violation is detected by BCT: -1 (this value is stored in register eax at runtime).
+This model violation is caused by the change performed by the software developers. 
+By inspecting the stack trace of the  violations software developers can see that the change in the invariant may 
+lead to misbehaviors in method getAverageSalary: the violation if fact occurrs in line 48 of file WorkersMap.cpp, 
+where there is still the check <code>getSalary(*i) == 0</code> which may lead to failures at runtime 
+(we are currently extending the set of models to better pinpoint relations between callers and callees to ease the identification of regression faults like this).</p>
+
+<img src="regression/violationAnalysisEditor.jpg"  />
+
+<img src="regression/violationAnalysisEditorProperties.jpg"  />
+
+<img src="regression/getSalaryCaller.jpg" />
+
+</div>
+
+</body>
+</html>

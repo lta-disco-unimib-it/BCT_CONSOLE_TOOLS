@@ -1,0 +1,2 @@
+parameter[0] == 1
+store(parameter[0])

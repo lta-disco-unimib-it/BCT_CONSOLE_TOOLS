@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id: plugin.xml,v 1.1 2008-07-07 20:07:50 pastore Exp $
+-->
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "it.unimib.disco.lta.eclipse" 
+       class = "anomalyGraph.AnomalyGraphPackage"
+       genModel = "model/AnomalyGraph.genmodel" /> 
+  </extension>
+
+</plugin>

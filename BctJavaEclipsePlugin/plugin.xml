@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="it.unimib.disco.lta.bct.bctJavaEclipse.ui.actions.violationsCompositeActions" name="Violations Composite Actions" schema="schema/it.unimib.disco.lta.bct.bctJavaEclipse.ui.actions.violationsCompositeActions.exsd"/>
+   <extension-point id="it.unimib.disco.lta.bct.bctJavaEclipse.ui.actions.violationsFilterActions" name="Violations Flters Actions" schema="schema/it.unimib.disco.lta.bct.bctJavaEclipse.ui.actions.violationsFilterActions.exsd"/>
+<!-- Declare the data collector -->
+
+
+<!-- Inizio pagina preferenze -->
+<extension
+      point="org.eclipse.ui.preferencePages">
+   <!--page id="BCTPreferencePage
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.BCTPreferencePage"
+         id="bctjavaeclipse.preferences.BCTPreferencePage"
+         name="BCT Preferences"/-->
+
+
+	<!--page id="ConfigurationPage"
+ 		name="BCT Configuration"
+    		class="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.BCTConfigurationPage">
+   	</page-->
+
+   	
+  <page
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.BCTPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.BCTpreferencepage"
+        name="BCT">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.BCTpreferencepage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.InvariantGeneratorPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InvariantGeneratorpage"
+        name="InvariantGeneratorpage">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.BCTpreferencepage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.InferenceEnginesPage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InferenceEnginespage"
+        name="InferenceEnginespage">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InferenceEnginespage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.KBehaviorPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.Kbehaviorpage"
+        name="Kbehavior">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InferenceEnginespage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.KTailPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.Ktail"
+        name="K Tail">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InferenceEnginespage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.ReissPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.Reiss"
+        name="Reiss">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InferenceEnginespage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.KInclusionPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.KInclusionPreferencePage"
+        name="KInclusion">
+  </page>
+  <page
+        category="it.unimib.disco.lta.bct.bctjavaeclipse.preferences.InferenceEnginespage"
+        class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.GKTailPreferencePage"
+        id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.GKTailPreferencePage"
+        name="GKTail">
+  </page>
+
+</extension>
+
+<extension
+      point="org.eclipse.core.runtime.preferences">
+   <initializer class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.preferences.PreferenceInitializer"/>
+</extension>
+
+
+
+
+
+
+
+
+
+
+<extension
+      point="org.eclipse.ui.perspectiveExtensions">
+   <perspectiveExtension targetID="org.eclipse.ui.resourcePerspective">
+      <view
+            id="bctjavaeclipse.views.BCTView"
+            ratio="0.5"
+            relationship="right"
+            relative="org.eclipse.ui.views.TaskList"/>
+   </perspectiveExtension>
+   <perspectiveExtension targetID="org.eclipse.ui.resourcePerspective">
+      <view
+            id="bctjavaeclipse.views.SampleView"
+            ratio="0.5"
+            relationship="right"
+            relative="org.eclipse.ui.views.TaskList"/>
+   </perspectiveExtension>
+   <perspectiveExtension targetID="org.eclipse.ui.resourcePerspective">
+      <view
+            id="bctjavaeclipse.BCTViews.BCTView"
+            ratio="0.5"
+            relationship="right"
+            relative="org.eclipse.ui.views.TaskList"/>
+   </perspectiveExtension>
+</extension>
+<extension
+      point="org.eclipse.ui.views">
+   <category
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BCT"
+
+         name="BCT"/>
+   <view
+         category="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BCT"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BctConsoleView"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.bctConsoleView"
+         name="BCTConsoleView">
+   </view>
+   <view
+         category="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BCT"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BctLogAnalysisView"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.bctLogAnalysisView"
+         name="BCT log analysis">
+   </view>
+   <view
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BctLogAnalysisResultsViewPart"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.bctLogAnalysisResultsView"
+         name="LogAnalysisResults">
+   </view>
+   <view
+         allowMultiple="false"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.view.AnomalousSequenceView"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.view.anomalousSequenceView"
+         name="AnomalousSequenceView">
+   </view>
+   <view
+         category="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.BCT"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.ProgramPointsView"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.ProgramPointsView"
+         name="Program Points View">
+   </view>
+
+</extension>
+<extension
+      point="org.eclipse.ui.editors">
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.configuration.editors.BctComponentsConfigurationEditor"
+         contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+         extensions="bctcc"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.BctComponnetDefinitionEditor"
+         name="BctComponnetDefinitionEditor">
+   </editor>
+   <editor
+   		name="Components Configuration Editor"
+   		icon="icons/sample.gif"
+   		extensions="bctcc"
+   		contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"
+         class="org.eclipse.ui.editors.text.TextEditor"
+         default="false"
+         id="org.eclipse.ui.editors.text.texteditor"/>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.configuration.editors.BctMonitoringConfigurationEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.configuration.editors.BctMonitoringConfigurationEditorContributor"
+         extensions="bctmc"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.editors.BctMonitoringConfigurationEditor"
+         name="Monitoring Configuration Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SimpleTextEditor"
+         contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+         extensions="dtrace"
+         icon="icons/ioTrace.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SimpleTextEditorIo"
+         name="Bct text Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SimpleTextEditor"
+         contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+         extensions="int"
+         icon="icons/interactionTrace.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SimpleTextEditorInteraction"
+         name="Bct text Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SimpleTextEditor"
+         contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+         extensions="decls"
+         icon="icons/ioTrace.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SimpleTextEditorIo"
+         name="Bct text Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.configuration.editors.SortedIndexEditor"
+         default="true"
+         extensions="idx"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.SortedIndexEditor"
+         name="Sorted Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.configuration.editors.IndexEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.configuration.editors.IndexEditorContributor"
+         extensions="idx"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.IndexEditor"
+         name="Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.editors.BctViolationsLogAnalysisEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.editors.BctViolationsLogAnalysisEditorContributor"
+         default="true"
+         extensions="bctla"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.editors.BctLogAnalysisEditor"
+         name="BCT Violations Log Analysis Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.editors.BctViolationsLogEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.editors.BctViolationsLogAnalysisEditorContributor"
+         default="true"
+         filenames="bctCBElog"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.editors.BctLogEditor"
+         name="BCT Violations Log Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.IOModelsEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/ioTrace.gif"
+         id="bctjavaeclipse.editors.IOModelsEditor"
+         name="IO Models Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.IOTracesEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/ioTrace.gif"
+         id="bctjavaeclipse.editors.IOTracesEditor"
+         name="IO Traces Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.InteractionNormalizedTracesEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.InteractionNormalizedTracesEditor"
+         name="Interaction Normalized Traces Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.InteractionRawTracesEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.InteractionRawTracesEditor"
+         name="Interaction Raw Traces Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.IOModelsIndexEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.IOModelsIndexEditor"
+         name="IO Models Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.InteractionModelsIndexEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.InteractionModelsIndexEditor"
+         name="Interaction Models Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.IOTracesIndexEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.IOTracesIndexEditor"
+         name="IO Traces Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.InteractionNormalizedTracesIndexEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.InteractionNormalizedTracesIndexEditor"
+         name="Interaction Normalized Traces Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.InteractionRawTracesIndexEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.InteractionRawTracesIndexEditor"
+         name="Interaction Raw Traces Index Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.ProgramPointsVisualizerEditor"
+         contributorClass="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.actions.ActionBarContributor"
+         icon="icons/ioTrace.gif"
+         id="bctjavaeclipse.editors.ProgramPointsVisualizerEditor"
+         name="Program Points Visualizer Editor">
+   </editor>
+   <editor
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.editors.InteractionTracesDifferencesEditor"
+         default="false"
+         extensions="itd"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.editors.differences"
+         name="Interaction Traces Differences Editor">
+   </editor>
+         
+</extension>
+
+<extension
+      point="org.eclipse.ui.newWizards">
+   <category
+         id="BctJavaEclipse"
+         name="BCT">
+   </category>
+   <wizard
+         category="BctJavaEclipse"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.NewBCTComponentsConfigurationWizard"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.wizards.NewBCTConfigurationWizard"
+         name="BCT Components Configuration">
+   </wizard>
+   <wizard
+         category="BctJavaEclipse"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.NewBCTMonitoringConfigurationWizard"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.wizards.BCTMonitoringResource"
+         name="BCT Java Monitoring Configuration">
+   </wizard>
+   <wizard
+         category="BctJavaEclipse"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.NewBCTCMonitoringConfigurationWizard"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.wizards.NewBCTCConfigurationWizard"
+         name="BCT C/C++ Monitoring Configuration">
+   </wizard>
+   <wizard
+         category="BctJavaEclipse"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.NewBCTCRegressionConfigurationWizard"
+         icon="icons/sample.gif"
+         id="bctjavaeclipse.wizards.NewBCTRegressionConfigurationWizard"
+         name="BCT C/C++ Regression Configuration">
+   </wizard>
+   <wizard
+         category="BctJavaEclipse"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.wizards.BctViolationsLogAnalysisWizard"
+         icon="icons/sample.gif"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.wizards.BCTViolationsLogAnalysis"
+         name="BCT Violations Log Analysis">
+   </wizard>
+</extension>
+<extension
+      point="org.eclipse.ui.popupMenus">
+      <objectContribution
+         id="BctJavaEclipsePlugin.bctCBElog"
+         nameFilter="bctCBELog"
+         objectClass="org.eclipse.core.resources.IFile">
+         <menu
+            id="BctJavaEclipsePlugin.menubctCBElog"
+            label="BCT"
+            path="additions">
+         <separator
+               name="BctJavaEclipsePlugin.bctCBElog">
+         </separator>
+         </menu>
+         <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.IdentifyAnomalousAssertionsAction"
+            id="BctJavaEclipsePlugin.identifyAnomalousAssertionsCBE"
+            label="Identify Anomalous Assertions"
+            menubarPath="BctJavaEclipsePlugin.menubctCBElog/BctJavaEclipsePlugin.bctCBElog">
+      </action>
+      
+      
+   </objectContribution>
+   <objectContribution
+         id="BctJavaEclipse.bctcc"
+         nameFilter="*.bctcc"
+         objectClass="org.eclipse.core.resources.IFile">
+      <menu
+            id="BctJavaEclipse.menu1"
+            label="BCT"
+            path="additions">
+         <separator
+               name="BCTMenuGroupExport">
+         </separator>
+         <separator
+               name="BCTMenuGroupInstrument">
+         </separator>
+      </menu>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.ExportDataRecordingProbe"
+            enablesFor="1"
+            id="BctJavaEclipse.newAction"
+            label="Export DataRecording Probe"
+            menubarPath="BctJavaEclipse.menu1/BCTMenuGroupExport">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.InstrumentDataRecordingProbe"
+            id="BctJavaEclipsePlugin.action1"
+            label="Instrument DataRecording Probe"
+            menubarPath="BctJavaEclipse.menu1/BCTMenuGroupInstrument">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.CompareTraces"
+            id="BctJavaEclipsePlugin.compareTracesAction"
+            label="Compare Traces">
+      </action>
+   </objectContribution>
+   <objectContribution
+         id="BctJavaEclipsePlugin.javaFiles"
+         nameFilter="*"
+         objectClass="org.eclipse.jdt.core.IJavaElement">
+         <menu
+            id="BctJavaEclipsePlugin.javaFiles"
+            label="BCT">
+         <separator
+               name="BctJavaEclipsePlugin.experimental">
+         </separator>
+      </menu>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.IdentifyTestedMethodsStaticallyAction"
+            id="BctJavaEclipsePlugin.identifyTestedMethodsStaticallyAction"
+            label="Identify Tested Methods Statically"
+            menubarPath="BctJavaEclipsePlugin.javaFiles/BctJavaEclipsePlugin.experimental">
+      </action>
+       <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.IdentifyTestedMethodsDynamicallyAction"
+            id="BctJavaEclipsePlugin.identifyTestedMethodsDynamicallyAction"
+            label="Identify Tested Methods Dynamically"
+            menubarPath="BctJavaEclipsePlugin.javaFiles/BctJavaEclipsePlugin.experimental">
+      </action>
+   </objectContribution>
+   <objectContribution
+         id="BctJavaEclipsePlugin.bctmc"
+         nameFilter="*.bctmc"
+         objectClass="org.eclipse.core.resources.IFile">
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.DeleteBctData"
+            id="BctJavaEclipsePlugin.deleteBctData"
+            label="Delete BCT data"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.delete">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.InstrumentForDataRecordingWithProbe"
+            id="BctJavaEclipsePlugin.instrumentForDataRecordingWithAspect"
+            label="Instrument for data recording (aspects)"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.dataRecording">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.InstrumentForDataRecordingWithProbe"
+            id="BctJavaEclipsePlugin.instrumentForDataRecordingWithProbe"
+            label="Instrument for data recording (probe)"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.dataRecording">
+      </action>
+      <menu
+            id="BctJavaEclipsePlugin.menumc"
+            label="BCT">
+         <separator
+               name="BctJavaEclipsePlugin.delete">
+         </separator>
+         <separator
+               name="BctJavaEclipsePlugin.dataRecording">
+         </separator>
+         <separator
+               name="BctJavaEclipsePlugin.runtimeChecking">
+         </separator>
+         <separator
+               name="BctJavaEclipsePlugin.modelInference">
+         </separator>
+         <separator
+               name="BctJavaEclipsePlugin.anomaliesAnalysis">
+         </separator>
+         <separator
+               name="BctJavaEclipsePlugin.trueProperties">
+         </separator>
+         <separator
+               name="BctJavaEclipsePlugin.experimental">
+         </separator>
+      </menu>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.NewAnomaliesAnalysisAction"
+            id="BctJavaEclipsePlugin.analyzeAnomalies"
+            label="Analyze Anomalies"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.anomaliesAnalysis">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.AnalyzeRegression"
+            id="BctJavaEclipsePlugin.AnalyzeRegression"
+            label="Analyze Regression (Infer Models + Identify Anomalies)"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.modelInference">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.StaticallyIdentifyAnomaliesAction"
+            id="BctJavaEclipsePlugin.staticallyIdentifyAnomaliesAction"
+            label="Identify Anomalies from Traces"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.modelInference">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.InferModelsAction"
+            id="BctJavaEclipsePlugin.inferModels"
+            label="Infer models"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.modelInference">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.InstrumentForRuntimeCheckingWithProbe"
+            id="BctJavaEclipsePlugin.instrumentForRuntimeCheckingWithAspect"
+            label="Instrument for runtime checking (aspects)"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.runtimeChecking">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.InstrumentForRuntimeCheckingWithProbe"
+            id="BctJavaEclipsePlugin.instrumentForRuntimeCheckingWithProbe"
+            label="Instrument for runtime checking (probe)"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.runtimeChecking">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.IdentifyTrueModelsAction"
+            id="BctJavaEclipsePlugin.identifyTrueProperties"
+            label="IdentifyTrueProperties"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.trueProperties">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.IdentifyViolatedTruePropertiesAction"
+            id="BctJavaEclipsePlugin.identifyViolatedTrueProperties"
+            label="IdentifyViolatedTrueProperties"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.trueProperties">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.popup.actions.IdentifyAnomalousAssertionsAction"
+            id="BctJavaEclipsePlugin.identifyAnomalousAssertions"
+            label="Identify Anomalous Assertions"
+            menubarPath="BctJavaEclipsePlugin.menumc/BctJavaEclipsePlugin.experimental">
+      </action>
+      
+      
+   </objectContribution>
+</extension>
+<extension
+      id="id1"
+      point="org.eclipse.core.resources.builders">
+   <builder></builder>
+</extension>
+<extension
+      point="org.eclipse.ui.statusHandlers">
+</extension>
+<extension
+      point="org.eclipse.ui.exportWizards">
+   <wizard
+         category="BctJavaEclipsePlugin.category1"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.fsaExportImportWizards.FsaBCTExportWizard"
+         icon="icons/sample.gif"
+         id="BctJavaEclipsePlugin.wizard3"
+         name="FSA BCT">
+   </wizard>
+   <category
+         id="BctJavaEclipsePlugin.category1"
+         name="BCT">
+   </category>
+   <wizard
+         category="BctJavaEclipsePlugin.category1"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.dataExporting.IoExportWizard"
+         id="BctJavaEclipsePlugin.wizard1"
+         name="Export IO data">
+   </wizard>
+</extension>
+
+<extension
+      point="org.eclipse.ui.importWizards">
+   <category
+         id="BctJavaEclipsePlugin.category1"
+         name="BCT">
+   </category>
+   <wizard
+         category="BctJavaEclipsePlugin.category1"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.fsaExportImportWizards.FsaBCTImportWizard"
+         icon="icons/sample.gif"
+         id="BctJavaEclipsePlugin.wizard1"
+         name="FSA BCT">
+   </wizard>
+</extension>
+<extension
+      point="org.eclipse.ui.propertyPages">
+   <page
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.properties.BCTJavaProjectPropertyPage"
+         id="it.unimib.disco.lta.eclipse.fsa.custom.properties.samplePropertyPage"
+         name="BCT"
+         nameFilter="*"
+         objectClass="org.eclipse.jdt.core.IJavaProject">
+   </page>
+</extension>
+<extension
+      point="org.eclipse.ui.navigator.viewer">
+   <viewerContentBinding
+         viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+      <includes>
+         <contentExtension
+               pattern="it.unimib.disco.lta.bct.bctjavaeclipse.ui.navigator.bctmcContent">
+         </contentExtension>
+         <contentExtension
+               pattern="it.unimib.disco.lta.bct.bctjavaeclipse.ui.navigator.componentClassesFilter">
+         </contentExtension>
+      </includes>
+   </viewerContentBinding>
+</extension>
+<extension
+      point="org.eclipse.ui.navigator.navigatorContent">
+   <navigatorContent
+         activeByDefault="true"
+         contentProvider="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.BctMonitoringConfigurationContentProvider"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.navigator.bctmcContent"
+         labelProvider="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.BctMonitoringConfigurationLabelProvider"
+         name="BCT Monitoring Configuration File Contents"
+         priority="highest">
+      <triggerPoints>
+         <and>
+            <instanceof
+                  value="org.eclipse.core.resources.IResource">
+            </instanceof>
+            <test
+                  property="org.eclipse.core.resources.extension"
+                  value="bctmc">
+            </test>
+         </and>
+      </triggerPoints>
+      <possibleChildren>
+         <instanceof
+               value="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.BctMonitoringConfigurationTreeData">
+         </instanceof>
+      </possibleChildren>
+      <actionProvider
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.actions.ActionProvider"
+            id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.RefreshProvider">
+         <enablement>
+            <or>
+               <instanceof
+                     value="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.BctMonitoringConfigurationTreeData">
+               </instanceof>
+               <and>
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+                  <test
+                        property="org.eclipse.core.resources.extension"
+                        value="bctmc">
+                  </test>
+               </and>
+            </or>
+         </enablement>
+      </actionProvider>
+   </navigatorContent>
+   <commonFilter
+         activeByDefault="true"
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.JavaElementsFilter"
+         description="Hide Java classes not in monitored component"
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.navigator.componentClassesFilter"
+         name="BCT component classes">
+   </commonFilter>
+</extension>
+<extension
+      point="org.eclipse.ui.viewActions">
+   <viewContribution
+         id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.refreshBctContentsContribution"
+         targetID="org.eclipse.ui.navigator.ProjectExplorer">
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.actions.RefreshViewActionDelegate"
+            icon="icons/refresh.gif"
+            id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.refreshBctContentsAction"
+            label="Refresh"
+            toolbarPath="additions"
+            tooltip="Refresh BCT resources...">
+      </action>
+      <action
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.actions.CompareInteractionTraces"
+            icon="icons/refresh.gif"
+            id="it.unimib.disco.lta.bct.bctjavaeclipse.ui.view.navigator.compareInteractionTracesAction"
+            label="Compare"
+            toolbarPath="additions"
+            tooltip="Compare interaction traces.">
+      </action>
+   </viewContribution>
+</extension>
+<extension
+      point="org.eclipse.core.filesystem.filesystems">
+   <filesystem
+         scheme="bct">
+      <run
+            class="it.unimib.disco.lta.bct.bctjavaeclipse.core.filesystem.BctFileSystem">
+      </run>
+   </filesystem>
+</extension>
+<extension
+      point="org.eclipse.ui.editors">
+</extension>
+<extension
+      point="it.unimib.disco.lta.bct.bctJavaEclipse.ui.actions.violationsCompositeActions">
+   <violationCompositeAction
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.widgets.OpenModelViolationsCompositeAction">
+   </violationCompositeAction>
+   <violationCompositeAction
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.widgets.OpenTraceViolationsCompositeAction">
+   </violationCompositeAction>
+   <violationCompositeAction
+         class="it.unimib.disco.lta.bct.bctjavaeclipse.ui.logAnalysis.widgets.OpenSourceFileViolationsCompositeAction">
+   </violationCompositeAction>
+</extension>
+ 
+
+
+
+</plugin>

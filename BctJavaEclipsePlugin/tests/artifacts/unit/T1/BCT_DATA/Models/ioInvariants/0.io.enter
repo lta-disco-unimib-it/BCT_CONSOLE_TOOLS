@@ -1,0 +1,4 @@
+parameter[0] == 1
+parameter[1].age one of { 9, 90 }
+store(parameter[0])
+store(parameter[1].age) >> returnValue == 0)

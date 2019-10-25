@@ -1,0 +1,7 @@
+y != 0
+y == orig(y)
+x == orig(x)
+returnValue != null
+y >= 0.600000024
+x >= 0.400000006
+x != 0

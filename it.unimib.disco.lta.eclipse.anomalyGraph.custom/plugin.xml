@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.menu.openModels"
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.ioModelOpen"
+            objectClass="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.parts.BctIOModelViolationEditPart">
+         <action
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.custom.editor.OpenBctIOModelViolationAction"
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.menu.openBctIOModelViolationAction"
+               label="Open IO Model">
+         </action>
+         <action
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.custom.editor.OpenJavaClassAction"
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.menu.openJavaClassAction"
+               label="Open source file with statement causing the anomaly">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="false"
+            id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.fsaModelOpen"
+            objectClass="it.unimib.disco.lta.eclipse.anomalyGraph.diagram.edit.parts.BctFSAModelViolationEditPart">
+         <action
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.custom.editor.OpenBctFSAModelViolationAction"
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.menu.openBctIOModelViolationAction"
+               label="Open FSA Model">
+         </action>
+         <action
+               class="it.unimib.disco.lta.eclipse.anomalyGraph.custom.editor.OpenJavaClassAction"
+               id="it.unimib.disco.lta.eclipse.anomalyGraph.custom.menu.openJavaClassAction"
+               label="Open source file with statement causing the anomaly">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

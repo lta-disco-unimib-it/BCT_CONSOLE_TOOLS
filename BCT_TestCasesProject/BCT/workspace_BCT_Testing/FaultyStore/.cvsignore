@@ -1,0 +1,6 @@
+Store.exe
+StoreTest
+*.gcov
+*.gcno
+*.gcda
+*.ser

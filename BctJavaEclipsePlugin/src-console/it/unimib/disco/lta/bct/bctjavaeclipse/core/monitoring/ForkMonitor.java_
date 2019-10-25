@@ -1,0 +1,97 @@
+package it.unimib.disco.lta.bct.bctjavaeclipse.core.monitoring;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import cpp.gdb.GdbRegressionConfigCreator;
+
+import it.unimib.disco.lta.bct.bctjavaeclipse.core.bctIntegrationLayer.ConfigurationFilesManager;
+import it.unimib.disco.lta.bct.bctjavaeclipse.core.bctIntegrationLayer.ConsoleHelper;
+import sun.misc.Signal;
+import sun.misc.SignalHandler;
+import util.JavaRunner;
+import util.ProcessRunner;
+
+public class ForkMonitor {
+
+	public static class ForkHandler implements SignalHandler {
+
+		private String configFile;
+		private AtomicInteger processesCounter = new AtomicInteger();
+
+		public ForkHandler(String configFile) {
+			this.configFile = configFile;
+			
+		}
+
+		@Override
+		public void handle(Signal arg0) {
+			
+			int currentCounter = processesCounter.incrementAndGet();
+			File newConfigFile = createNewConfigFile(currentCounter);
+			
+			String[] commandToExecute = ConsoleHelper.createGdbCommandToExecute(newConfigFile);
+			
+			ArrayList<String> command = new ArrayList<String>();
+			for ( String c : commandToExecute ){
+				command.add(c);
+			}
+			
+			command.add("--wait");
+			
+			ProcessRunner.run(command, null, null, 0);
+		}
+
+		private File createNewConfigFile(int currentCounter) throws IOException {
+			File file = new File( configFile+"-"+currentCounter );
+			
+			BufferedReader r = new BufferedReader(new FileReader(configFile));
+			BufferedWriter w = new BufferedWriter( new FileWriter(file) );
+			
+			String line = null;
+			try {
+				boolean forkModeSet = false;
+				while ( ( line = r.readLine() ) != null ){
+					if ( line.startsWith(GdbRegressionConfigCreator.SET_FOLLOW_FORK_MODE) && !forkModeSet){
+						line = GdbRegressionConfigCreator.SET_FOLLOW_FORK_MODE +"parent";
+						forkModeSet = true;
+					} else if ( line.startsWith(GdbRegressionConfigCreator.SET_LOGGING_FILE) ){
+						String path = line.substring( GdbRegressionConfigCreator.SET_LOGGING_FILE.length() );
+						String newPath = path.trim()+currentCounter;
+						line = GdbRegressionConfigCreator.SET_LOGGING_FILE+newPath;
+					}
+					w.write(line);
+				}
+				w.close();
+				r.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			return file;
+		}
+		
+	}
+	
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String configFile = args[0];
+		String loggingFile = args[1];
+		
+		Signal signal = new Signal("SIGUSR1");
+        SignalHandler handler = new ForkHandler(configFile,loggingFile);
+		oldHandler = Signal.handle(signal, handler );
+	}
+
+}

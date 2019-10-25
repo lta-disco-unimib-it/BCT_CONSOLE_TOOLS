@@ -1,0 +1,1320 @@
+Jan 21, 2016 10:56:46 AM util.JavaRunner runMainInClass
+INFO: Including current path
+Jan 21, 2016 10:56:46 AM util.JavaRunner runMainInClass
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciChangesDetectionScript, AnalysisV0.change, EsempioV0, EsempioV0/test, EsempioV1, EsempioV1/test]
+Jan 21, 2016 10:56:46 AM util.ProcessRunner run
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciChangesDetectionScript, AnalysisV0.change, EsempioV0, EsempioV0/test, EsempioV1, EsempioV1/test]
+LOADING
+CREATING  INV G OPT
+CREATED INV G OPT
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+_init
+free@plt-0x10
+free@plt
+putchar@plt
+puts@plt
+vsnprintf@plt
+strlen@plt
+printf@plt
+__libc_start_main@plt
+calloc@plt
+__gmon_start__@plt
+memcpy@plt
+malloc@plt
+realloc@plt
+exit@plt
+_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+utstring_printf_va
+utstring_printf
+_utstring_BuildTable
+_utstring_BuildTableR
+_utstring_find
+_utstring_findR
+utstring_find
+utstring_findR
+ucl_obj_todouble_safe
+ucl_obj_todouble
+ucl_obj_toint_safe
+ucl_obj_toint
+ucl_obj_toboolean_safe
+ucl_obj_toboolean
+ucl_obj_tostring_safe
+ucl_obj_tostring
+ucl_strlcpy_unsafe
+ucl_add_tabs
+ucl_elt_string_write_json
+ucl_elt_obj_write_json
+ucl_elt_array_write_json
+ucl_elt_write_json
+ucl_obj_write_json
+ucl_object_emit_json
+ucl_elt_obj_write_rcl
+ucl_elt_array_write_rcl
+ucl_elt_write_rcl
+ucl_object_emit_rcl
+ucl_elt_obj_write_yaml
+ucl_elt_array_write_yaml
+ucl_elt_write_yaml
+ucl_object_emit_yaml
+ucl_object_emit
+main
+__libc_csu_init
+__libc_csu_fini
+_fini
+_init
+free@plt-0x10
+free@plt
+putchar@plt
+puts@plt
+vsnprintf@plt
+strlen@plt
+printf@plt
+__libc_start_main@plt
+calloc@plt
+__gmon_start__@plt
+memcpy@plt
+malloc@plt
+realloc@plt
+exit@plt
+_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+utstring_printf_va
+utstring_printf
+_utstring_BuildTable
+_utstring_BuildTableR
+_utstring_find
+_utstring_findR
+utstring_find
+utstring_findR
+ucl_obj_todouble_safe
+ucl_obj_todouble
+ucl_obj_toint_safe
+ucl_obj_toint
+ucl_obj_toboolean_safe
+ucl_obj_toboolean
+ucl_obj_tostring_safe
+ucl_obj_tostring
+ucl_add_tabs
+ucl_elt_string_write_json
+ucl_elt_obj_write_json
+ucl_elt_array_write_json
+ucl_elt_write_json
+ucl_obj_write_json
+ucl_object_emit_json
+ucl_elt_obj_write_rcl
+ucl_elt_array_write_rcl
+ucl_elt_write_rcl
+ucl_object_emit_rcl
+ucl_elt_obj_write_yaml
+ucl_elt_array_write_yaml
+ucl_elt_write_yaml
+ucl_object_emit_yaml
+ucl_object_emit
+main
+__libc_csu_init
+__libc_csu_fini
+_fini
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@54394557
+Scrittura oggetto in Xml riuscita
+{daikonPath=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/../BctEclipseCore/lib/daikon.jar, normalizedTraceHandlerFile.interactionDir=%%BCT_HOME%%/Preprocessing/interaction, normalizedTraceHandlerFile.declsDir=%%BCT_HOME%%/Preprocessing/decls, addAdditionalInvariants=true, daikonConfidenceLevel=0, traceReader.type=traceReaders.raw.FileTracesReader, traceReader.tracesPath=%%BCT_HOME%%/DataRecording/, expandReferences=true, normalizedTraceHandler.type=traceReaders.normalized.NormalizedTraceHandlerFile, FSAEngine=KBehavior, deleteTemporaryDir=true, daikonConfig=essentials, type=tools.InvariantGenerator, normalizedTraceHandlerFile.dtraceDir=%%BCT_HOME%%/Preprocessing/dtrace, temporaryDir=%%BCT_HOME%%/tmp, traceReader.interactionTracesDirName=interactionInvariantLogs, traceReader.ioTracesDirName=ioInvariantLogs}
+Saving additional invariant generator options
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] , Component :AddedFunctions, Component :DeletedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] ]
+Targets: [[FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:564:578 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:582:597 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: calloc@plt
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: malloc@plt
+Working on child: ucl_elt_write_yaml
+writeFunctionMonitoring ucl_elt_write_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeFunctionMonitoring ucl_elt_write_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+Working on child: calloc@plt
+Working on child: free@plt
+Working on child: ucl_elt_write_rcl
+writeFunctionMonitoring ucl_elt_write_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeFunctionMonitoring ucl_elt_write_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: malloc@plt
+Working on child: calloc@plt
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: malloc@plt
+Working on child: ucl_obj_write_json
+writeFunctionMonitoring ucl_obj_write_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_obj_write_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeFunctionMonitoring ucl_obj_write_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_obj_write_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+Working on child: putchar@plt
+Working on child: puts@plt
+Working on child: malloc@plt
+Working on child: printf@plt
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 7
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 8
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 11
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 12
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 13
+writeFunctionMonitoring ucl_object_emit_rJan 21, 2016 10:56:53 AM util.ProcessRunner run
+INFO: Exit code 0
+Jan 21, 2016 10:56:53 AM util.JavaRunner runMainInClass
+INFO: Java Process Exit code 0
+Jan 21, 2016 10:56:53 AM util.JavaRunner runMainInClass
+INFO: Including current path
+Jan 21, 2016 10:56:53 AM util.JavaRunner runMainInClass
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciChangesDetectionScript, AnalysisV1.change, EsempioV1, EsempioV1/test, EsempioV0, EsempioV0/test]
+Jan 21, 2016 10:56:53 AM util.ProcessRunner run
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciChangesDetectionScript, AnalysisV1.change, EsempioV1, EsempioV1/test, EsempioV0, EsempioV0/test]
+LOADING
+CREATING  INV G OPT
+CREATED INV G OPT
+_init
+free@plt-0x10
+free@plt
+putchar@plt
+puts@plt
+vsnprintf@plt
+strlen@plt
+printf@plt
+__libc_start_main@plt
+calloc@plt
+__gmon_start__@plt
+memcpy@plt
+malloc@plt
+realloc@plt
+exit@plt
+_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+utstring_printf_va
+utstring_printf
+_utstring_BuildTable
+_utstring_BuildTableR
+_utstring_find
+_utstring_findR
+utstring_find
+utstring_findR
+ucl_obj_todouble_safe
+ucl_obj_todouble
+ucl_obj_toint_safe
+ucl_obj_toint
+ucl_obj_toboolean_safe
+ucl_obj_toboolean
+ucl_obj_tostring_safe
+ucl_obj_tostring
+ucl_add_tabs
+ucl_elt_string_write_json
+ucl_elt_obj_write_json
+ucl_elt_array_write_json
+ucl_elt_write_json
+ucl_obj_write_json
+ucl_object_emit_json
+ucl_elt_obj_write_rcl
+ucl_elt_array_write_rcl
+ucl_elt_write_rcl
+ucl_object_emit_rcl
+ucl_elt_obj_write_yaml
+ucl_elt_array_write_yaml
+ucl_elt_write_yaml
+ucl_object_emit_yaml
+ucl_object_emit
+main
+__libc_csu_init
+__libc_csu_fini
+_fini
+_init
+free@plt-0x10
+free@plt
+putchar@plt
+puts@plt
+vsnprintf@plt
+strlen@plt
+printf@plt
+__libc_start_main@plt
+calloc@plt
+__gmon_start__@plt
+memcpy@plt
+malloc@plt
+realloc@plt
+exit@plt
+_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+utstring_printf_va
+utstring_printf
+_utstring_BuildTable
+_utstring_BuildTableR
+_utstring_find
+_utstring_findR
+utstring_find
+utstring_findR
+ucl_obj_todouble_safe
+ucl_obj_todouble
+ucl_obj_toint_safe
+ucl_obj_toint
+ucl_obj_toboolean_safe
+ucl_obj_toboolean
+ucl_obj_tostring_safe
+ucl_obj_tostring
+ucl_strlcpy_unsafe
+ucl_add_tabs
+ucl_elt_string_write_json
+ucl_elt_obj_write_json
+ucl_elt_array_write_json
+ucl_elt_write_json
+ucl_obj_write_json
+ucl_object_emit_json
+ucl_elt_obj_write_rcl
+ucl_elt_array_write_rcl
+ucl_elt_write_rcl
+ucl_object_emit_rcl
+ucl_elt_obj_write_yaml
+ucl_elt_array_write_yaml
+ucl_elt_write_yaml
+ucl_object_emit_yaml
+ucl_object_emit
+main
+__libc_csu_init
+__libc_csu_fini
+_fini
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7c896573
+Scrittura oggetto in Xml riuscita
+{daikonPath=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/../BctEclipseCore/lib/daikon.jar, normalizedTraceHandlerFile.interactionDir=%%BCT_HOME%%/Preprocessing/interaction, normalizedTraceHandlerFile.declsDir=%%BCT_HOME%%/Preprocessing/decls, addAdditionalInvariants=true, daikonConfidenceLevel=0, traceReader.type=traceReaders.raw.FileTracesReader, traceReader.tracesPath=%%BCT_HOME%%/DataRecording/, expandReferences=true, normalizedTraceHandler.type=traceReaders.normalized.NormalizedTraceHandlerFile, FSAEngine=KBehavior, deleteTemporaryDir=true, daikonConfig=essentials, type=tools.InvariantGenerator, normalizedTraceHandlerFile.dtraceDir=%%BCT_HOME%%/Preprocessing/dtrace, temporaryDir=%%BCT_HOME%%/tmp, traceReader.interactionTracesDirName=interactionInvariantLogs, traceReader.ioTracesDirName=ioInvariantLogs}
+Saving additional invariant generator options
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] , Component :AddedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] , Component :DeletedFunctions]
+Targets: [[FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:553:562 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:566:589 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:286 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:412:421 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: calloc@plt
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: ucl_elt_write_yaml
+writeFunctionMonitoring ucl_elt_write_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeFunctionMonitoring ucl_elt_write_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+Working on child: free@plt
+Working on child: malloc@plt
+Working on child: printf@plt
+Working on child: puts@plt
+Working on child: putchar@plt
+Working on child: calloc@plt
+Working on child: ucl_obj_write_json
+writeFunctionMonitoring ucl_obj_write_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_obj_write_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeFunctionMonitoring ucl_obj_write_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_obj_write_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: ucl_elt_write_rcl
+writeFunctionMonitoring ucl_elt_write_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeFunctionMonitoring ucl_elt_write_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 11
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef main breakpoint id: 12
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 13
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 14
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 15
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCJan 21, 2016 10:57:00 AM util.ProcessRunner run
+INFO: Exit code 0
+Jan 21, 2016 10:57:00 AM util.JavaRunner runMainInClass
+INFO: Java Process Exit code 0
+Jan 21, 2016 10:57:00 AM util.JavaRunner runMainInClass
+INFO: Including current path
+Jan 21, 2016 10:57:00 AM util.JavaRunner runMainInClass
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciChangesDetectionScript, AnalysisV2.change, EsempioV2/, EsempioV2/test, EsempioV0, EsempioV0/test]
+Jan 21, 2016 10:57:00 AM util.ProcessRunner run
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciChangesDetectionScript, AnalysisV2.change, EsempioV2/, EsempioV2/test, EsempioV0, EsempioV0/test]
+LOADING
+CREATING  INV G OPT
+CREATED INV G OPT
+_init
+free@plt-0x10
+free@plt
+putchar@plt
+puts@plt
+vsnprintf@plt
+strlen@plt
+printf@plt
+__libc_start_main@plt
+calloc@plt
+__gmon_start__@plt
+memcpy@plt
+malloc@plt
+realloc@plt
+exit@plt
+_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+utstring_printf_va
+utstring_printf
+_utstring_BuildTable
+_utstring_BuildTableR
+_utstring_find
+_utstring_findR
+utstring_find
+utstring_findR
+ucl_obj_todouble_safe
+ucl_obj_todouble
+ucl_obj_toint_safe
+ucl_obj_toint
+ucl_obj_toboolean_safe
+ucl_obj_toboolean
+ucl_obj_tostring_safe
+ucl_obj_tostring
+ucl_strlcpy_unsafe
+ucl_add_tabs
+ucl_elt_string_write_json
+ucl_elt_obj_write_json
+ucl_elt_array_write_json
+ucl_elt_write_json
+ucl_obj_write_json
+ucl_object_emit_json
+ucl_elt_obj_write_rcl
+ucl_elt_array_write_rcl
+ucl_elt_write_rcl
+ucl_object_emit_rcl
+ucl_elt_obj_write_yaml
+ucl_elt_array_write_yaml
+ucl_elt_write_yaml
+ucl_object_emit_yaml
+ucl_object_emit
+main
+__libc_csu_init
+__libc_csu_fini
+_fini
+_init
+free@plt-0x10
+free@plt
+putchar@plt
+puts@plt
+vsnprintf@plt
+strlen@plt
+printf@plt
+__libc_start_main@plt
+calloc@plt
+__gmon_start__@plt
+memcpy@plt
+malloc@plt
+realloc@plt
+exit@plt
+_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+utstring_printf_va
+utstring_printf
+_utstring_BuildTable
+_utstring_BuildTableR
+_utstring_find
+_utstring_findR
+utstring_find
+utstring_findR
+ucl_obj_todouble_safe
+ucl_obj_todouble
+ucl_obj_toint_safe
+ucl_obj_toint
+ucl_obj_toboolean_safe
+ucl_obj_toboolean
+ucl_obj_tostring_safe
+ucl_obj_tostring
+ucl_strlcpy_unsafe
+ucl_add_tabs
+ucl_elt_string_write_json
+ucl_elt_obj_write_json
+ucl_elt_array_write_json
+ucl_elt_write_json
+ucl_obj_write_json
+ucl_object_emit_json
+ucl_elt_obj_write_rcl
+ucl_elt_array_write_rcl
+ucl_elt_write_rcl
+ucl_object_emit_rcl
+ucl_elt_obj_write_yaml
+ucl_elt_array_write_yaml
+ucl_elt_write_yaml
+ucl_object_emit_yaml
+ucl_object_emit
+main
+__libc_csu_init
+__libc_csu_fini
+_fini
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7c896573
+Scrittura oggetto in Xml riuscita
+{daikonPath=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/../BctEclipseCore/lib/daikon.jar, normalizedTraceHandlerFile.interactionDir=%%BCT_HOME%%/Preprocessing/interaction, normalizedTraceHandlerFile.declsDir=%%BCT_HOME%%/Preprocessing/decls, addAdditionalInvariants=true, daikonConfidenceLevel=0, traceReader.type=traceReaders.raw.FileTracesReader, traceReader.tracesPath=%%BCT_HOME%%/DataRecording/, expandReferences=true, normalizedTraceHandler.type=traceReaders.normalized.NormalizedTraceHandlerFile, FSAEngine=KBehavior, deleteTemporaryDir=true, daikonConfig=essentials, type=tools.InvariantGenerator, normalizedTraceHandlerFile.dtraceDir=%%BCT_HOME%%/Preprocessing/dtrace, temporaryDir=%%BCT_HOME%%/tmp, traceReader.interactionTracesDirName=interactionInvariantLogs, traceReader.ioTracesDirName=ioInvariantLogs}
+Saving additional invariant generator options
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] , Component :AddedFunctions, Component :DeletedFunctions]
+Targets: [[FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:566:579 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: free@plt
+Working on child: exit@plt
+Working on child: realloc@plt
+Working on child: ucl_elt_write_yaml
+writeFunctionMonitoring ucl_elt_write_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeFunctionMonitoring ucl_elt_write_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+Working on child: calloc@plt
+Working on child: malloc@plt
+Working on child: printf@plt
+Working on child: puts@plt
+Working on child: putchar@plt
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 5
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/test.c
+writeParentDef main breakpoint id: 6
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/test.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV2.change/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] , Component :AddedFunctions, Component :DeletedFunctions]
+Targets: [[FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:564:578 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: putchar@plt
+Working on child: malloc@plt
+Working on child: puts@plt
+Working on child: printf@plt
+Working on child: ucl_strlcpy_unsafe
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: free@plt
+Working on child: calloc@plt
+Working on child: ucl_elt_write_yaml
+writeFunctionMonitoring ucl_elt_write_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeFunctionMonitoring ucl_elt_write_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_elt_write_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 5
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef main breakpoint id: 6
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspacJan 21, 2016 10:57:06 AM util.ProcessRunner run
+INFO: Exit code 0
+Jan 21, 2016 10:57:06 AM util.JavaRunner runMainInClass
+INFO: Java Process Exit code 0
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@67011281
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@33bcb230
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@60d60cd6
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@cfed7c
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@26e6d0a5
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@1c042510
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@bbf4061
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@296bbb56
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@45051da4
+Functions to monitor:
+AnalysisV0
+EsempioV0
+EsempioV0/test
+EsempioV1
+EsempioV1/test
+ucl_object_emit_rcl
+ucl_strlcpy_unsafe
+ucl_object_emit_json
+ucl_object_emit_yaml
+ucl_elt_write_yaml
+ucl_object_emit
+main
+Jan 21, 2016 10:57:06 AM util.JavaRunner runMainInClass
+INFO: Including current path
+Jan 21, 2016 10:57:06 AM util.JavaRunner runMainInClass
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciBranchComparisonScript, AnalysisV0, EsempioV0, EsempioV0/test, EsempioV1, EsempioV1/test, ucl_object_emit_rcl, ucl_strlcpy_unsafe, ucl_object_emit_json, ucl_object_emit_yaml, ucl_elt_write_yaml, ucl_object_emit, main]
+Jan 21, 2016 10:57:06 AM util.ProcessRunner run
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciBranchComparisonScript, AnalysisV0, EsempioV0, EsempioV0/test, EsempioV1, EsempioV1/test, ucl_object_emit_rcl, ucl_strlcpy_unsafe, ucl_object_emit_json, ucl_object_emit_yaml, ucl_elt_write_yaml, ucl_object_emit, main]
+Functions to monitor:
+ucl_object_emit_rcl
+ucl_strlcpy_unsafe
+ucl_object_emit_json
+ucl_object_emit_yaml
+ucl_elt_write_yaml
+ucl_object_emit
+main
+LOADING
+CREATING  INV G OPT
+CREATED INV G OPT
+RESET FOR COMPLETE
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7daed910
+Scrittura oggetto in Xml riuscita
+Set use entry point detector: false
+Use entry point detector: false
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:564:578 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:582:597 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: calloc@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: free@plt
+Working on child: ucl_elt_write_rcl
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: ucl_elt_write_yaml
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: free@plt
+Working on child: exit@plt
+Working on child: puts@plt
+Working on child: malloc@plt
+Working on child: putchar@plt
+Working on child: printf@plt
+Working on child: calloc@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: free@plt
+Working on child: ucl_obj_write_json
+Working on child: exit@plt
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 1
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 2
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 5
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 6
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 9
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef main breakpoint id: 10
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 11
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 12
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION ucl_object_emit location:ucl_emitter.c:566:589 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:286 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:412:421 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:553:562 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: free@plt
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: ucl_obj_write_json
+Working on child: realloc@plt
+Working on child: puts@plt
+Working on child: malloc@plt
+Working on child: printf@plt
+Working on child: putchar@plt
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: ucl_elt_write_rcl
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: ucl_elt_write_yaml
+Working on child: calloc@plt
+Working on child: realloc@plt
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 1
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 2
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 5
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef main breakpoint id: 6
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/modifiedSoftware.gdb.config.txt.probes
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@d8a1017
+Scrittura oggetto in Xml riuscita
+{daikonPath=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/../BctEclipseCore/lib/daikon.jar, normalizedTraceHandlerFile.interactionDir=%%BCT_HOME%%/Preprocessing/interaction, normalizedTraceHandlerFile.declsDir=%%BCT_HOME%%/Preprocessing/decls, addAdditionalInvariants=true, daikonConfidenceLevel=0, traceReader.type=traceReaders.raw.FileTracesReader, traceReader.tracesPath=%%BCT_HOME%%/DataRecording/, expandReferences=true, normalizedTraceHandler.type=traceReaders.normalized.NormalizedTraceHandlerFile, FSAEngine=KBehavior, deleteTemporaryDir=true, daikonConfig=essentials, type=tools.InvariantGenerator, normalizedTraceHandlerFile.dtraceDir=%%BCT_HOME%%/Preprocessing/dtrace, temporaryDir=%%BCT_HOME%%/tmp, traceReader.interactionTracesDirName=interactionInvariantLogs, traceReader.ioTracesDirName=ioInvariantLogs}
+Saving additional invariant generator options
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:582:597 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:564:578 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: malloc@plt
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: ucl_elt_write_rcl
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: malloc@plt
+Working on child: puts@plt
+Working on child: printf@plt
+Working on child: putchar@plt
+Working on child: malloc@plt
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: ucl_obj_write_json
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: ucl_elt_write_yaml
+Working on child: malloc@plt
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: calloc@plt
+Working on child: exit@plt
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 1
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 2
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 5
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 6
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef main 
+writeParentDef main breakpoint id: 7
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef main breakpoint id: 8
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 11
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_eJan 21, 2016 10:57:13 AM util.ProcessRunner run
+INFO: Exit code 0
+Jan 21, 2016 10:57:13 AM util.JavaRunner runMainInClass
+INFO: Java Process Exit code 0
+Functions to monitor:
+AnalysisV1
+EsempioV1
+EsempioV1/test
+EsempioV0
+EsempioV0/test
+ucl_object_emit_rcl
+ucl_strlcpy_unsafe
+ucl_object_emit_json
+ucl_object_emit_yaml
+ucl_elt_write_yaml
+ucl_object_emit
+main
+Jan 21, 2016 10:57:13 AM util.JavaRunner runMainInClass
+INFO: Including current path
+Jan 21, 2016 10:57:13 AM util.JavaRunner runMainInClass
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciBranchComparisonScript, AnalysisV1, EsempioV1, EsempioV1/test, EsempioV0, EsempioV0/test, ucl_object_emit_rcl, ucl_strlcpy_unsafe, ucl_object_emit_json, ucl_object_emit_yaml, ucl_elt_write_yaml, ucl_object_emit, main]
+Jan 21, 2016 10:57:13 AM util.ProcessRunner run
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciBranchComparisonScript, AnalysisV1, EsempioV1, EsempioV1/test, EsempioV0, EsempioV0/test, ucl_object_emit_rcl, ucl_strlcpy_unsafe, ucl_object_emit_json, ucl_object_emit_yaml, ucl_elt_write_yaml, ucl_object_emit, main]
+Functions to monitor:
+ucl_object_emit_rcl
+ucl_strlcpy_unsafe
+ucl_object_emit_json
+ucl_object_emit_yaml
+ucl_elt_write_yaml
+ucl_object_emit
+main
+LOADING
+CREATING  INV G OPT
+CREATED INV G OPT
+RESET FOR COMPLETE
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7daed910
+Scrittura oggetto in Xml riuscita
+Set use entry point detector: false
+Use entry point detector: false
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:553:562 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:566:589 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:412:421 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:286 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: calloc@plt
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: ucl_elt_write_yaml
+Working on child: free@plt
+Working on child: calloc@plt
+Working on child: ucl_elt_write_rcl
+Working on child: realloc@plt
+Working on child: exit@plt
+Working on child: printf@plt
+Working on child: puts@plt
+Working on child: malloc@plt
+Working on child: putchar@plt
+Working on child: calloc@plt
+Working on child: realloc@plt
+Working on child: ucl_obj_write_json
+Working on child: exit@plt
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 1
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 2
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 5
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 6
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 7
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef main breakpoint id: 8
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV1/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:564:578 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:582:597 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: malloc@plt
+Working on child: ucl_elt_write_rcl
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: printf@plt
+Working on child: malloc@plt
+Working on child: putchar@plt
+Working on child: puts@plt
+Working on child: free@plt
+Working on child: ucl_elt_write_yaml
+Working on child: realloc@plt
+Working on child: malloc@plt
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: free@plt
+Working on child: realloc@plt
+Working on child: ucl_obj_write_json
+Working on child: malloc@plt
+Working on child: exit@plt
+Working on child: calloc@plt
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 1
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 2
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 5
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef main breakpoint id: 6
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 11
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 12
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV1/BCT/BCT_DATA/BCT/conf/files/scripts/modifiedSoftware.gdb.config.txt.probes
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@d8a1017
+Scrittura oggetto in Xml riuscita
+{daikonPath=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/../BctEclipseCore/lib/daikon.jar, normalizedTraceHandlerFile.interactionDir=%%BCT_HOME%%/Preprocessing/interaction, normalizedTraceHandlerFile.declsDir=%%BCT_HOME%%/Preprocessing/decls, addAdditionalInvariants=true, daikonConfidenceLevel=0, traceReader.type=traceReaders.raw.FileTracesReader, traceReader.tracesPath=%%BCT_HOME%%/DataRecording/, expandReferences=true, normalizedTraceHandler.type=traceReaders.normalized.NormalizedTraceHandlerFile, FSAEngine=KBehavior, deleteTemporaryDir=true, daikonConfig=essentials, type=tools.InvariantGenerator, normalizedTraceHandlerFile.dtraceDir=%%BCT_HOME%%/Preprocessing/dtrace, temporaryDir=%%BCT_HOME%%/tmp, traceReader.interactionTracesDirName=interactionInvariantLogs, traceReader.ioTracesDirName=ioInvariantLogs}
+Saving additional invariant generator options
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:553:562 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:286 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:412:421 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:566:589 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: malloc@plt
+Working on child: printf@plt
+Working on child: putchar@plt
+Working on child: puts@plt
+Working on child: realloc@plt
+Working on child: ucl_elt_write_yaml
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: realloc@plt
+Working on child: ucl_obj_write_json
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: realloc@plt
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: ucl_elt_write_rcl
+Working on child: free@plt
+writeParentDef main 
+writeParentDef main breakpoint id: 1
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef main breakpoint id: 2
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/test.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 5
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 6
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV1/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV1/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:Jan 21, 2016 10:57:20 AM util.ProcessRunner run
+INFO: Exit code 0
+Jan 21, 2016 10:57:20 AM util.JavaRunner runMainInClass
+INFO: Java Process Exit code 0
+Functions to monitor:
+AnalysisV2
+EsempioV2/
+EsempioV2/test
+EsempioV0
+EsempioV0/test
+ucl_object_emit_rcl
+ucl_strlcpy_unsafe
+ucl_object_emit_json
+ucl_object_emit_yaml
+ucl_elt_write_yaml
+ucl_object_emit
+main
+Jan 21, 2016 10:57:20 AM util.JavaRunner runMainInClass
+INFO: Including current path
+Jan 21, 2016 10:57:20 AM util.JavaRunner runMainInClass
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciBranchComparisonScript, AnalysisV2, EsempioV2/, EsempioV2/test, EsempioV0, EsempioV0/test, ucl_object_emit_rcl, ucl_strlcpy_unsafe, ucl_object_emit_json, ucl_object_emit_yaml, ucl_elt_write_yaml, ucl_object_emit, main]
+Jan 21, 2016 10:57:20 AM util.ProcessRunner run
+INFO: Executing [java, -Dbct.useEntryPointDetector=false, -Dbct.monitorGlobalVariables=false, -Dbct.generatePINprobes=true, -Dbct.pinHome=/mnt/data/PIN/pin-2.14-71313-gcc.4.4.7-linux/, -cp, /home/user/Workspaces/workspaceBCT/BCT/bin:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/bin/:/home/user/Workspaces/workspaceBCT/BCT_EclipseLibrariesStubs/dist/bct-console-tools.jar:/home/user/Workspaces/workspaceBCT/BDCI/bin, it.unimib.disco.lta.bdci.GenerateBdciBranchComparisonScript, AnalysisV2, EsempioV2/, EsempioV2/test, EsempioV0, EsempioV0/test, ucl_object_emit_rcl, ucl_strlcpy_unsafe, ucl_object_emit_json, ucl_object_emit_yaml, ucl_elt_write_yaml, ucl_object_emit, main]
+Functions to monitor:
+ucl_object_emit_rcl
+ucl_strlcpy_unsafe
+ucl_object_emit_json
+ucl_object_emit_yaml
+ucl_elt_write_yaml
+ucl_object_emit
+main
+LOADING
+CREATING  INV G OPT
+CREATED INV G OPT
+RESET FOR COMPLETE
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7daed910
+Scrittura oggetto in Xml riuscita
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:583:598 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:566:579 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: puts@plt
+Working on child: printf@plt
+Working on child: putchar@plt
+Working on child: malloc@plt
+Working on child: ucl_elt_write_yaml
+Working on child: free@plt
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: realloc@plt
+Working on child: ucl_elt_write_rcl
+Working on child: free@plt
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: realloc@plt
+Working on child: malloc@plt
+Working on child: free@plt
+Working on child: ucl_obj_write_json
+Working on child: calloc@plt
+Working on child: exit@plt
+Working on child: realloc@plt
+Working on child: malloc@plt
+writeParentDef main 
+writeParentDef main breakpoint id: 1
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/test.c
+writeParentDef main breakpoint id: 2
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/test.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 5
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 6
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 7
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 8
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_internal.h
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 9
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 10
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 11
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 12
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV2/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt.probes
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:564:578 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:582:597 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: calloc@plt
+Working on child: ucl_elt_write_yaml
+Working on child: exit@plt
+Working on child: free@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: calloc@plt
+Working on child: ucl_obj_write_json
+Working on child: exit@plt
+Working on child: free@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: calloc@plt
+Working on child: ucl_elt_write_rcl
+Working on child: exit@plt
+Working on child: free@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: putchar@plt
+Working on child: printf@plt
+Working on child: malloc@plt
+Working on child: puts@plt
+writeParentDef ucl_object_emit_yaml 
+writeParentDef ucl_object_emit_yaml breakpoint id: 1
+writeFunctionMonitoring ucl_object_emit_yaml ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_yaml breakpoint id: 2
+writeFunctionMonitoring ucl_object_emit_yaml EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_yaml null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 5
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 6
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl 
+writeParentDef ucl_object_emit_rcl breakpoint id: 7
+writeFunctionMonitoring ucl_object_emit_rcl ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef ucl_object_emit_rcl breakpoint id: 8
+writeFunctionMonitoring ucl_object_emit_rcl EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_rcl null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_emitter.c
+writeParentDef main 
+writeParentDef main breakpoint id: 9
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef main breakpoint id: 10
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/test.c
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 11
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 12
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV0/ucl_internal.h
+!!!PIN probes written to: /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV2/BCT/BCT_DATA/BCT/conf/files/scripts/modifiedSoftware.gdb.config.txt.probes
+Scrittura oggetto in Xml iniziata
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@6a87832d
+Scrittura oggetto in Xml riuscita
+{daikonPath=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/../BctEclipseCore/lib/daikon.jar, normalizedTraceHandlerFile.interactionDir=%%BCT_HOME%%/Preprocessing/interaction, normalizedTraceHandlerFile.declsDir=%%BCT_HOME%%/Preprocessing/decls, addAdditionalInvariants=true, daikonConfidenceLevel=0, traceReader.type=traceReaders.raw.FileTracesReader, traceReader.tracesPath=%%BCT_HOME%%/DataRecording/, expandReferences=true, normalizedTraceHandler.type=traceReaders.normalized.NormalizedTraceHandlerFile, FSAEngine=KBehavior, deleteTemporaryDir=true, daikonConfig=essentials, type=tools.InvariantGenerator, normalizedTraceHandlerFile.dtraceDir=%%BCT_HOME%%/Preprocessing/dtrace, temporaryDir=%%BCT_HOME%%/tmp, traceReader.interactionTracesDirName=interactionInvariantLogs, traceReader.ioTracesDirName=ioInvariantLogs}
+Saving additional invariant generator options
+Set use entry point detector: false
+Use entry point detector: false
+Objdump already up to date. SKIPPING objdump creation.
+Objdump already up to date. SKIPPING objdump creation.
+Generating config for components: [Component :ModifiedFunctions[util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_rcl] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_strlcpy_unsafe] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_json] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_elt_write_yaml] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,ucl_object_emit] [util.componentsDeclaration.MatchingRuleInclude:.*,.*,main] ]
+Targets: [[FUNCTION main location:test.c:7:26 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_json location:ucl_emitter.c:277:291 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit location:ucl_emitter.c:583:598 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_strlcpy_unsafe location:ucl_internal.h:151:153 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_yaml location:ucl_emitter.c:566:579 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false], [FUNCTION ucl_object_emit_rcl location:ucl_emitter.c:417:432 target:false implementedInProject:true calledByTarget:false callerOfTarget:false calledByParentOfTarget:false]]
+Working on child: puts@plt
+Working on child: malloc@plt
+Working on child: putchar@plt
+Working on child: printf@plt
+Working on child: calloc@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: ucl_obj_write_json
+Working on child: free@plt
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: realloc@plt
+Working on child: free@plt
+Working on child: ucl_elt_write_yaml
+Working on child: exit@plt
+Working on child: calloc@plt
+Working on child: malloc@plt
+Working on child: realloc@plt
+Working on child: free@plt
+Working on child: ucl_elt_write_rcl
+Working on child: exit@plt
+writeParentDef main 
+writeParentDef main breakpoint id: 1
+writeFunctionMonitoring main ENTER
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/test.c
+writeParentDef main breakpoint id: 2
+writeFunctionMonitoring main EXIT
+additionalCommandsCreator SKIPPING FOR main null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/test.c
+writeParentDef ucl_object_emit_json 
+writeParentDef ucl_object_emit_json breakpoint id: 3
+writeFunctionMonitoring ucl_object_emit_json ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit_json breakpoint id: 4
+writeFunctionMonitoring ucl_object_emit_json EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit_json null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit 
+writeParentDef ucl_object_emit breakpoint id: 5
+writeFunctionMonitoring ucl_object_emit ENTER
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_object_emit breakpoint id: 6
+writeFunctionMonitoring ucl_object_emit EXIT
+additionalCommandsCreator SKIPPING FOR ucl_object_emit null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_emitter.c
+writeParentDef ucl_strlcpy_unsafe 
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 7
+writeFunctionMonitoring ucl_strlcpy_unsafe ENTER
+additionalCommandsCreator SKIPPING FOR ucl_strlcpy_unsafe null /home/BCT/workspace_BCT_Testing/BDCI/Esempio13/EsempioV2/ucl_internal.h
+writeParentDef ucl_strlcpy_unsafe breakpoint id: 8
+writeFunctionMonitoring ucl_strlcpy_unsafe EXIT
+additionalCommandsCreator SKIPPING FOR ucJan 21, 2016 10:57:26 AM util.ProcessRunner run
+INFO: Exit code 0
+Jan 21, 2016 10:57:26 AM util.JavaRunner runMainInClass
+INFO: Java Process Exit code 0
+To monitor version V0: 
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@57799932
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7ba2a1d2
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@621c6849
+GDB_CONFIG=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV0/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+$GDB <modifiedProgram or testCases> <args>
+
+To monitor version V1: 
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@5fdb7adc
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@5e691263
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@c847fcf
+GDB_CONFIG=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV1/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+$GDB <modifiedProgram or testCases> <args>
+
+To monitor version V2: 
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@7b28e644
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@275c48f7
+setA it.unimib.disco.lta.bct.bctjavaeclipse.core.configuration.ActionsMonitoringOptions@577412d0
+GDB_CONFIG=/home/BCT/workspace_BCT_Testing/BDCI/Esempio13/AnalysisV2/BCT/BCT_DATA/BCT/conf/files/scripts/originalSoftware.gdb.config.txt
+GDB="gdb -batch -silent -n -x $GDB_CONFIG --args"
+$GDB <modifiedProgram or testCases> <args>
+

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: it.unimib.disco.lta.eclipse.anomalyGraph.edit; singleton:=true
+Bundle-Version: 1.2.3
+Bundle-ClassPath: .
+Bundle-Activator: it.unimib.disco.lta.eclipse.anomalyGraph.provider.AnomalyGraphEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: it.unimib.disco.lta.eclipse.anomalyGraph.provider
+Require-Bundle: org.eclipse.core.runtime,
+ it.unimib.disco.lta.eclipse.anomalyGraph;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Eclipse-LazyStart: true

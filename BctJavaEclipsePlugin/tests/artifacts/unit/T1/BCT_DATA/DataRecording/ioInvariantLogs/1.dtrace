@@ -1,0 +1,12 @@
+testPackage.Test1.m(int):::ENTER
+parameter[0]
+1
+1
+
+testPackage.Test1.m(int):::EXIT1
+parameter[0]
+1
+1
+returnValue
+10
+1

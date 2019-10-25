@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/it.unimib.disco.lta.eclipse.anomalyGraph/src"
+    modelPluginID="it.unimib.disco.lta.eclipse.anomalyGraph" modelName="AnomalyGraph"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>AnomalyGraph.ecore</foreignModel>
+  <genPackages prefix="It" disposableProviderFactory="true" ecorePackage="AnomalyGraph.ecore#/">
+    <nestedGenPackages prefix="Unimib" disposableProviderFactory="true" ecorePackage="AnomalyGraph.ecore#//unimib">
+      <nestedGenPackages prefix="Disco" disposableProviderFactory="true" ecorePackage="AnomalyGraph.ecore#//unimib/disco">
+        <nestedGenPackages prefix="Lta" disposableProviderFactory="true" ecorePackage="AnomalyGraph.ecore#//unimib/disco/lta">
+          <nestedGenPackages prefix="Eclipse" disposableProviderFactory="true" ecorePackage="AnomalyGraph.ecore#//unimib/disco/lta/eclipse">
+            <nestedGenPackages prefix="AnomalyGraph" disposableProviderFactory="true"
+                ecorePackage="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph">
+              <genEnums typeSafeEnumCompatible="false" ecoreEnum="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/ViolationTypes">
+                <genEnumLiterals ecoreEnumLiteral="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/ViolationTypes/UnexpectedEvent"/>
+                <genEnumLiterals ecoreEnumLiteral="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/ViolationTypes/PrematureEnd"/>
+                <genEnumLiterals ecoreEnumLiteral="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/ViolationTypes/ParameterInvariantViolated"/>
+              </genEnums>
+              <genClasses ecoreClass="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Graph">
+                <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Graph/violations"/>
+                <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Graph/relationships"/>
+              </genClasses>
+              <genClasses image="false" ecoreClass="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation">
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/id"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/violatedModel"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/violation"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/creationTime"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/activeActions"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/activeTests"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/pid"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/threadId"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/stackTrace"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctModelViolation/violationType"/>
+              </genClasses>
+              <genClasses ecoreClass="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctIOModelViolation">
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctIOModelViolation/actualParametersStates"/>
+              </genClasses>
+              <genClasses ecoreClass="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctFSAModelViolation">
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/BctFSAModelViolation/currentStates"/>
+              </genClasses>
+              <genClasses ecoreClass="AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Relationship">
+                <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                    ecoreFeature="ecore:EReference AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Relationship/from"/>
+                <genFeatures notify="false" createChild="false" propertySortChoices="true"
+                    ecoreFeature="ecore:EReference AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Relationship/to"/>
+                <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AnomalyGraph.ecore#//unimib/disco/lta/eclipse/anomalyGraph/Relationship/weight"/>
+              </genClasses>
+            </nestedGenPackages>
+          </nestedGenPackages>
+        </nestedGenPackages>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

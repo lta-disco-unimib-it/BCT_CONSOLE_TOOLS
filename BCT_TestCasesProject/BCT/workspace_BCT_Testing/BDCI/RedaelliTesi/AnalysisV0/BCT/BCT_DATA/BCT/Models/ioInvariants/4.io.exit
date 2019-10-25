@@ -1,0 +1,4 @@
+x == orig(x)
+returnValue != null
+x >= 0.300000191
+x != 0

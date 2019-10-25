@@ -1,0 +1,176 @@
+
+sottrazione :::ENTER
+y
+2
+1
+x
+1
+1
+
+sottrazione :::EXIT1
+risultato
+1
+1
+y
+2
+1
+x
+1
+1
+returnValue.eax
+1065353216
+1
+
+sottrazione :::ENTER
+y
+0.899999976
+1
+x
+0.5
+1
+
+sottrazione :::EXIT1
+risultato
+0.399999976
+1
+y
+0.899999976
+1
+x
+0.5
+1
+returnValue.eax
+1053609164
+1
+
+sottrazione :::ENTER
+y
+5
+1
+x
+5
+1
+
+sottrazione :::EXIT1
+risultato
+1
+1
+y
+5
+1
+x
+5
+1
+returnValue.eax
+1065353216
+1
+
+sottrazione :::ENTER
+y
+1
+1
+x
+2
+1
+
+sottrazione :::EXIT1
+risultato
+1
+1
+y
+1
+1
+x
+2
+1
+returnValue.eax
+1065353216
+1
+
+sottrazione :::ENTER
+y
+10
+1
+x
+0.400000006
+1
+
+sottrazione :::EXIT1
+risultato
+9.60000038
+1
+y
+10
+1
+x
+0.400000006
+1
+returnValue.eax
+1092196762
+1
+
+sottrazione :::ENTER
+y
+100
+1
+x
+100
+1
+
+sottrazione :::EXIT1
+risultato
+1
+1
+y
+100
+1
+x
+100
+1
+returnValue.eax
+1065353216
+1
+
+sottrazione :::ENTER
+y
+4.19999981
+1
+x
+4.5
+1
+
+sottrazione :::EXIT1
+risultato
+0.300000191
+1
+y
+4.19999981
+1
+x
+4.5
+1
+returnValue.eax
+1050253728
+1
+
+sottrazione :::ENTER
+y
+0.600000024
+1
+x
+0.600000024
+1
+
+sottrazione :::EXIT1
+risultato
+1
+1
+y
+0.600000024
+1
+x
+0.600000024
+1
+returnValue.eax
+1065353216
+1

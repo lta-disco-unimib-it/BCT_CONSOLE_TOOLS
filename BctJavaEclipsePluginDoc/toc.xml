@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="BCT" topic="html/toc.html">
+   <topic href="html/gettingstarted/maintopic.html" label="An overview of BCT">
+      <anchor id="gettingstarted"/>
+   </topic>
+   <topic label="Debugging Java programs with BCT">
+      <topic href="html/cpp/regression.html" label="Debugging faults with BCT">
+      </topic>
+   </topic>
+   <topic href="html/cpp/maintopic.html" label="Debugging C++ programs with BCT">
+      <topic href="html/cpp/regression.html" label="Identifying regression faults">
+      </topic>
+   </topic>
+</toc>

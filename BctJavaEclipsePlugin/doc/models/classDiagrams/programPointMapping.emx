@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_N4RN4DbPEdy7ivhRYoVROg" name="programPointMapping">
+  <eAnnotations xmi:id="_N4RN4TbPEdy7ivhRYoVROg" source="uml2.diagrams" references="_N4RN4jbPEdy7ivhRYoVROg">
+    <contents xmi:type="notation:Diagram" xmi:id="_N4RN4jbPEdy7ivhRYoVROg" type="Class" name="Main">
+      <children xmi:id="_PEqIgDbPEdy7ivhRYoVROg">
+        <children xmi:id="_PEty4DbPEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_PEty4TbPEdy7ivhRYoVROg" width="530" height="530"/>
+        </children>
+        <children xmi:id="_PEty4jbPEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_PEuZ8DbPEdy7ivhRYoVROg" type="Kind"/>
+        <children xmi:id="_PEuZ8TbPEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_PEyEUDbPEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_PEyrYDbPEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_PEyrYTbPEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_PE9DcDbPEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_PE9DcTbPEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_PEqIgTbPEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text" useClassifierShape="true"/>
+        <element xmi:type="uml:Interface" href="mmi:///#jsrctype%5Ename=ProgramPointsRawFinder%5Bjcu%5Ename=ProgramPointsRawFinder.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.finders%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Interface"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEqIgjbPEdy7ivhRYoVROg" x="13995" y="776"/>
+      </children>
+      <children xmi:id="_SIiJMDbPEdy7ivhRYoVROg">
+        <children xmi:id="_SIiwQDbPEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_SIiwQTbPEdy7ivhRYoVROg" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_SIiwQjbPEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_SIjXUDbPEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_SIjXUTbPEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_SIjXUjbPEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SIjXUzbPEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_SIjXVDbPEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SIjXVTbPEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SIiJMTbPEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPoint%5Bjcu%5Ename=ProgramPoint.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SIiJMjbPEdy7ivhRYoVROg" x="6686" y="9848"/>
+      </children>
+      <children xmi:id="_8HEnsDbPEdy7ivhRYoVROg">
+        <children xmi:id="_8HFOwDbPEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_8HFOwTbPEdy7ivhRYoVROg" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_8HFOwjbPEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_8HFOwzbPEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_8HF10DbPEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_8HF10TbPEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8HF10jbPEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_8HF10zbPEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8HF11DbPEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8HEnsTbPEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPointRawMapperFile%5Bjcu%5Ename=ProgramPointRawMapperFile.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.file%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8HEnsjbPEdy7ivhRYoVROg" x="27136" y="8863"/>
+      </children>
+      <children xmi:id="_S_PAUDbSEdy7ivhRYoVROg">
+        <children xmi:id="_S_PnYDbSEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_S_PnYTbSEdy7ivhRYoVROg" width="530" height="530"/>
+        </children>
+        <children xmi:id="_S_QOcDbSEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_S_QOcTbSEdy7ivhRYoVROg" type="Kind"/>
+        <children xmi:id="_S_QOcjbSEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_S_QOczbSEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_S_Q1gDbSEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_S_Q1gTbSEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_S_RckDbSEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_S_RckTbSEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_S_PAUTbSEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text" useClassifierShape="true"/>
+        <element xmi:type="uml:Interface" href="mmi:///#jsrctype%5Ename=ProgramPointRawMapper%5Bjcu%5Ename=ProgramPointRawMapper.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Interface"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S_PAUjbSEdy7ivhRYoVROg" x="3421" y="4043"/>
+      </children>
+      <children xmi:id="_X9JEwDbSEdy7ivhRYoVROg">
+        <children xmi:id="_X9Jr0DbSEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_X9Jr0TbSEdy7ivhRYoVROg" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_X9Jr0jbSEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_X9Jr0zbSEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_X9Jr1DbSEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_X9KS4DbSEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X9KS4TbSEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_X9UD4DbSEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_X9UD4TbSEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_X9JEwTbSEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPointRawMapperDB%5Bjcu%5Ename=ProgramPointRawMapperDB.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.db%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9JEwjbSEdy7ivhRYoVROg" x="-6220" y="8785"/>
+      </children>
+      <children xmi:id="_cvSlIDbSEdy7ivhRYoVROg">
+        <children xmi:id="_cvTMMDbSEdy7ivhRYoVROg" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_cvTMMTbSEdy7ivhRYoVROg" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_cvTMMjbSEdy7ivhRYoVROg" type="Stereotype"/>
+        <children xmi:id="_cvTzQDbSEdy7ivhRYoVROg" type="Name"/>
+        <children xmi:id="_cvTzQTbSEdy7ivhRYoVROg" type="Parent"/>
+        <children xmi:id="_cvTzQjbSEdy7ivhRYoVROg" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cvTzQzbSEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <children xmi:id="_cvTzRDbSEdy7ivhRYoVROg" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cvTzRTbSEdy7ivhRYoVROg" showTitle="true"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_cvSlITbSEdy7ivhRYoVROg" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showParent="Name" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=AbstractMapperFile%5Bjcu%5Ename=AbstractMapperFile.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.file%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cvSlIjbSEdy7ivhRYoVROg" x="27136" y="4820"/>
+      </children>
+      <children xmi:id="_tW6Y0HAkEdyZKrgQ2MHT7g">
+        <children xmi:id="_tW6_4HAkEdyZKrgQ2MHT7g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_tW6_4XAkEdyZKrgQ2MHT7g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_tW7m8HAkEdyZKrgQ2MHT7g" type="Stereotype"/>
+        <children xmi:id="_tW7m8XAkEdyZKrgQ2MHT7g" type="Name"/>
+        <children xmi:id="_tW7m8nAkEdyZKrgQ2MHT7g" type="Parent"/>
+        <children xmi:id="_tW7m83AkEdyZKrgQ2MHT7g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tW7m9HAkEdyZKrgQ2MHT7g"/>
+        </children>
+        <children xmi:id="_tW8OAHAkEdyZKrgQ2MHT7g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_tW8OAXAkEdyZKrgQ2MHT7g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_tW6Y0XAkEdyZKrgQ2MHT7g" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPointModel%5Bjcu%5Ename=ProgramPointModel.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tW6Y0nAkEdyZKrgQ2MHT7g" x="32783" y="14253" width="4976" height="1891"/>
+      </children>
+      <children xmi:id="_0A4WcHAkEdyZKrgQ2MHT7g">
+        <children xmi:id="_0A4Wc3AkEdyZKrgQ2MHT7g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_0A4WdHAkEdyZKrgQ2MHT7g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_0A49gHAkEdyZKrgQ2MHT7g" type="Stereotype"/>
+        <children xmi:id="_0A49gXAkEdyZKrgQ2MHT7g" type="Name"/>
+        <children xmi:id="_0A49gnAkEdyZKrgQ2MHT7g" type="Parent"/>
+        <children xmi:id="_0A49g3AkEdyZKrgQ2MHT7g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0A49hHAkEdyZKrgQ2MHT7g"/>
+        </children>
+        <children xmi:id="_0A49hXAkEdyZKrgQ2MHT7g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_0A49hnAkEdyZKrgQ2MHT7g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_0A4WcXAkEdyZKrgQ2MHT7g" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPointVariable%5Bjcu%5Ename=ProgramPointVariable.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0A4WcnAkEdyZKrgQ2MHT7g" x="36516" y="17441" width="3732" height="2150"/>
+      </children>
+      <children xmi:id="_2r5LMHAkEdyZKrgQ2MHT7g">
+        <children xmi:id="_2r5yQHAkEdyZKrgQ2MHT7g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_2r5yQXAkEdyZKrgQ2MHT7g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_2r5yQnAkEdyZKrgQ2MHT7g" type="Stereotype"/>
+        <children xmi:id="_2r5yQ3AkEdyZKrgQ2MHT7g" type="Name"/>
+        <children xmi:id="_2r5yRHAkEdyZKrgQ2MHT7g" type="Parent"/>
+        <children xmi:id="_2r6ZUHAkEdyZKrgQ2MHT7g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2r6ZUXAkEdyZKrgQ2MHT7g"/>
+        </children>
+        <children xmi:id="_2r7AYHAkEdyZKrgQ2MHT7g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_2r7AYXAkEdyZKrgQ2MHT7g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2r5LMXAkEdyZKrgQ2MHT7g" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPointValue%5Bjcu%5Ename=ProgramPointValue.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2r5LMnAkEdyZKrgQ2MHT7g" x="26124" y="16794"/>
+      </children>
+      <children xmi:id="_5XS6IHAnEdyZKrgQ2MHT7g">
+        <children xmi:id="_5XThMHAnEdyZKrgQ2MHT7g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_5XThMXAnEdyZKrgQ2MHT7g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_5XThMnAnEdyZKrgQ2MHT7g" type="Stereotype"/>
+        <children xmi:id="_5XThM3AnEdyZKrgQ2MHT7g" type="Name"/>
+        <children xmi:id="_5XUIQHAnEdyZKrgQ2MHT7g" type="Parent"/>
+        <children xmi:id="_5XUIQXAnEdyZKrgQ2MHT7g" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5XUIQnAnEdyZKrgQ2MHT7g"/>
+        </children>
+        <children xmi:id="_5XUIQ3AnEdyZKrgQ2MHT7g" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_5XUIRHAnEdyZKrgQ2MHT7g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_5XS6IXAnEdyZKrgQ2MHT7g" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+        <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProgramPointRaw%5Bjcu%5Ename=ProgramPointRaw.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D$uml.Class"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XS6InAnEdyZKrgQ2MHT7g" x="14098" y="16275" width="4354" height="2825"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_N4RN4zbPEdy7ivhRYoVROg"/>
+      <edges xmi:id="_S_XjMDbSEdy7ivhRYoVROg" source="_8HEnsDbPEdy7ivhRYoVROg" target="_S_PAUDbSEdy7ivhRYoVROg">
+        <children xmi:id="_S_XjMzbSEdy7ivhRYoVROg" type="NameLabel">
+          <children xmi:id="_S_XjNTbSEdy7ivhRYoVROg" type="Stereotype"/>
+          <children xmi:id="_S_YKQDbSEdy7ivhRYoVROg" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S_XjNDbSEdy7ivhRYoVROg" y="-519"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_S_XjMTbSEdy7ivhRYoVROg" fontName="Sans" showStereotype="Text"/>
+        <element xmi:type="uml:InterfaceRealization" href="mmi:///#jimpl%5Bjsrctype%5Ename=ProgramPointRawMapperFile%5Bjcu%5Ename=ProgramPointRawMapperFile.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.file%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramPointRawMapper%5Bjcu%5Ename=ProgramPointRawMapper.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.InterfaceRealization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S_XjMjbSEdy7ivhRYoVROg" points="[-14, -2216, 20760, 2800]$[-20774, -3772, 0, 1244]"/>
+      </edges>
+      <edges xmi:id="_TDM6UDbSEdy7ivhRYoVROg" source="_S_PAUDbSEdy7ivhRYoVROg" target="_PEqIgDbPEdy7ivhRYoVROg">
+        <children xmi:id="_TDNhYDbSEdy7ivhRYoVROg" type="NameLabel">
+          <children xmi:id="_TDOIcDbSEdy7ivhRYoVROg" type="Stereotype"/>
+          <children xmi:id="_TDOIcTbSEdy7ivhRYoVROg" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TDNhYTbSEdy7ivhRYoVROg" y="-519"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_TDM6UTbSEdy7ivhRYoVROg" fontName="Sans" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=ProgramPointRawMapper%5Bjcu%5Ename=ProgramPointRawMapper.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramPointsRawFinder%5Bjcu%5Ename=ProgramPointsRawFinder.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.finders%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Generalization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TDM6UjbSEdy7ivhRYoVROg" points="[0, -1244, -7543, 2799]$[7542, -2799, -1, 1244]"/>
+      </edges>
+      <edges xmi:id="_X9dN0DbSEdy7ivhRYoVROg" source="_X9JEwDbSEdy7ivhRYoVROg" target="_S_PAUDbSEdy7ivhRYoVROg">
+        <children xmi:id="_X9fqEDbSEdy7ivhRYoVROg" type="NameLabel">
+          <children xmi:id="_X9fqEjbSEdy7ivhRYoVROg" type="Stereotype"/>
+          <children xmi:id="_X9gRIDbSEdy7ivhRYoVROg" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X9fqETbSEdy7ivhRYoVROg" y="-519"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_X9dN0TbSEdy7ivhRYoVROg" fontName="Sans" showStereotype="Text"/>
+        <element xmi:type="uml:InterfaceRealization" href="mmi:///#jimpl%5Bjsrctype%5Ename=ProgramPointRawMapperDB%5Bjcu%5Ename=ProgramPointRawMapperDB.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.db%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramPointRawMapper%5Bjcu%5Ename=ProgramPointRawMapper.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.InterfaceRealization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X9dN0jbSEdy7ivhRYoVROg" points="[-13, -2216, -5650, 2800]$[5637, -3772, 0, 1244]"/>
+      </edges>
+      <edges xmi:id="_eFJk0DbSEdy7ivhRYoVROg" source="_8HEnsDbPEdy7ivhRYoVROg" target="_cvSlIDbSEdy7ivhRYoVROg">
+        <children xmi:id="_eFJk0zbSEdy7ivhRYoVROg" type="NameLabel">
+          <children xmi:id="_eFKL4DbSEdy7ivhRYoVROg" type="Stereotype"/>
+          <children xmi:id="_eFKL4TbSEdy7ivhRYoVROg" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eFJk1DbSEdy7ivhRYoVROg" y="-519"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_eFJk0TbSEdy7ivhRYoVROg" fontName="Sans" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=ProgramPointRawMapperFile%5Bjcu%5Ename=ProgramPointRawMapperFile.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.file%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=AbstractMapperFile%5Bjcu%5Ename=AbstractMapperFile.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.dataLayer.mappers.file%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Generalization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eFJk0jbSEdy7ivhRYoVROg" points="[-14, -2216, -1, 2800]$[-14, -3772, -1, 1244]"/>
+      </edges>
+      <edges xmi:id="_5XiKsHAnEdyZKrgQ2MHT7g" source="_5XS6IHAnEdyZKrgQ2MHT7g" target="_SIiJMDbPEdy7ivhRYoVROg">
+        <children xmi:id="_5XixwHAnEdyZKrgQ2MHT7g" type="NameLabel">
+          <children xmi:id="_5XjY0HAnEdyZKrgQ2MHT7g" type="Stereotype"/>
+          <children xmi:id="_5XjY0XAnEdyZKrgQ2MHT7g" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XixwXAnEdyZKrgQ2MHT7g" y="-182"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_5XiKsXAnEdyZKrgQ2MHT7g" fontName="Sans" showStereotype="Text"/>
+        <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=ProgramPointRaw%5Bjcu%5Ename=ProgramPointRaw.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProgramPoint%5Bjcu%5Ename=ProgramPoint.java%5Bjpack%5Ename=it.unimib.disco.lta.bct.bctjavaeclipse.core.businessLogic.domainEntities%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=BctJavaEclipsePlugin%5D%5D%5D%5D%5D$uml.Generalization"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5XiKsnAnEdyZKrgQ2MHT7g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <ownedComment xmi:id="_Iwg_ADbREdy7ivhRYoVROg">
+    <body>find(IoRawTrace trace){</body>
+  </ownedComment>
+  <packageImport xmi:id="_N4RN5DbPEdy7ivhRYoVROg">
+    <importedPackage xmi:type="uml:Model" href="jar:file:/opt/IBM/SDP70Shared/plugins/org.eclipse.uml2.uml.resources_2.0.2.v200610251409.jar!/libraries/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZHFe8HAjEdyZKrgQ2MHT7g" name="ProgramPointModel">
+    <eAnnotations xmi:id="_y3lokHAjEdyZKrgQ2MHT7g" source="uml2.diagrams">
+      <contents xmi:type="notation:Diagram" xmi:id="_y3mPoHAjEdyZKrgQ2MHT7g" type="Structure" element="_ZHFe8HAjEdyZKrgQ2MHT7g" name="StructureDiagram1" measurementUnit="Himetric">
+        <children xmi:id="_y3mPoXAjEdyZKrgQ2MHT7g" type="StructureDiagramFrame" element="_ZHFe8HAjEdyZKrgQ2MHT7g">
+          <children xmi:id="_y3mPonAjEdyZKrgQ2MHT7g" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_y3mPo3AjEdyZKrgQ2MHT7g"/>
+          </children>
+          <children xmi:id="_y3mPpHAjEdyZKrgQ2MHT7g" type="Name"/>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_y3mPpXAjEdyZKrgQ2MHT7g" fontName="Sans" showListStereotype="Text" showListVisibility="Text" showListSignature="true" showStereotype="Text"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y3mPpnAjEdyZKrgQ2MHT7g" x="777" y="777"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_y3mPp3AjEdyZKrgQ2MHT7g"/>
+      </contents>
+    </eAnnotations>
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_sVX4wHAjEdyZKrgQ2MHT7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eSqzAHAjEdyZKrgQ2MHT7g" name="ProgramPointVariable">
+    <ownedAttribute xmi:id="_BW9cMHAkEdyZKrgQ2MHT7g" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="jar:file:/opt/IBM/SDP70Shared/plugins/org.eclipse.uml2.uml.resources_2.0.2.v200610251409.jar!/libraries/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_N4RN5TbPEdy7ivhRYoVROg">
+    <eAnnotations xmi:id="_N4RN5jbPEdy7ivhRYoVROg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_N4RN5zbPEdy7ivhRYoVROg">
+    <eAnnotations xmi:id="_N4RN6DbPEdy7ivhRYoVROg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_N4RN6TbPEdy7ivhRYoVROg">
+    <eAnnotations xmi:id="_N4RN6jbPEdy7ivhRYoVROg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Model>
