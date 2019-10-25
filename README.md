@@ -3,12 +3,18 @@ This is Behavior Capture and Test (BCT), a dynamic analysis toolset to support p
 This repository contains the sources of the BCT user interfaces: a standalone library and an Eclipse plugin.
 
 To compile the library:
+
 cd to BCT_EclipseLibraryStubs
+
 ant eclipseStandaloneAll
 
 The project BCT is required in a sister folder. For example:
+
 /parent/BCT
+
 /parent/BCT_TOOLSET
+
+
 
 We suggest to import all the projects in an Eclipse workspace.
 
@@ -27,6 +33,6 @@ Dynamic Detection of COTS Component Incompatibility. IEEE Software 24(5): 76-85 
 * L. Mariani and M. Pezze`, “Behavior capture and test: automated analysis
 of component integration,” in proceedings on the 10th International Con- ference on Engineering Complex Computer Systems. IEEE Computer Society, 2005, pp. 292–301.
 
-The project can be compiled using Apache ANT.
+
 
 
