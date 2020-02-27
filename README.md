@@ -34,16 +34,21 @@ Dynamic Detection of COTS Component Incompatibility. IEEE Software 24(5): 76-85 
 of component integration,” in proceedings on the 10th International Con- ference on Engineering Complex Computer Systems. IEEE Computer Society, 2005, pp. 292–301.
 
 
-#Videos
+# Videos
 
+## BCT/Radar - Identifying Regression Faults in C/C++
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=tKirorsbwSM" target="_blank"><img src="http://img.youtube.com/vi/tKirorsbwSM/0.jpg" alt="BCT: C/C++ debugging" width="540" height="380" border="10" /></a>
 
+## Debugging a Tomcat Fault with BCT
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=kv14X1tTZjk" target="_blank"><img src="http://img.youtube.com/vi/kv14X1tTZjk/0.jpg" alt="BCT: C/C++ debugging" width="540" height="380" border="10" /></a>
 
+## Using BCT to diagnose a regression fault in NanoXml (no audio)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=B6yxSOVZTYc" target="_blank"><img src="http://img.youtube.com/vi/B6yxSOVZTYc/0.jpg" alt="BCT: C/C++ debugging" width="540" height="380" border="10" /></a>
 
+## Detecting Object Usage Anomalies With BCT
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=It5DbTQZFd8" target="_blank"><img src="http://img.youtube.com/vi/It5DbTQZFd8/0.jpg" alt="BCT: C/C++ debugging" width="540" height="380" border="10" /></a>
 
+## New BCT Monitoring Configuration for Object Usage Anomalies detection
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=0VIuSBghjCs" target="_blank"><img src="http://img.youtube.com/vi/0VIuSBghjCs/0.jpg" alt="BCT: C/C++ debugging" width="540" height="380" border="10" /></a>
 
 
